@@ -5,11 +5,38 @@
 // -----------------------------------------------------------------------------
 
 .section-header {
+  position: fixed;
+  top: 15px;
+  right: 0;
+  left: 0;
+  z-index: 2;
+  
+  background-color: transparent;
+
+  .active {
+    background-color: $white;
+  }
+  
+  .logo {
+    padding: 0 0 0 8px;
+  }
+
   .navbar-nav {
+
     .nav-link {
-      font-family: $text-font-light;
+      font-family: $text-spectral-regular;
       font-size: 16px;
       color: $violet;
+    }
+
+    .nav-link:active {
+      color: $red-orange;
+    }
+  }
+
+  .navbar-toggler {
+    .icon-bar {
+      background-color: $violet;
     }
   }
 }
