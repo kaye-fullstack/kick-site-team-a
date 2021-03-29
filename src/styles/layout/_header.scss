@@ -1,0 +1,15 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the header of the site/application.
+// -----------------------------------------------------------------------------
+
+.section-header {
+  .navbar-nav {
+    .nav-link {
+      font-family: $text-font-light;
+      font-size: 16px;
+      color: $violet;
+    }
+  }
+}
