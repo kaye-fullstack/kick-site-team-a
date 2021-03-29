@@ -3,3 +3,93 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+footer{
+  padding-top: 500px;
+  .footer-wrapper{
+    .footer-content{
+      padding-left: 8px;
+
+      p{
+        font-family: 'BasisGrotesquePro-Regular';
+        font-size: 15px;
+      }
+
+      .started-to-support{
+        margin: 31px 0 0 1px;
+      }
+
+      .address{
+        margin: 19px 0 0 1px;
+        width: 131px;
+      }
+
+      .seal{
+        position: absolute;
+        
+        right: -4px;
+        top: 129px;
+        width: 125px;
+      }
+
+      .footer-links{
+        display: flex;
+        flex-direction: row;
+        margin: 57px 0 0 32px;
+        width: 250px;
+
+        .first-set-of-links{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+
+          list-style-type: none;
+        }
+
+        .last-set-of-links{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0 0 0 100px;
+
+          list-style-type: none;
+        }
+
+        .links{
+          margin-bottom: 6px;
+
+          font-family: 'BasisGrotesquePro-Regular';
+          font-size: 15px;    
+          color: $pastel-blue;
+          
+          border-bottom: 1px;
+        }
+      }
+    }
+
+    .subscribe-to-newsletter{
+      .subscribe{
+        margin: 12px 0 0 40px;
+
+        font-family: 'BasisGrotesquePro-Regular';
+        font-size: 15px;
+      }
+
+      .latest-mental{
+        margin:0 0 14px 40px;
+
+        font-family: 'BasisGrotesquePro-Regular';
+        font-size: 13px;
+      }
+
+      .form-control{
+        width: 72%;
+        height: 32px;
+        margin: 0 0 0 40px;
+
+        border-radius: 0;
+      }
+    }
+  }
+}
