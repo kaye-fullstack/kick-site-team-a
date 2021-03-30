@@ -15,7 +15,131 @@
     .title {
       font-family: $text-font-light;
       font-size: 24px;
-      color: $violet;
     }
+  }
+
+  .section-personalized {
+    background-color: $pastel-grey;
+
+    .title {
+      width: 305px;
+    }
+    
+    .sub-heading {
+      font-size: 14px;
+      font-family: $font-BasisGrotesquePro-Light;
+      text-transform: uppercase;
+    }
+
+    .treatment-list {
+      line-height: 27px;
+      list-style: none;
+
+      &:nth-child(1):before{
+        content: '1';
+
+        position: absolute;
+        left: 24px;
+
+        margin-right: 12px;
+        width: 21px;
+        height: 21px;
+
+        line-height: 1.8;
+        text-align: center;
+        font-size: 12px;
+        color: $white;
+
+        background-color: $mid-grey;
+        border-radius: 100%;
+      }
+      
+      &:nth-child(2):before{
+        content: '2';
+
+        position: absolute;
+        left: 24px;
+
+        margin-right: 12px;
+        width: 21px;
+        height: 21px;
+        
+        line-height: 1.8;
+        text-align: center;
+        font-size: 12px;
+        color: $white;
+
+        background-color: $mid-grey;
+        border-radius: 100%;
+      }
+
+      &:nth-child(3):before{
+        content: '3';
+        
+        position: absolute;
+        left: 24px;
+
+        margin-right: 12px;
+        width: 21px;
+        height: 21px;
+
+        line-height: 1.8;
+        text-align: center;
+        font-size: 12px;
+        color: $white;
+
+        background-color: $mid-grey;
+        border-radius: 100%;
+      }
+    }
+  }
+
+  .section-testimonial {
+    background-color: $tortoise;
+
+    .swiper-container {
+      height: 50vh;
+
+      .swiper-slide {
+        padding-top: 100px;
+        width: 500px;
+
+        text-align: center;
+        font-size: 30px;
+        font-family: $font-Spectral-Medium;
+      }
+      
+      .content-holder {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .description {
+          color: $white;
+        }
+        .bottom-text {
+          font-size: 18px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .section-sleep-solutions {
+    background-color: $pastel-yellow;
+
+    .title {
+      width: 305px;
+    }
+    
+    .sub-heading {
+      font-size: 14px;
+      font-family: $font-BasisGrotesquePro-Light;
+      text-transform: uppercase;
+    }
+  }
+
+  .section-anxiety-solutions {
+    background-color: $lavender;
   }
 }
