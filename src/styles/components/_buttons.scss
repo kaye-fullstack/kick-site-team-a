@@ -1,21 +1,34 @@
+  
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
-.btn-newsletter {
-  position: absolute;
-  top: 252px;
-  right: 22px;
 
-  width: 35px;
-  height: 32px;
+.btn-yellow {
+  width: 156px;
+  height: 41px;
 
-  background-color: $dark-blue;
-  border: 1px $dark-blue;
+  font-family: $text-spectral-regular;
+  font-size: 16px;
+  color: $violet;
+  text-align: center;
+  letter-spacing: -1px;
+
+  background-color: $pastel-yellow;
+  border: none;
 }
 
-.btn-newsletter:hover {
-  background-color: $white;
-  border: 2px $dark-blue;
+.btn-navy {
+  width: 156px;
+  height: 41px;
+
+  font-family: $text-spectral-regular;
+  font-size: 16px;
+  color: $violet;
+  text-align: center;
+  letter-spacing: -1px;
+
+  background-color: $violet;
+  border: none;
 }
