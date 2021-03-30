@@ -5,8 +5,6 @@
 // -----------------------------------------------------------------------------
 
 .home {
-  transition: all .2s ease-in-out;
-  
   .section-hero {
     position: relative;
     top: 0;
@@ -30,7 +28,7 @@
     }
 
     .description {
-      padding-bottom: 49px;
+      padding-bottom: 43px;
       width: 308px;
 
       font-family: $text-spectral-regular;
@@ -197,7 +195,7 @@
     }
   }
 
-  .section-testimonial {
+  .section-quotation-slider {
     background-color: $tortoise;
 
     .swiper-container {
@@ -246,84 +244,83 @@
     background-color: $lavender;
   }
 
-  .section-questions-answered {
-    margin-left: 22px;
+  .section-testimonials {
+    padding: 62px 0 90px 0;
 
-    background-color: $dark-blue;
+    text-align: center;
 
-    .content-wrapper{
-      display: flex;
-      flex-direction: row;
-      .content-holder{
-        &:nth-child(1){
-          width: 50%
-        }
+    background-color: $pastel-yellow;
 
-        &:nth-child(2){
-          width: 50%
-        }
+    .title {
+      padding-bottom: 48px;
 
-        .title{
-          padding: 112px 0 2px 15px;
-    
-          color: #f25930;
-          font-size: 14px;
-        }
-    
-        .swiper-container {
-          margin: 18px 0 0 5px;
-    
-          .swiper-slide {
-            width: 52%;
-            height: 100%;
-    
-            .quote {
-              position: relative;
-              
-              width: 440px;
-              padding: 0 18px;
-    
-              font-family: $font-Spectral-Medium;
-              font-size: 47px;
-              color: $white;
-              text-align: left;
-            }
-    
-            .quote:before {
-              position: absolute;
-              left: 0px;
-    
-              content: "“";
-            }
-    
-            .quote:after {
-              position: absolute;
-    
-              content: "”";
-            }
-          }
-        }
-    
-        .desc{
-          width: 300px;
-          margin: -19px 0 58px 20px;
-    
-          color: $white;
-          font-size: 13px;
-        }
-
-        .doctor-image{
-          margin: 129px 0 0 216px;
-        }
-
-        .doctor-name{
-          margin: 30px 0 0 237px;
-          
-          color: $white;
-          font-size: 13px;
-        }
-      }
+      font-family: $text-spectral-medium;
+      font-size: 32px;
+      letter-spacing: -2.5px;
     }
 
+    .image-holder {
+      margin: 0 auto 26px;
+      width: 68px;
+    }
+
+    .logo-desc {
+      margin: 10px 0 16px;
+      font-family: $text-spectral-regular;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+      line-height: 24px;
+    }
+
+    // .content-holder {
+    //   display: flex;
+    //   align-items: center;
+    //   justify-content: space-between;
+
+    //   margin: 55px auto 20px;
+    //   width: 875px;
+
+    //   .image-holder {
+    //     font-family: $text-spectral-regular;
+    //     font-size: 16px;
+    //     color: $violet;
+    //     text-align: center;
+    //     letter-spacing: -1.4px;
+
+    //     &:first-child {
+    //       .logo {
+    //         padding-bottom: 18px;
+    //         width: 68px;
+    //       }
+
+    //       .logo-desc {
+    //         width: 173px;
+    //       }
+    //     }
+
+    //     &:nth-child(2) {
+    //       .logo {
+    //         padding-bottom: 25px;
+    //         width: 68px;
+    //       }
+
+    //       .logo-desc {
+    //         width: 178px;
+    //       }
+    //     }
+
+    //     &:nth-child(3) {
+    //       .logo {
+    //         padding-bottom: 25px;
+    //         width: 68px;
+    //       }
+
+    //       .logo-desc {
+    //         width: 184px;
+    //       }
+    //     }
+
+    //   }
+    // }
   }
 }

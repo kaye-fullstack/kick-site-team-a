@@ -13,16 +13,15 @@ AppName.Modules.ThemeModule = (function () {
         el: '.swiper-pagination',
       },
     });
-
-    $(window).on("scroll", function() {
-      if($(window).scrollTop() > 50) {
-        $(".header").addClass("active");
-      } 
-      else {
-        $(".header").removeClass("active");
-      }
-    });
+    
+    const elem = $('.scroll-active-js');
+    const scrolled = () => {
+      const threshold = $(document).scrollTop() > 50;
+        elem.toggleClass('scrolled', threshold);
+      };
+    $(window).on({ scroll: scrolled });
   };
+
 
   /////////////////////
   // Public Methods //
