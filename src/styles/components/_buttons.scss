@@ -4,6 +4,27 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the button component.
 // -----------------------------------------------------------------------------
+.btn-newsletter {
+  position: absolute;
+  top: 252px;
+  right: 21px;
+
+  width: 35px;
+  height: 32px;
+
+  border: none;
+  background-color: $dark-blue;
+  background-image: url("C:../assets/images/arrow-right-navy.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 18px;
+}
+
+.btn-newsletter:active {
+  border: $dark-blue;
+  background-color: transparent;
+  background-image: url("C:../assets/images/arrow-right-navy.svg");
+}
 
 .btn-yellow {
   width: 156px;
