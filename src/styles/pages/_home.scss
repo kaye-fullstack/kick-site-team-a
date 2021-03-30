@@ -237,10 +237,18 @@
         .description {
           color: $white;
         }
+        
         .bottom-text {
           font-size: 18px;
           color: $white;
         }
+      }
+      .swiper-pagination-bullet {
+        background-color: $white;
+      }
+
+      .swiper-pagination-bullets {
+        top: 290px;
       }
     }
   }
@@ -261,6 +269,7 @@
 
   .section-anxiety-solutions {
     background-color: $lavender;
+
   }
   
   .section-questions-answered {

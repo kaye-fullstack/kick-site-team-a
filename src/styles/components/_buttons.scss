@@ -52,7 +52,16 @@
     letter-spacing: -1px;
   
     background-color: $violet;
-    border: none;
+    border: 1px solid $violet;
+
+    transition: all .2s ease-in-out;
+
+    @include on-event() {
+      color: $violet;
+      
+      border: 1px solid $violet;
+      background-color: $white;
+    }
   }
 }
 
