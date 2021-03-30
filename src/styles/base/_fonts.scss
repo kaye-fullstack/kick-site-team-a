@@ -3,7 +3,7 @@
 // -----------------------------------------------------------------------------
 // This file contains all @font-face declarations, if any.
 // -----------------------------------------------------------------------------
-
+@include font-face($font-opensans, $base-url + 'fonts/', 'opensans-regular', 'opensans-regular');
 @include font-face($font-BasisGrotesquePro-Bold, $base-url + 'fonts/', 'BasisGrotesquePro-Bold', 'BasisGrotesquePro-Bold');
 @include font-face($font-BasisGrotesquePro-Light, $base-url + 'fonts/', 'BasisGrotesquePro-Light', 'BasisGrotesquePro-Light');
 @include font-face($font-BasisGrotesquePro-Regular, $base-url + 'fonts/', 'BasisGrotesquePro-Regular', 'BasisGrotesquePro-Regular');

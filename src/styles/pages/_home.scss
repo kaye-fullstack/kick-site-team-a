@@ -123,9 +123,21 @@
     background-color: $pastel-grey;
 
     .title {
-      width: 305px;
+      width: 330px;
+      margin-top: 18px;
+
+      line-height: 41px;
     }
     
+    .content {
+      height: 357px;
+      margin: 119px 0 0 70px;
+    }
+
+    .image-wrapper {
+      margin-left: 80px;
+    }
+
     .sub-heading {
       font-size: 14px;
       font-family: $font-BasisGrotesquePro-Light;
@@ -133,25 +145,30 @@
     }
 
     .treatment-list {
-      line-height: 27px;
+      position: relative;
+      
+      margin-bottom: 10px;
+
       list-style: none;
+      line-height: 28px;
 
       &:nth-child(1):before {
         content: '1';
 
         position: absolute;
-        left: 24px;
+        top: 6px;
+        left: -30px;
 
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
+        width: 18px;
+        height: 18px;
 
-        line-height: 1.8;
+        line-height: 1.6;
         text-align: center;
         font-size: 12px;
         color: $white;
 
-        background-color: $mid-grey;
+        background-color: $pastel-blue;
         border-radius: 100%;
       }
       
@@ -159,18 +176,19 @@
         content: '2';
 
         position: absolute;
-        left: 24px;
+        top: 6px;
+        left: -30px;
 
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
-        
-        line-height: 1.8;
+        width: 18px;
+        height: 18px;
+
+        line-height: 1.6;
         text-align: center;
         font-size: 12px;
         color: $white;
 
-        background-color: $mid-grey;
+        background-color: $pastel-blue;
         border-radius: 100%;
       }
 
@@ -178,18 +196,19 @@
         content: '3';
         
         position: absolute;
-        left: 24px;
+        top: 6px;
+        left: -30px;
 
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
+        width: 18px;
+        height: 18px;
 
-        line-height: 1.8;
+        line-height: 1.6;
         text-align: center;
         font-size: 12px;
         color: $white;
 
-        background-color: $mid-grey;
+        background-color: $pastel-blue;
         border-radius: 100%;
       }
     }
@@ -199,10 +218,10 @@
     background-color: $tortoise;
 
     .swiper-container {
-      height: 50vh;
+      height: 44vh;
 
       .swiper-slide {
-        padding-top: 100px;
+        padding-top: 55px;
         width: 500px;
 
         text-align: center;

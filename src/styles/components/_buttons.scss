@@ -26,30 +26,33 @@
   background-image: url("../assets/images/arrow-right-navy.svg");
 }
 
-.btn-yellow {
-  width: 156px;
-  height: 41px;
-
-  font-family: $text-spectral-regular;
-  font-size: 16px;
-  color: $violet;
-  text-align: center;
-  letter-spacing: -1px;
-
-  background-color: $pastel-yellow;
-  border: none;
+.btn  {
+  &-yellow {
+    width: 156px;
+    height: 41px;
+  
+    font-family: $text-spectral-regular;
+    font-size: 16px;
+    color: $violet;
+    text-align: center;
+    letter-spacing: -1px;
+  
+    background-color: $pastel-yellow;
+    border: none;
+  }
+  
+  &-navy {
+    width: 156px;
+    height: 41px;
+  
+    font-family: $text-spectral-regular;
+    font-size: 16px;
+    color: $white;
+    text-align: center;
+    letter-spacing: -1px;
+  
+    background-color: $violet;
+    border: none;
+  }
 }
 
-.btn-navy {
-  width: 156px;
-  height: 41px;
-
-  font-family: $text-spectral-regular;
-  font-size: 16px;
-  color: $violet;
-  text-align: center;
-  letter-spacing: -1px;
-
-  background-color: $violet;
-  border: none;
-}
