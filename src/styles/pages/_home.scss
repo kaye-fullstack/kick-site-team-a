@@ -253,24 +253,13 @@
           color: $pastel-pink;
         }
       }
-
       .swiper-pagination-bullet {
-        background-color: $pastel-pink;
+        background-color: $white;
       }
 
       .swiper-pagination-bullets {
         top: 290px;
       }
-    }
-
-    .bottom-reviews {
-      padding-bottom: 50px;
-      margin-top: -90px;
-
-      font-family: $font-Spectral-Medium;
-      font-size: 17px;
-      color: $pastel-pink;
-      
     }
   }
 
@@ -295,8 +284,15 @@
       list-style: none;
     }
 
-    .work-item {
-      position: relative;
+  .section-anxiety-solutions {
+    background-color: $lavender;
+
+  }
+  
+  .section-questions-answered {
+    padding: 43px 0 83px;
+    
+    background-color: $violet;
 
       width: 166px;
       height: 44px;
