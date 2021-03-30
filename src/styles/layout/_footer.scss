@@ -3,3 +3,98 @@
 // -----------------------------------------------------------------------------
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
+
+footer{
+  padding: 500px 0 30px 0;
+
+  .footer-wrapper{
+    .footer-content{
+      padding-left: 8px;
+
+      p{
+        font-family: $font-BasisGrotesquePro-Regular;
+        font-size: 14px;
+      }
+
+      .description{
+        margin: 31px 0 0 1px;
+      }
+
+      .address{
+        margin: 20px 0 0 1px;
+        width: 131px;
+      }
+
+      .seal{
+        position: absolute;
+        top: 129px;        
+        right: -4px;
+
+        width: 125px;
+      }
+
+      .footer-links{
+        display: flex;
+        flex-direction: row;
+        margin: 66px 0 0 32px;
+        width: 250px;
+
+        .first-set-of-links{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0;
+
+          list-style-type: none;
+        }
+
+        .last-set-of-links{
+          display: flex;
+          flex-direction: column;
+          padding: 0;
+          margin: 0 0 0 87px;
+
+          list-style-type: none;
+        }
+
+        .links{
+          margin-bottom: 6px;
+
+          font-family: $font-BasisGrotesquePro-Regular;
+          font-size: 15px;    
+          color: $pastel-blue;
+          
+          border-bottom: 1px;
+        }
+
+        .links:hover{
+          color: $violet;
+        }
+      }
+    }
+
+    .subscribe-to-newsletter{
+      .title{
+        margin: 17px 0 0 39px;
+
+        font-family: $font-BasisGrotesquePro-Regular;
+        font-size: 14px;
+      }
+
+      .description{
+        margin:3px 0 17px 39px;
+
+        font-family: $font-BasisGrotesquePro-Regular;
+        font-size: 11px;
+      }
+
+      .form-control{
+        margin: 0 0 0 40px;
+        width: 72%;
+        height: 32px;
+
+        border-radius: 0;
+      }
+    }
+  }
+}
