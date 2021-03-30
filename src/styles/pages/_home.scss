@@ -122,19 +122,25 @@
     background-color: $pastel-grey;
 
     .title {
-      margin-top: 18px;
       width: 330px;
+      margin-top: 18px;
 
       line-height: 41px;
     }
     
     .content {
-      margin: 122px 0 0 162px;
       height: 357px;
+      margin: 119px 0 0 70px;
     }
 
-    .image-holder {
+    .image-wrapper {
       margin-left: 80px;
+    }
+
+    .sub-heading {
+      font-size: 14px;
+      font-family: $font-BasisGrotesquePro-Light;
+      text-transform: uppercase;
     }
 
     .treatment-list {
@@ -145,13 +151,20 @@
       list-style: none;
       line-height: 28px;
 
+      list-style: none;
+      line-height: 28px;
+
       &:before {
         position: absolute;
-        
+        top: 6px;
+        left: -30px;
+
         margin-right: 12px;
         width: 18px;
         height: 18px;
 
+        line-height: 1.6;
+        text-align: center;
         font-size: 12px;
         color: $white;
         text-align: center;
@@ -171,38 +184,40 @@
       &:nth-child(2):before {
         content: '2';
 
+        position: absolute;
         top: 6px;
         left: -30px;
 
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
-        
+        width: 18px;
+        height: 18px;
+
+        line-height: 1.6;
+        text-align: center;
         font-size: 12px;
         color: $white;
-        text-align: center;
-        line-height: 1.8;
-        
-        background-color: $mid-grey;
+
+        background-color: $pastel-blue;
         border-radius: 100%;
       }
 
       &:nth-child(3):before {
         content: '3';
-
+        
+        position: absolute;
         top: 6px;
         left: -30px;
 
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
+        width: 18px;
+        height: 18px;
 
+        line-height: 1.6;
+        text-align: center;
         font-size: 12px;
         color: $white;
-        text-align: center;
-        line-height: 1.8;
-        
-        background-color: $mid-grey;
+
+        background-color: $pastel-blue;
         border-radius: 100%;
       }
     }
