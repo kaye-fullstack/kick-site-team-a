@@ -130,17 +130,11 @@
     
     .content {
       height: 357px;
-      margin: 119px 0 0 70px;
+      margin: 122px 0 0 162px;
     }
 
     .image-wrapper {
       margin-left: 80px;
-    }
-
-    .sub-heading {
-      font-size: 14px;
-      font-family: $font-BasisGrotesquePro-Light;
-      text-transform: uppercase;
     }
 
     .treatment-list {
@@ -243,8 +237,7 @@
         margin-left: auto;
         width: 500px;
 
-        .content-swiper {
-          font-size: 30px;
+        .description {
           color: $pastel-pink;
         }
         
@@ -253,13 +246,23 @@
           color: $pastel-pink;
         }
       }
+
       .swiper-pagination-bullet {
-        background-color: $white;
+        background-color: $pastel-pink;
       }
 
       .swiper-pagination-bullets {
         top: 290px;
       }
+    }
+    .bottom-reviews {
+      margin-top: -90px;
+      padding-bottom: 50px;
+
+      color: $pastel-pink;
+      font-size: 17px;
+      font-family: $font-Spectral-Medium;
+      
     }
   }
 
@@ -267,26 +270,156 @@
     padding-top: 98px;
     padding-bottom: 79px;
 
-    .title {
-      font-family: $font-Spectral-Medium;
-      font-size: 30px;
-      text-align: center;
+    .image-holder {
+      max-width: 90%;
+      margin-left: auto;
     }
 
-    .work-list {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding-left: 0;
-      margin: 89px auto;
-      width: 724px;
+    .content {
+      height: 313px;
+      max-width: 65%;
+      margin-left: 10px;
+    }
 
-      list-style: none;
+    .title {
+      margin: 35px 0;
+      max-width: 200px;
     }
 
   .section-anxiety-solutions {
     background-color: $lavender;
 
+    .image-holder {
+      max-width: 85%;
+      margin-left: auto;
+    }
+
+    .content {
+      max-width: 354px;
+      margin-left: 144px;
+    }
+
+    .title {
+      margin: 30px 0;
+    }
+  }
+
+  .section-how-it-works {
+
+    .title {
+      font-size: 25px;
+      margin-bottom: 70px;
+    }
+
+    .content {
+      margin: 100px 0;
+
+    }
+
+    .works-list {
+      display: flex;
+      flex-direction: row; 
+      justify-content: center;
+      justify-content: space-between;
+      max-width: 67%;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    .works-item {
+      position: relative;
+
+      padding-top: 30px;
+      
+      font-family: $font-Spectral-Medium;
+      font-weight: 300;
+      list-style: none;
+      color: $violet;
+
+      &:nth-child(1):before {
+        content: '1';
+        position: absolute;
+        top: -4px;
+        left: 40px;
+        
+        width: 18px;
+        height: 18px;
+        line-height: 1.6;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+
+        background-color: #8096ab;
+        border-radius: 100%;
+      }
+      
+      &:nth-child(2):before {
+        content: '2';
+        position: absolute;
+        top: -4px;
+        left: 30px;
+        
+        width: 18px;
+        height: 18px;
+        line-height: 1.6;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+
+        background-color: #8096ab;
+        border-radius: 100%;
+      }
+
+      &:nth-child(3):before {
+        content: '3';
+        position: absolute;
+        top: -4px;
+        left: 40px;
+        
+        width: 18px;
+        height: 18px;
+        line-height: 1.6;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+
+        background-color: #8096ab;
+        border-radius: 100%;
+      }
+
+      &:nth-child(4):before {
+        content: '4';
+        position: absolute;
+        top: -4px;
+        left: 40px;
+        
+        width: 18px;
+        height: 18px;
+        line-height: 1.6;
+        text-align: center;
+        font-size: 12px;
+        color: #fff;
+
+        background-color: #8096ab;
+        border-radius: 100%;
+      }
+    }
+
+    .works-item:after {
+      content: '';
+      position: absolute;
+      top: -11px;
+      left: 67px;
+      right: 0;
+      margin: 0 auto;
+      width: 150px;
+      height: 16px;
+      border-bottom: 2px solid #8096ab;
+    }
+
+    .works-item:last-child:after {
+      display: none;
+    }
   }
   
   .section-questions-answered {
