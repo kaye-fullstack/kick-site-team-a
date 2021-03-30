@@ -53,27 +53,37 @@
   }
 }
 
-.nav-link {
-  position: relative;
-  
-  &:focus {
+  &.scrolled {
+    position: fixed;
+    top: 0;
+
+    background-color: $white;
+  }
+
+
+.navbar-nav {
+  .nav-link {
+    font-family: $text-spectral-regular;
+    font-size: 16px;
+    color: $violet;
+  }
+
+  .nav-link:active {
     color: $red-orange;
   }
+}
 
-  &:focus:before {
-    content: "";
+.nav-link:hover {
+  background-image: url("../assets/images/header-hover-icon.jpg");
+  background-position: 98% 15%;
+  background-size: 8px;
+  background-repeat: no-repeat;
+}
 
-    position: absolute;
-    top: 6px;
-    right: -2px;
-
-    width: 11px;
-    height: 11px;
-    
-    background-color: transparent;
-    background-image: url("../assets/images/header-active-icon.svg");
-    background-repeat: no-repeat;
-  }
+.nav-link:active {
+  background-image: url("../assets/images/header-active-icon.svg");
+  background-position: 98% 20%;
+  background-repeat: no-repeat;
 }
 
 .navbar-toggler {

@@ -15,30 +15,26 @@
     background-position: center;
     background-size: cover;
 
-    .content {
-      .text-holder {
-        .title {
-          margin-bottom: 13px;
-          width: 249px;
-  
-          font-family: $text-spectral-medium;
-          font-size: 37px;
-          color: $violet;
-          letter-spacing: -1.7px;
-          
-          line-height: 1.2;
-        }
-    
-        .description {
-          padding-bottom: 49px;
-          width: 308px;
-  
-          font-family: $text-spectral-regular;
-          font-size: 18px;
-          color: $violet;
-          letter-spacing: -1.4px;
-        }
-      }
+    .title {
+      margin-bottom: 13px;
+      width: 249px;
+
+      font-family: $text-spectral-medium;
+      font-size: 37px;
+      color: $violet;
+      letter-spacing: -1.7px;
+      
+      line-height: 1.2;
+    }
+
+    .description {
+      padding-bottom: 43px;
+      width: 308px;
+
+      font-family: $text-spectral-regular;
+      font-size: 18px;
+      color: $violet;
+      letter-spacing: -1.4px;
     }
   }
 
@@ -285,57 +281,119 @@
       list-style: none;
     }
 
-    .work-item {
-      position: relative;
+    .title {
+      margin: 30px 0;
+    }
+  }
 
-      width: 166px;
-      height: 44px;
-      
-      font-family: $font-Spectral-Regular;
-      font-size: 20px;
-      text-align: center;
-      line-height: 24px;
+  .section-testimonials {
+    padding: 62px 0 90px 0;
+
+    .content-holder {
+      &:nth-child(1) {
+        margin: 113px 0 0 0;
+      }
+
+      &:nth-child(2) {
+        margin: 127px -10px 0 0;
+      }
+
+      h5{
+        position: absolute;
+
+        padding: 0 0 2px 17px;
+  
+        font-size: 15px;
+        color: $red-orange;
+      }
+  
+      .swiper-container {
+        width: 425px;
+        margin: 43px 0 0 2px;
+  
+        .swiper-slide {
+          width: 480px;
+          height: 100%;
+  
+          .quote {
+            position: relative;
+            
+            width: 440px;
+            padding: 0 18px;
+  
+            font-family: $font-Spectral-Medium;
+            font-size: 47px;
+            line-height: 1.3;
+            color: $white;
+            text-align: left;
+          }
+  
+          .quote:before {
+            position: absolute;
+            left: 0px;
+  
+            content: "“";
+          }
+  
+          .quote:after {
+            position: absolute;
+  
+            content: "”";
+          }
+        }
+      }
+  
+      .desc {
+        width: 300px;
+        margin: 0 0 58px 18px;
+  
+        color: $white;
+        font-size: 13px;
+      }
+
+      .btn-yellow{
+        position: relative;
+        
+        width: 182px;
+        height: 45px;
+        margin-left: 17px;
+      }
+
+      .doctor-image {
+        .doctor-border {
+          position: relative;
+          z-index: 1;
+          
+          .image {
+            position: relative;
+          } 
+        }
+
+        .doctor-border:before {
+          content: "";
+          position: absolute;
+          z-index: -1;
+
+          margin: 10px 0 0 19px;
+          width: 256px;
+          height: 348px;
+
+          background-color: $purple;
+        }
+      }
+
+      .doctor-name {
+        margin: 29px 0 0 21px;
+        
+        color: $white;
+        font-size: 13px;
+      }
     }
 
-    .work-item::before {
-      content: attr(data-attribute);
+  }
 
-      position: absolute;
-      top: -35px;
-      right: 0;
-      left: 0;
-
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 0 auto;
-      width: 18px;
-      height: 18px;
-
-      font-family: $font-Spectral-Medium;
-      font-size: 14px;
-      color: $attribute;
-      text-align: center;
-      line-height: 22px;
-
-      background-color: $pastel-blue;
-      border-radius: 100%;
-    }
-
-    .work-item::after {
-      content: " ";
-
-      position: absolute;
-      top: -42px;
-      right: 0;
-      left: 98px;
-
-      margin: 0 auto;
-      width: 150px;
-      height: 16px;
-
-      border-bottom: 2px solid $pastel-blue
-    }
+  .section-ratings {
+    padding: 43px 0 83px;
 
     #four::after {
       content: none;
@@ -409,74 +467,6 @@
         width: 48px;
         height: 2px;
 
-        transform: rotate(90deg);
-      }
-    }
-  }
-}
-
-@include respond-to(xs) {
-  .home {
-    .section-press {
-      .logo-holder {
-        flex-wrap: wrap;
-
-        padding-top: 30px;
-        padding-bottom: 40px;
-        width: 100%;
-      }
-    }
-
-    .section-help-products {
-      .product-holder {
-        flex-wrap: wrap;
-        justify-content: center;
-        align-items: center;
-        width: 100%;
-
-        .item {
-          &:first-child {
-            .prod-image {
-              width: 300px;
-            }
-          }
-
-          &:nth-child(2) {
-            margin: 25px 0 25px;
-
-            .prod-image {
-              width: 300px;
-            }
-          }
-        }
-      }
-    }
-
-    .section-how-it-works {
-      padding-bottom: 0;
-
-      .work-list {
-        display: block;
-        margin: 55px auto 20px;
-        width: 100%;
-      }
-
-      .work-item {
-        margin-bottom: 80px;
-        width: 100%;
-      }
-
-      .work-item::before {
-        top: -28px;
-      }
-
-      .work-item::after {
-        top: 52px;
-        left: 0;
-
-        width: 48px;
-        height: 2px;
-        
         transform: rotate(90deg);
       }
     }
