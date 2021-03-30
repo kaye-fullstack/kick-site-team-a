@@ -8,13 +8,116 @@
   transition: all .2s ease-in-out;
   
   .section-hero {
+    position: relative;
+    top: 0;
+    
+    padding: 146px 0 151px 14px;
+
     background-image: url("../assets/images/homepage-hero.jpg");
     background-position: center;
     background-size: cover;
-  
+
     .title {
-      font-family: $text-font-light;
-      font-size: 24px;
+      margin-bottom: 13px;
+      width: 249px;
+
+      font-family: $text-spectral-medium;
+      font-size: 37px;
+      color: $violet;
+      letter-spacing: -1.7px;
+      
+      line-height: 1.2;
+    }
+
+    .description {
+      padding-bottom: 49px;
+      width: 308px;
+
+      font-family: $text-spectral-regular;
+      font-size: 18px;
+      color: $violet;
+      letter-spacing: -1.4px;
+    }
+  }
+
+  .section-press {
+    background-color: $violet;
+
+    .logo-holder {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 86px 0 83px 0;
+      margin: 0 auto;
+      width: 660px;
+
+      .image-holder {
+        &:first-child {
+          padding-left: 16px;
+        }
+
+        &:nth-child(2) {
+          padding-left: 0;
+        }
+
+        &:nth-child(3) {
+          padding-left: 0;
+        }
+
+        &:nth-child(4) {
+          padding-left: 0;
+        }
+      }
+    }
+  }
+
+  .section-help-products {
+    padding: 58px 0 0 0;
+    .text-holder {
+      text-align: center;
+
+      .title {
+        margin-bottom: 13px;
+  
+        font-family: $text-spectral-medium;
+        font-size: 32px;
+        letter-spacing: -2.5px;
+      }
+  
+      .description {
+        font-family: $text-spectral-regular;
+        font-size: 14px;
+      }
+    }
+
+    .product-holder {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 50px auto 20px;
+      width: 580px;
+
+      .item {
+        font-family: $text-spectral-regular;
+        font-size: 19px;
+        text-align: center;
+
+        .prod-image {
+          padding-bottom: 17px;
+        }
+
+        .item-desc{
+          color: $black;
+        }
+      }
+      
+      .item:hover {
+        text-decoration: none;
+      }
+
+      .item:hover {
+        text-decoration: none;
+      }
     }
   }
 
