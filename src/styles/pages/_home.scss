@@ -280,8 +280,15 @@
       list-style: none;
     }
 
-    .work-item {
-      position: relative;
+    .title {
+      margin: 30px 0;
+    }
+  }
+  
+  .section-questions-answered {
+    padding: 43px 0 83px;
+
+    background-color: $violet;
 
       width: 166px;
       height: 44px;
