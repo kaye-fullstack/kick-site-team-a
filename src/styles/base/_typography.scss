@@ -14,5 +14,13 @@ body {
 
   .description {
     color: $violet;
+    font-family: $font-Spectral-Medium;
+  }
+
+  .sub-heading {
+    font-size: 14px;
+    font-family: $font-Spectral-Regular;
+    text-transform: uppercase;
+    color: $violet;
   }
 }
