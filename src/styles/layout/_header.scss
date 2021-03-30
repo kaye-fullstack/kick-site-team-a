@@ -14,6 +14,7 @@
 
   transition: all 1s;
 
+<<<<<<< HEAD
 }
 
 .active {
@@ -41,6 +42,35 @@
   background-repeat: no-repeat;
 }
 
+=======
+  &.scrolled {
+    position: fixed;
+    top: 0;
+
+    background-color: $white;
+  }
+}
+
+.navbar-nav {
+  .nav-link {
+    font-family: $text-spectral-regular;
+    font-size: 16px;
+    color: $violet;
+  }
+
+  .nav-link:active {
+    color: $red-orange;
+  }
+}
+
+.nav-link:hover {
+  background-image: url("../assets/images/header-hover-icon.jpg");
+  background-position: 98% 15%;
+  background-size: 8px;
+  background-repeat: no-repeat;
+}
+
+>>>>>>> 417fa9b (header-resubale/section-testimonial-reusable)
 .nav-link:active {
   background-image: url("../assets/images/header-active-icon.svg");
   background-position: 98% 20%;
