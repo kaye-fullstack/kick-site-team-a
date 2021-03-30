@@ -16,30 +16,26 @@
     background-position: center;
     background-size: cover;
 
-    .content {
-      .text-holder {
-        .title {
-          margin-bottom: 13px;
-          width: 249px;
-  
-          font-family: $text-spectral-medium;
-          font-size: 37px;
-          color: $violet;
-          letter-spacing: -1.7px;
-          
-          line-height: 1.2;
-        }
-    
-        .description {
-          padding-bottom: 49px;
-          width: 308px;
-  
-          font-family: $text-spectral-regular;
-          font-size: 18px;
-          color: $violet;
-          letter-spacing: -1.4px;
-        }
-      }
+    .title {
+      margin-bottom: 13px;
+      width: 249px;
+
+      font-family: $text-spectral-medium;
+      font-size: 37px;
+      color: $violet;
+      letter-spacing: -1.7px;
+      
+      line-height: 1.2;
+    }
+
+    .description {
+      padding-bottom: 49px;
+      width: 308px;
+
+      font-family: $text-spectral-regular;
+      font-size: 18px;
+      color: $violet;
+      letter-spacing: -1.4px;
     }
   }
 
