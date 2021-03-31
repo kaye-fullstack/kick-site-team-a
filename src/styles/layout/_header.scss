@@ -16,6 +16,11 @@
   height: 86px;
   
   transition: all 0.5s ease-out;
+
+  z-index: 2;
+
+  transition: all 1s;
+
 }
 
 .active {
@@ -56,10 +61,13 @@
   &.scrolled {
     position: fixed;
     top: 0;
-
-    background-color: $white;
   }
 
+.active {
+  position: fixed;
+  top: 0;
+  background-color: $white;
+}
 
 .navbar-nav {
   .nav-link {
