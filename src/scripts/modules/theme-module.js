@@ -13,16 +13,16 @@ AppName.Modules.ThemeModule = (function () {
         el: '.swiper-pagination',
       },
     });
-
+    
     $(window).on("scroll", function() {
       if($(window).scrollTop() > 50) {
-        $(".header").addClass("active");
-      } 
-      else {
-        $(".header").removeClass("active");
+          $(".scroll-active-js").addClass("active");
+      } else {
+         $(".scroll-active-js").removeClass("active");
       }
-    });
+  });
   };
+
 
   /////////////////////
   // Public Methods //
