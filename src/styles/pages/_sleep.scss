@@ -1,0 +1,49 @@
+.sleep {
+  .section-hero {
+    position: relative;
+    top: 0;
+    
+    padding: 146px 0 151px 14px;
+
+    background-image: url("../assets/images/sleep-product-hero.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .title {
+      margin-bottom: 120px;
+      width: 415px;
+
+      font-family: $text-spectral-medium;
+      font-size: 37px;
+      color: $white;
+      letter-spacing: -1.7px;
+      
+      line-height: 1.2;
+    }
+  }
+
+  .section-trials {
+    .wrapper {
+      margin: 70px 0;
+    }
+
+    .holder {
+      padding: 20px 35px;
+      position: relative;
+
+      .image-trials {
+        position: absolute;
+        top: 0;
+        left: 75px;
+        transform: rotate(-7deg);
+      }
+
+      .title {
+        font-family: $font-Spectral-Medium;
+      }
+      .description {
+        font-family: $font-Spectral-Regular;
+      }
+    }
+  }
+}
