@@ -21,8 +21,6 @@
 
   transition: all 1s;
 
-}
-
 .active {
   background-color: $white;
 }
@@ -62,6 +60,7 @@
     position: fixed;
     top: 0;
   }
+}
 
 .active {
   position: fixed;

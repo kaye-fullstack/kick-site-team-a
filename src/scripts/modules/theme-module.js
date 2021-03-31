@@ -14,7 +14,6 @@ AppName.Modules.ThemeModule = (function () {
       },
     });
     
-    
     $(window).on("scroll", function() {
       if($(window).scrollTop() > 50) {
           $(".scroll-active-js").addClass("active");
