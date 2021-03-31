@@ -5,8 +5,7 @@
 // -----------------------------------------------------------------------------
 
 .home {
-  
-  .section-hero {
+  .section-banner {
     position: relative;
     top: 0;
     
@@ -20,10 +19,10 @@
       margin-bottom: 13px;
       width: 249px;
 
-      font-family: $font-Spectral-Medium;
       font-size: 37px;
       color: $violet;
       letter-spacing: -1.7px;
+      
       line-height: 1.2;
     }
 
@@ -31,7 +30,6 @@
       padding-bottom: 43px;
       width: 308px;
 
-      font-family: $font-Spectral-Regular;
       font-size: 18px;
       color: $violet;
       letter-spacing: -1.4px;
@@ -43,8 +41,8 @@
 
     .logo-holder {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       padding: 86px 0 83px 0;
       margin: 0 auto;
       width: 660px;
@@ -70,32 +68,29 @@
   }
 
   .section-help-products {
-    padding: 58px 0 50px 0;
+    padding: 58px 0 51px 0;
 
     .title {
       margin-bottom: 13px;
       
-      font-family: $font-Spectral-Medium;
       font-size: 32px;
       text-align: center;
       letter-spacing: -2.5px;
     }
 
     .description {
-      font-family: $font-Spectral-Regular;
       font-size: 14px;
       text-align: center;
     }
 
     .product-holder {
       display: flex;
-      justify-content: space-between;
       align-items: center;
+      justify-content: space-between;
       margin: 50px auto 20px;
       width: 580px;
 
       .item {
-        font-family: $font-Spectral-Regular;
         font-size: 19px;
         text-align: center;
 
@@ -110,11 +105,6 @@
       
       .item:hover {
         text-decoration: none;
-      }
-
-      .btn-yellow {
-        width: 200px;
-        height: 45px;
       }
     }
   }
@@ -131,11 +121,22 @@
     
     .content {
       height: 357px;
-      margin: 122px 0 0 162px;
+      margin: 130px 0 0 170px;
+
+
+      .btn-white {
+        padding: 8px 30px;
+        width: auto;
+        height: auto;
+      }
     }
 
     .image-holder {
       margin-left: 80px;
+    }
+
+    .treatment-holder {
+      margin-bottom: 27px;
     }
 
     .treatment-list {
@@ -146,14 +147,9 @@
       list-style: none;
       line-height: 28px;
 
-      list-style: none;
-      line-height: 28px;
-
       &:before {
         position: absolute;
-        top: 6px;
-        left: -30px;
-
+        
         margin-right: 12px;
         width: 18px;
         height: 18px;
@@ -162,8 +158,6 @@
         text-align: center;
         font-size: 12px;
         color: $white;
-        text-align: center;
-        line-height: 1.8;
 
         background-color: $pastel-blue;
         border-radius: 100%;
@@ -171,66 +165,41 @@
 
       &:nth-child(1):before {
         content: '1';
-
         top: 6px;
         left: -30px;
       }
       
       &:nth-child(2):before {
         content: '2';
-
-        position: absolute;
         top: 6px;
         left: -30px;
 
         margin-right: 12px;
-        width: 18px;
-        height: 18px;
-
-        line-height: 1.6;
-        text-align: center;
-        font-size: 12px;
-        color: $white;
-
-        background-color: $pastel-blue;
-        border-radius: 100%;
       }
 
       &:nth-child(3):before {
         content: '3';
-        
-        position: absolute;
         top: 6px;
         left: -30px;
 
         margin-right: 12px;
-        width: 18px;
-        height: 18px;
-
-        line-height: 1.6;
-        text-align: center;
-        font-size: 12px;
-        color: $white;
-
-        background-color: $pastel-blue;
-        border-radius: 100%;
       }
     }
   }
 
   .section-quotation-slider {
+    padding: 45px 0;
     background-color: $tortoise;
 
     .swiper-container {
       height: 44vh;
 
       .swiper-slide {
-        padding-top: 55px;
+        padding-top: 30px;
         width: 500px;
 
-        font-size: 30px;
-        font-family: $font-Spectral-Medium;
         text-align: center;
+        font-size: 30px;
       }
       
       .content-holder {
@@ -239,8 +208,9 @@
         width: 500px;
 
         .content-swiper {
-          color: $pastel-pink;
           font-size: 30px;
+          margin-bottom: 0;
+          color: $pastel-pink;
         }
         
         .bottom-text {
@@ -254,17 +224,16 @@
       }
 
       .swiper-pagination-bullets {
-        top: 290px;
+        top: 254px;
       }
+      padding-bottom: 50px;
     }
+
     .bottom-reviews {
       margin-top: -90px;
-      padding-bottom: 50px;
 
-      color: $pastel-pink;
       font-size: 17px;
-      font-family: $font-Spectral-Medium;
-      
+      color: $pastel-pink;
     }
   }
 
@@ -272,169 +241,30 @@
     padding-top: 98px;
     padding-bottom: 79px;
 
-    .image-holder {
-      max-width: 90%;
-      margin-left: auto;
-    }
-
-    .content {
-      height: 313px;
-      max-width: 65%;
-      margin-left: 10px;
-    }
-
     .title {
-      margin: 35px 0;
-      max-width: 200px;
+      text-align: center;
     }
 
-  .section-anxiety-solutions {
-    background-color: $lavender;
-
-    .image-holder {
-      max-width: 85%;
-      margin-left: auto;
-    }
-
-    .content {
-      max-width: 354px;
-      margin-left: 144px;
-    }
-
-    .title {
-      margin: 30px 0;
-    }
-  }
-
-  .section-how-it-works {
-
-    .title {
-      font-size: 25px;
-      margin-bottom: 70px;
-    }
-
-    .content {
-      margin: 100px 0;
-
-    }
-
-    .works-list {
+    .work-list {
       display: flex;
-      flex-direction: row; 
-      justify-content: center;
+      align-items: center;
       justify-content: space-between;
-      max-width: 67%;
-      margin-right: auto;
-      margin-left: auto;
-    }
+      padding-left: 0;
+      margin: 89px auto;
+      width: 724px;
 
-    .works-item {
-      position: relative;
-
-      padding-top: 30px;
-      
-      font-family: $font-Spectral-Medium;
-      font-weight: 300;
       list-style: none;
-      color: $violet;
-
-      &:nth-child(1):before {
-        content: '1';
-        position: absolute;
-        top: -4px;
-        left: 40px;
-        
-        width: 18px;
-        height: 18px;
-        line-height: 1.6;
-        text-align: center;
-        font-size: 12px;
-        color: #fff;
-
-        background-color: #8096ab;
-        border-radius: 100%;
-      }
-      
-      &:nth-child(2):before {
-        content: '2';
-        position: absolute;
-        top: -4px;
-        left: 30px;
-        
-        width: 18px;
-        height: 18px;
-        line-height: 1.6;
-        text-align: center;
-        font-size: 12px;
-        color: #fff;
-
-        background-color: #8096ab;
-        border-radius: 100%;
-      }
-
-      &:nth-child(3):before {
-        content: '3';
-        position: absolute;
-        top: -4px;
-        left: 40px;
-        
-        width: 18px;
-        height: 18px;
-        line-height: 1.6;
-        text-align: center;
-        font-size: 12px;
-        color: #fff;
-
-        background-color: #8096ab;
-        border-radius: 100%;
-      }
-
-      &:nth-child(4):before {
-        content: '4';
-        position: absolute;
-        top: -4px;
-        left: 40px;
-        
-        width: 18px;
-        height: 18px;
-        line-height: 1.6;
-        text-align: center;
-        font-size: 12px;
-        color: #fff;
-
-        background-color: #8096ab;
-        border-radius: 100%;
-      }
     }
 
-    .works-item:after {
-      content: '';
-      position: absolute;
-      top: -11px;
-      left: 67px;
-      right: 0;
-      margin: 0 auto;
-      width: 150px;
-      height: 16px;
-      border-bottom: 2px solid #8096ab;
-    }
-
-    .works-item:last-child:after {
-      display: none;
-    }
-  }
-  
-  .section-questions-answered {
-    padding: 43px 0 83px;
-    
-    background-color: $violet;
+    .work-item {
+      position: relative;
 
       width: 166px;
       height: 44px;
       
-      font-family: $font-Spectral-Regular;
       font-size: 20px;
       text-align: center;
+
       line-height: 24px;
     }
 
@@ -447,20 +277,20 @@
       left: 0;
 
       display: flex;
-      justify-content: center;
       align-items: center;
+      justify-content: center;
       margin: 0 auto;
       width: 18px;
       height: 18px;
 
-      font-family: $font-Spectral-Medium;
       font-size: 14px;
-      color: $attribute;
+      // color: $attribute;
       text-align: center;
-      line-height: 22px;
 
       background-color: $pastel-blue;
       border-radius: 100%;
+
+      line-height: 22px;
     }
 
     .work-item::after {
@@ -486,6 +316,49 @@
 
 @include respond-to(md) {
   .home {
+    .section-personalized {
+      .title {
+        width: 100%;
+
+        font-size: 24px;
+
+        line-height: 27px;
+      }
+
+      .treatment-list {
+        font-size: 16px;
+      }
+
+      .content {
+        padding: 55px 15px;
+        margin: 0;
+
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        margin-left: 10px;
+        
+        img {
+          padding: 0;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .section-quotation-slider {
+      .swiper-container {
+        .content-holder {
+          width: 70%;
+          
+          .content-swiper {
+          font-size: 25px;
+          }
+        }
+      }
+    }
+
     .section-how-it-works {
       padding-bottom: 0;
     }
@@ -520,6 +393,50 @@
             .prod-image {
               width: 215px;
             }
+          }
+        }
+      }
+    }
+
+    .section-personalized {
+      .title {
+        width: 100%;
+
+        font-size: 24px;
+
+
+        line-height: 27px;
+      }
+
+      .treatment-list {
+        font-size: 16px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        display: none;
+
+        img {
+          padding: 0;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .section-quotation-slider {
+      .swiper-container {
+        .content-holder {
+          width: 90%;
+
+          .content-swiper {
+          font-size: 23px;
           }
         }
       }
@@ -587,7 +504,45 @@
 
             .prod-image {
               width: 300px;
-            }
+            };
+          }
+        }
+      }
+    }
+
+    .section-personalized {
+      .title {
+        width: 100%;
+
+        font-size: 24px;
+
+        line-height: 27px;
+      }
+
+      .treatment-list {
+        font-size: 16px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-quotation-slider {
+      .swiper-container {
+        .content-holder {
+          max-width: 80%;
+          width: auto;
+          
+          .content-swiper {
+          font-size: 20px;
           }
         }
       }
@@ -619,334 +574,6 @@
         height: 2px;
         
         transform: rotate(90deg);
-      }
-    }
-  }
-}
-
-
-@include respond-to(sm-down) {
-  .home {
-    .section-personalized {
-      .title {
-        width: 100%;
-
-        font-size: 24px;
-        line-height: 27px;
-      }
-
-      .treatment-list {
-        font-size: 16px;
-      }
-
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-
-        width: 100%;
-        height: auto;
-      }
-
-      .image-holder {
-        display: none;
-      }
-    }
-
-    .section-quotation-slider {
-      .swiper-slide {
-        padding-top: 20px;
-      }
-
-      .swiper-container {
-
-        .swiper-slide {
-          padding-top: 40px;
-        }
-
-        .swiper-pagination-bullets {
-          top: 243px;
-        }
-
-        .content-holder {
-          width: auto;
-          
-        }
-      }
-
-      .content-holder {
-        width: auto;
-        .content-swiper {
-          font-size: 20px;
-        }
-      }
-    }
-
-    .section-sleep-solutions {
-
-      .title {
-        margin: 15px 0;
-        max-width: 100%;
-
-        font-size: 24px;
-      }
-
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-        
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-      }
-      
-      .image-holder {
-        display: none;
-      }
-    }
-
-    .section-anxiety-solutions {
-
-      .title {
-        margin: 15px 0;
-        max-width: 100%;
-
-        font-size: 24px;
-      }
-
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-        
-        width: 100%;
-        height: auto;
-      }
-
-      .image-holder {
-        display: none;
-      }
-    }
-
-    .section-how-it-works {
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-      }
-
-      .title {
-        margin-bottom: 0;
-      }
-      .works-list {
-        flex-direction: column; 
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-      }
-
-      .works-item {
-        padding-top: 60px;
-      }
-
-      .works-item:after {
-        content: '';
-        position: absolute;
-        top: 120px;
-        left: 18px;
-        right: 0;
-        margin: 0 auto;
-        width: 39px;
-        height: 16px;
-        border-bottom: 2px solid #8096ab;
-        transform: rotate(90deg);
-      }
-
-      .works-item{
-        &:nth-child(1):before {
-          top: 45px;
-          left: 48%;
-        }
-        &:nth-child(2):before {
-          top: 45px;
-          left: 48%;
-        }
-        &:nth-child(3):before {
-          top: 45px;
-          left: 48%;
-        }
-        &:nth-child(4):before {
-          top: 45px;
-          left: 48%;
-        }
-      }
-    }
-  }
-}
-
-@include respond-to(sm-up) {
-  .home {
-    .section-personalized {
-      .title {
-        width: 100%;
-
-        font-size: 24px;
-        line-height: 27px;
-      }
-
-      .treatment-list {
-        font-size: 16px;
-      }
-
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-
-        width: 100%;
-        height: auto;
-      }
-
-      .image-holder {
-        margin-left: 10px;
-
-        img {
-          padding: 0;
-          max-width: 100%;
-        }
-      }
-    }
-
-    .section-quotation-slider {
-      .swiper-slide {
-        padding-top: 20px;
-      }
-
-      .swiper-container {
-
-        .swiper-slide {
-          padding-top: 40px;
-        }
-
-        .swiper-pagination-bullets {
-          top: 243px;
-        }
-
-        .content-holder {
-          width: 100%;
-          
-        }
-      }
-
-      .content-holder {
-        width: auto;
-        .content-swiper {
-          font-size: 20px;
-        }
-      }
-    }
-
-    .section-sleep-solutions {
-
-      .title {
-        margin: 15px 0;
-        max-width: 100%;
-
-        font-size: 24px;
-      }
-
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-        
-        max-width: 100%;
-        width: 100%;
-        height: auto;
-      }
-      
-      .image-holder {
-        margin-left: 10px;
-        
-        img {
-          padding: 0;
-          max-width: 100%;
-        }
-      }
-    }
-
-    .section-anxiety-solutions {
-
-      .title {
-        margin: 15px 0;
-        max-width: 100%;
-
-        font-size: 24px;
-      }
-
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-        
-        width: 100%;
-        height: auto;
-      }
-
-      .image-holder {
-        margin-left: 10px;
-        
-        img {
-          padding: 0;
-          max-width: 100%;
-        }
-      }
-    }
-
-    .section-how-it-works {
-      .content {
-        margin: 0;
-        padding: 55px 15px;
-      }
-
-      .title {
-        margin-bottom: 0;
-      }
-      .works-list {
-        flex-direction: column; 
-        max-width: 100%;
-        padding: 0;
-        margin: 0;
-      }
-
-      .works-item {
-        padding-top: 60px;
-      }
-
-      .works-item:after {
-        content: '';
-        position: absolute;
-        top: 120px;
-        left: 18px;
-        right: 0;
-        margin: 0 auto;
-        width: 39px;
-        height: 16px;
-        border-bottom: 2px solid #8096ab;
-        transform: rotate(90deg);
-      }
-
-      .works-item{
-        &:nth-child(1):before {
-          top: 45px;
-          left: 48%;
-        }
-        &:nth-child(2):before {
-          top: 45px;
-          left: 48%;
-        }
-        &:nth-child(3):before {
-          top: 45px;
-          left: 48%;
-        }
-        &:nth-child(4):before {
-          top: 45px;
-          left: 48%;
-        }
       }
     }
   }
