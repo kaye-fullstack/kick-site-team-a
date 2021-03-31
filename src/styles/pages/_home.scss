@@ -5,6 +5,7 @@
 // -----------------------------------------------------------------------------
 
 .home {
+  
   .section-hero {
     position: relative;
     top: 0;
@@ -230,6 +231,7 @@
 
         .content-swiper {
           color: $pastel-pink;
+          font-size: 30px;
         }
         
         .bottom-text {
@@ -725,7 +727,7 @@
         }
 
         .content-holder {
-          width: auto;
+          width: 100%;
           
         }
       }
@@ -782,7 +784,7 @@
         width: 100%;
         height: auto;
       }
-      
+
       .image-holder {
         margin-left: 10px;
         
