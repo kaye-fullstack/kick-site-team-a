@@ -192,3 +192,35 @@
     margin: 19px 0 0 0;
   }
 }
+
+.btn-link {
+  position: relative;
+  padding: 16px 30px 16px 10px;
+  height: 100%;
+  width: 100%;
+  font-family: $text-spectral-medium;
+  font-size: 30px;
+  color: $dark-blue;
+  text-align: initial;
+  text-decoration: none;
+  white-space: normal;
+  border: none;
+  border-top: 3px solid transparent;
+  border-bottom: 3px solid $pastel-yellow;
+}
+
+@include respond-to(sm) {
+  .btn-link {
+    padding: 16px 10px 16px 10px;
+
+    font-size: 18px;
+  }
+}
+
+@include respond-to(xs) {
+  .btn-link {
+    padding: 16px 10px 16px 10px;
+
+    font-size: 18px;
+  }
+}
