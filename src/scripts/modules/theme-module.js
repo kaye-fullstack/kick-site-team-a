@@ -21,13 +21,6 @@ AppName.Modules.ThemeModule = (function () {
          $(".scroll-active-js").removeClass("active");
       }
   });
-
-    const elem = $('.scroll-active-js');
-    const scrolled = () => {
-      const threshold = $(document).scrollTop() > 50;
-        elem.toggleClass('scrolled', threshold);
-      };
-    $(window).on({ scroll: scrolled });
   };
 
   const _activeListItem = () => {
