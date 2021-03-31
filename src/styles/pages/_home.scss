@@ -237,7 +237,7 @@
         margin-left: auto;
         width: 500px;
 
-        .description {
+        .content-swiper {
           color: $pastel-pink;
         }
         
@@ -639,36 +639,230 @@
 
       .content {
         margin: 0;
+        padding: 55px 15px;
 
+        width: 100%;
         height: auto;
       }
 
       .image-holder {
-        margin-left: 0;
-        margin-top: 30px;
-
-        img {
-          max-width: 100%;
-        }
+        display: none;
       }
     }
 
     .section-quotation-slider {
+      .swiper-slide {
+        padding-top: 20px;
+      }
 
       .swiper-container {
+
+        .swiper-slide {
+          padding-top: 40px;
+        }
+
+        .swiper-pagination-bullets {
+          top: 243px;
+        }
+
         .content-holder {
-          width: 200px;
+          width: auto;
+          
+        }
+      }
+
+      .content-holder {
+        width: auto;
+        .content-swiper {
+          font-size: 20px;
         }
       }
     }
 
     .section-sleep-solutions {
 
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
+
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+      
       .image-holder {
-        margin-left: 0;
-        margin-top: 100px;
+        display: none;
+      }
+    }
+
+    .section-anxiety-solutions {
+
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
+
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-how-it-works {
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+      }
+
+      .title {
+        margin-bottom: 0;
+      }
+      .works-list {
+        flex-direction: column; 
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .works-item {
+        padding-top: 60px;
+      }
+
+      .works-item:after {
+        content: '';
+        position: absolute;
+        top: 120px;
+        left: 18px;
+        right: 0;
+        margin: 0 auto;
+        width: 39px;
+        height: 16px;
+        border-bottom: 2px solid #8096ab;
+        transform: rotate(90deg);
+      }
+
+      .works-item{
+        &:nth-child(1):before {
+          top: 45px;
+          left: 48%;
+        }
+        &:nth-child(2):before {
+          top: 45px;
+          left: 48%;
+        }
+        &:nth-child(3):before {
+          top: 45px;
+          left: 48%;
+        }
+        &:nth-child(4):before {
+          top: 45px;
+          left: 48%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm-up) {
+  .home {
+    .section-personalized {
+      .title {
+        width: 100%;
+
+        font-size: 24px;
+        line-height: 27px;
+      }
+
+      .treatment-list {
+        font-size: 16px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        margin-left: 10px;
 
         img {
+          padding: 0;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .section-quotation-slider {
+      .swiper-slide {
+        padding-top: 20px;
+      }
+
+      .swiper-container {
+
+        .swiper-slide {
+          padding-top: 40px;
+        }
+
+        .swiper-pagination-bullets {
+          top: 243px;
+        }
+
+        .content-holder {
+          width: auto;
+          
+        }
+      }
+
+      .content-holder {
+        width: auto;
+        .content-swiper {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .section-sleep-solutions {
+
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
+
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+      
+      .image-holder {
+        margin-left: 10px;
+        
+        img {
+          padding: 0;
           max-width: 100%;
         }
       }
@@ -676,12 +870,80 @@
 
     .section-anxiety-solutions {
 
-      .image-holder {
-        margin-left: 0;
-        margin-top: 100px;
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
 
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        width: 100%;
+        height: auto;
+      }
+      
+      .image-holder {
+        margin-left: 10px;
+        
         img {
+          padding: 0;
           max-width: 100%;
+        }
+      }
+    }
+
+    .section-how-it-works {
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+      }
+
+      .title {
+        margin-bottom: 0;
+      }
+      .works-list {
+        flex-direction: column; 
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .works-item {
+        padding-top: 60px;
+      }
+
+      .works-item:after {
+        content: '';
+        position: absolute;
+        top: 120px;
+        left: 18px;
+        right: 0;
+        margin: 0 auto;
+        width: 39px;
+        height: 16px;
+        border-bottom: 2px solid #8096ab;
+        transform: rotate(90deg);
+      }
+
+      .works-item{
+        &:nth-child(1):before {
+          top: 45px;
+          left: 48%;
+        }
+        &:nth-child(2):before {
+          top: 45px;
+          left: 48%;
+        }
+        &:nth-child(3):before {
+          top: 45px;
+          left: 48%;
+        }
+        &:nth-child(4):before {
+          top: 45px;
+          left: 48%;
         }
       }
     }
