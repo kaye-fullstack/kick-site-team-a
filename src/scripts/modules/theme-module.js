@@ -14,12 +14,13 @@ AppName.Modules.ThemeModule = (function () {
       },
     });
     
-    const elem = $('.scroll-active-js');
-    const scrolled = () => {
-      const threshold = $(document).scrollTop() > 50;
-        elem.toggleClass('scrolled', threshold);
-      };
-    $(window).on({ scroll: scrolled });
+    $(window).on("scroll", function() {
+      if($(window).scrollTop() > 50) {
+          $(".scroll-active-js").addClass("active");
+      } else {
+         $(".scroll-active-js").removeClass("active");
+      }
+  });
   };
 
 

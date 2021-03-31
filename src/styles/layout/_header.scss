@@ -14,12 +14,12 @@
 
   transition: all 1s;
 
-  &.scrolled {
-    position: fixed;
-    top: 0;
+}
 
-    background-color: $white;
-  }
+.active {
+  position: fixed;
+  top: 0;
+  background-color: $white;
 }
 
 .navbar-nav {
