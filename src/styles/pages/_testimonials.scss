@@ -28,12 +28,12 @@
       display: flex;
       flex-direction: row;
 
-      margin: 110px 0 0 8px;
+      margin: 91px 0 0 4px;
 
       .btn-yellow {
         &:nth-child(1) {
           width: 186px; 
-          margin-right: 20px;         
+          margin-right: 17px;         
         }
 
         &:nth-child(2) {
@@ -152,6 +152,35 @@
         background-repeat: no-repeat;
         background-size: contain;
       }
+    }
+  }
+
+  .section-testimonials {
+    padding: 62px 0 90px 0;
+
+    text-align: center;
+
+    background-color: $pastel-yellow;
+
+    .title {
+      padding-bottom: 48px;
+
+      font-family: $text-spectral-medium;
+      font-size: 32px;
+      letter-spacing: -2.5px;
+    }
+
+    .image-holder {
+      margin: 0 auto 26px;
+      width: 68px;
+    }
+
+    .logo-desc {
+      margin: 10px 0 16px;
+      font-family: $text-spectral-regular;
+      font-size: 16px;
+      letter-spacing: -0.2px;
+      line-height: 24px;
     }
   }
 }
