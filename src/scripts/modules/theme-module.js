@@ -14,10 +14,6 @@ AppName.Modules.ThemeModule = (function () {
       },
     });
     
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> b6779d5 (fixed-header-js)
     $(window).on("scroll", function() {
       if($(window).scrollTop() > 50) {
           $(".scroll-active-js").addClass("active");
@@ -25,17 +21,13 @@ AppName.Modules.ThemeModule = (function () {
          $(".scroll-active-js").removeClass("active");
       }
   });
-<<<<<<< HEAD
-=======
+
     const elem = $('.scroll-active-js');
     const scrolled = () => {
       const threshold = $(document).scrollTop() > 50;
         elem.toggleClass('scrolled', threshold);
       };
     $(window).on({ scroll: scrolled });
->>>>>>> 417fa9b (header-resubale/section-testimonial-reusable)
-=======
->>>>>>> b6779d5 (fixed-header-js)
   };
 
 

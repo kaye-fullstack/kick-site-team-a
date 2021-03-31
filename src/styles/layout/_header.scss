@@ -14,10 +14,6 @@
 
   transition: all 1s;
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-}
-
 .active {
   position: fixed;
   top: 0;
@@ -43,13 +39,11 @@
   background-repeat: no-repeat;
 }
 
-=======
   &.scrolled {
     position: fixed;
     top: 0;
-=======
+  }
 }
->>>>>>> b6779d5 (fixed-header-js)
 
 .active {
   position: fixed;
@@ -76,7 +70,6 @@
   background-repeat: no-repeat;
 }
 
->>>>>>> 417fa9b (header-resubale/section-testimonial-reusable)
 .nav-link:active {
   background-image: url("../assets/images/header-active-icon.svg");
   background-position: 98% 20%;
