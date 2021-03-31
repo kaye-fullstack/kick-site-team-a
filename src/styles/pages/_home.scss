@@ -479,3 +479,31 @@
   }
 }
 
+
+@include respond-to(sm) {
+  .home {
+    .section-press {
+      .logo-holder {
+        flex-wrap: wrap;
+
+        padding-top: 30px;
+        padding-bottom: 40px;
+        width: 100%;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .home {
+    .section-press {
+      .logo-holder {
+        flex-wrap: wrap;
+
+        padding-top: 30px;
+        padding-bottom: 40px;
+        width: 100%;
+      }
+    }
+  }
+}
