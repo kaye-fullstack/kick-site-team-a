@@ -13,9 +13,7 @@ AppName.Modules.ThemeModule = (function () {
         el: '.swiper-pagination',
       },
     });
-  };
-
-  const _scrollHeader = () => {
+    
     $(window).on("scroll", function() {
       if($(window).scrollTop() > 50) {
           $(".scroll-active-js").addClass("active");
