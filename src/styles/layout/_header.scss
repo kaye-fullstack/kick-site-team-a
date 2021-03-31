@@ -20,46 +20,6 @@
   z-index: 2;
 
   transition: all 1s;
-
-.active {
-  background-color: $white;
-}
-
-.nav-link {
-  font-family: $font-spectral-regular;
-  font-size: 16px;
-  color: $violet;
-}
-
-.nav-link:hover {
-  position: relative;
-
-  &:before {
-    content: "";
-    
-    position: absolute;
-    top: 8px;
-    right: 1px;
-
-    width: 6px;
-    height: 6px;
-
-    border-radius: 100%;
-  }
-
-  &:hover:before {
-    background-color: $violet;
-  }
-
-  &:focus::before {
-    background-color: transparent;
-  }
-}
-
-  &.scrolled {
-    position: fixed;
-    top: 0;
-  }
 }
 
 .active {
