@@ -44,7 +44,6 @@
     .logo-holder {
       display: flex;
       justify-content: space-between;
-      align-items: center;
       padding: 86px 0 83px 0;
       margin: 0 auto;
       width: 660px;
@@ -286,113 +285,72 @@
     }
   }
 
-  .section-testimonials {
-    padding: 62px 0 90px 0;
+  .section-questions-answered {
+    padding: 43px 0 83px;
+    
+    background-color: $violet;
 
-    .content-holder {
-      &:nth-child(1) {
-        margin: 113px 0 0 0;
-      }
+    .title {
+      margin-bottom: 0;
+      font-family: $text-spectral-medium;
+      font-size: 29px;
+      color: $violet;
+      line-height: 43px;
+      text-align: center;
+    }
 
-      &:nth-child(2) {
-        margin: 127px -10px 0 0;
-      }
-
-      h5{
-        position: absolute;
-
-        padding: 0 0 2px 17px;
-  
-        font-size: 15px;
-        color: $red-orange;
-      }
-  
-      .swiper-container {
-        width: 425px;
-        margin: 43px 0 0 2px;
-  
-        .swiper-slide {
-          width: 480px;
-          height: 100%;
-  
-          .quote {
-            position: relative;
-            
-            width: 440px;
-            padding: 0 18px;
-  
-            font-family: $font-Spectral-Medium;
-            font-size: 47px;
-            line-height: 1.3;
-            color: $white;
-            text-align: left;
-          }
-  
-          .quote:before {
-            position: absolute;
-            left: 0px;
-  
-            content: "“";
-          }
-  
-          .quote:after {
-            position: absolute;
-  
-            content: "”";
-          }
-        }
-      }
-  
-      .desc {
-        width: 300px;
-        margin: 0 0 58px 18px;
-  
-        color: $white;
-        font-size: 13px;
-      }
-
-      .btn-yellow{
-        position: relative;
-        
-        width: 182px;
-        height: 45px;
-        margin-left: 17px;
-      }
-
-      .doctor-image {
-        .doctor-border {
-          position: relative;
-          z-index: 1;
-          
-          .image{
-            position: relative;
-          } 
+    .content-wrapper {
+      display: flex;
+      flex-direction: row;
+      padding: 0 0 122px 0;
+      .content-holder {
+        &:nth-child(1) {
+          width: 50%
         }
 
-        .doctor-border:before {
-          content: "";
+        &:nth-child(2) {
+          width: 50%
+        }
+
+        .title{
           position: absolute;
-          z-index: -1;
 
-          margin: 10px 0 0 19px;
-          width: 256px;
-          height: 348px;
+      font-family: $font-Spectral-Medium;
+      font-size: 14px;
+      color: $attribute;
+      text-align: center;
+      line-height: 22px;
 
-          background-color: $purple;
-        }
-      }
+      background-color: $pastel-blue;
+      border-radius: 100%;
+    }
 
-      .doctor-name {
-        margin: 29px 0 0 21px;
-        
-        color: $white;
-        font-size: 13px;
-      }
+    .work-item::after {
+      content: " ";
+
+      position: absolute;
+      top: -42px;
+      right: 0;
+      left: 98px;
+
+      margin: 0 auto;
+      width: 150px;
+      height: 16px;
+
+      border-bottom: 2px solid $pastel-blue
+    }
+
+    #four::after {
+      content: none;
     }
   }
-
+  
   .section-ratings {
     padding: 43px 0 83px;
+
+    --star-size: 60px;
+    --star-color: #F4F2F9;
+    --star-background: #404082;
 
     .title {
       margin-bottom: 0;
@@ -410,25 +368,38 @@
     }
 
     .rating-holder {
+      text-align: center;
       width: 165px;
     }
 
     .rating-star {
-      --rating: 4.7;
       --percent: calc(var(--rating) / 5 * 100%);
-
       display: block;
-
       font-size: var(--star-size);
-      text-align: center;
+      font-family: Times; 
       line-height: 1;
-    }
 
-    .rating-star::before {
-      content: "★★★★★";
-      letter-spacing: 0;
-      font-size: 26px;
-      color: $purple;
+      &:before {
+        content: "★★★★★";
+        font-size: 26px;
+        letter-spacing: 0;
+        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
+        -webkit-background-clip: text;
+        background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      &:first-child {
+        --rating: 4.7;
+      }
+
+      &:nth-child(2) {
+        --rating: 4.8;
+      }
+
+      &:nth-child(3) {
+        --rating: 4.7;
+      }
     }
 
     .rating-link {
@@ -470,3 +441,4 @@
     }
   }
 }
+  }}
