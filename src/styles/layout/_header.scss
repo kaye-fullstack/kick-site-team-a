@@ -51,16 +51,10 @@
   background-color: $white;
 }
 
-.navbar-nav {
-  .nav-link {
-    font-family: $text-spectral-regular;
-    font-size: 16px;
-    color: $violet;
-  }
-
-  .nav-link:active {
-    color: $red-orange;
-  }
+.nav-link {
+  font-family: $text-spectral-regular;
+  font-size: 16px;
+  color: $violet;
 }
 
 .nav-link:hover {
@@ -71,6 +65,8 @@
 }
 
 .nav-link:active {
+  color: $red-orange;
+
   background-image: url("../assets/images/header-active-icon.svg");
   background-position: 98% 20%;
   background-repeat: no-repeat;
