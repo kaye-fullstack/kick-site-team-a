@@ -134,7 +134,7 @@
       margin: 122px 0 0 162px;
     }
 
-    .image-wrapper {
+    .image-holder {
       margin-left: 80px;
     }
 
@@ -514,6 +514,72 @@
           
           color: $white;
           font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond-to(sm-down) {
+  .home {
+    .section-personalized {
+      .title {
+        width: 100%;
+
+        font-size: 24px;
+        line-height: 27px;
+      }
+
+      .treatment-list {
+        font-size: 16px;
+      }
+
+      .content {
+        margin: 0;
+
+        height: auto;
+      }
+
+      .image-holder {
+        margin-left: 0;
+        margin-top: 30px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .section-quotation-slider {
+
+      .swiper-container {
+        .content-holder {
+          width: 200px;
+        }
+      }
+    }
+
+    .section-sleep-solutions {
+
+      .image-holder {
+        margin-left: 0;
+        margin-top: 100px;
+
+        img {
+          max-width: 100%;
+        }
+      }
+    }
+
+    .section-anxiety-solutions {
+
+      .image-holder {
+        margin-left: 0;
+        margin-top: 100px;
+
+        img {
+          max-width: 100%;
         }
       }
     }
