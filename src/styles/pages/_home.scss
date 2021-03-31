@@ -367,7 +367,6 @@
 
     .rating-holder {
       text-align: center;
-      width: 165px;
     }
 
     .rating-star {
@@ -440,7 +439,6 @@
   }
 }
 
-
 @include respond-to(sm) {
   .home {
     .section-press {
@@ -472,6 +470,13 @@
             }
           }
         }
+      }
+    }
+
+    .section-ratings {
+      .rating {
+        display: block;
+        width: 100%;
       }
     }
   }
@@ -511,6 +516,13 @@
             }
           }
         }
+      }
+    }
+
+    .section-ratings {
+      .rating {
+        display: block;
+        width: 100%;
       }
     }
   }
