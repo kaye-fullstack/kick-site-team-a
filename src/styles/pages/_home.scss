@@ -136,7 +136,7 @@
       line-height: 27px;
       list-style: none;
 
-      &:nth-child(1):before{
+      &:nth-child(1):before {
         content: '1';
 
         position: absolute;
@@ -155,7 +155,7 @@
         border-radius: 100%;
       }
       
-      &:nth-child(2):before{
+      &:nth-child(2):before {
         content: '2';
 
         position: absolute;
@@ -174,7 +174,7 @@
         border-radius: 100%;
       }
 
-      &:nth-child(3):before{
+      &:nth-child(3):before {
         content: '3';
         
         position: absolute;
@@ -243,9 +243,11 @@
   .section-anxiety-solutions {
     background-color: $lavender;
   }
-
-  .section-ratings {
+  
+  .section-questions-answered {
     padding: 43px 0 83px;
+    
+    background-color: $violet;
 
     .title {
       margin-bottom: 0;
@@ -256,70 +258,95 @@
       text-align: center;
     }
 
-    .rating {
+    .content-wrapper {
       display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
-    }
+      flex-direction: row;
+      padding: 0 0 122px 0;
+      .content-holder {
+        &:nth-child(1) {
+          width: 50%
+        }
 
-    .rating-holder {
-      width: 165px;
-    }
+        &:nth-child(2) {
+          width: 50%
+        }
 
-    .rating-star {
-      --rating: 4.7;
-      --percent: calc(var(--rating) / 5 * 100%);
+        .title{
+          position: absolute;
 
-      display: block;
+          padding: 112px 0 2px 6px;
+    
+          color: #f25930;
+          font-size: 14px;
+        }
+    
+        .swiper-container {
+          margin: 150px 0 0 -9px;
+    
+          .swiper-slide {
+            width: 480px;
+            height: 100%;
+    
+            .quote {
+              position: relative;
+              
+              width: 440px;
+              padding: 0 18px;
+    
+              font-family: $font-Spectral-Medium;
+              font-size: 47px;
+              color: $white;
+              text-align: left;
+            }
+    
+            .quote:before {
+              position: absolute;
+              left: 0px;
+    
+              content: "“";
+            }
+    
+            .quote:after {
+              position: absolute;
+    
+              content: "”";
+            }
+          }
+        }
+    
+        .desc {
+          width: 300px;
+          margin: -25px 0 58px 6px;
+    
+          color: $white;
+          font-size: 13px;
+        }
 
-      font-size: var(--star-size);
-      text-align: center;
-      line-height: 1;
-    }
+        .doctor-image{
+          .doctor-border{
+            position: absolute;
 
-    .rating-star::before {
-      content: "★★★★★";
-      letter-spacing: 0;
-      font-size: 26px;
-      color: $purple;
-    }
+            margin: 136px 0 0 222px;
+            width: 256px;
+            height: 348px;
+  
+            background-color: $purple;
+          }
 
-    .rating-link {
-      margin-top: 3px;
-      font-family: $text-spectral-regular;
-      font-size: 14px;
-      color: $violet;
-      line-height: 20px;
-      text-align: center;
-    }
-  }
+          .image{
+            position: relative;
 
-  .section-testimonials {
-    padding: 62px 0 90px 0;
+            margin: 126px 0 0 203px;
+          }
+        }
 
-    text-align: center;
-
-    background-color: $pastel-yellow;
-
-    .title {
-      padding-bottom: 48px;
-
-      font-family: $text-spectral-medium;
-      font-size: 32px;
-      letter-spacing: -2.5px;
-    }
-
-    .image-holder {
-      margin: 0 auto 26px;
-      width: 68px;
-    }
-
-    .logo-desc {
-      margin: 10px 0 16px;
-      font-family: $text-spectral-regular;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-      line-height: 24px;
+        .doctor-name {
+          margin: 29px 0 0 225px;
+          
+          color: $white;
+          font-size: 13px;
+        }
+      }
     }
   }
 }
