@@ -63,5 +63,20 @@
       background-color: $white;
     }
   }
+
+  &-white {
+    width: 112px;
+    height: 35px;
+  
+    font-family: $text-spectral-regular;
+    font-size: 13px;
+    color: $violet;
+    text-align: center;
+    letter-spacing: -1px;
+  
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 0;
+  }
 }
 

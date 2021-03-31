@@ -23,8 +23,10 @@
   }
 
   .section-why-trials {
+    margin-bottom: 87px;
+
     .wrapper {
-      margin: 70px 0;
+      padding: 70px 0;
     }
 
     .holder {
@@ -43,6 +45,133 @@
       }
       .description {
         font-family: $font-Spectral-Regular;
+      }
+    }
+  }
+
+  .section-trials-work {
+    background-color: $lavender;
+    .wrapper {
+      padding: 84px 0;
+
+      align-items: center;
+
+      .title {
+
+        margin-bottom: 70px;
+        font-family: $font-Spectral-Medium;
+        font-size: 25px;
+        text-align: center;
+        
+      }
+
+      .holder {
+
+        .item {
+          position: relative;
+          max-width: 71%;
+
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 50px;
+
+          padding-left: 65px;
+
+          font-size: 16px;
+          font-family: $font-Spectral-Regular;
+          list-style: none;
+
+          &:before {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+
+            width: 30px;
+            height: 30px;
+
+            font-size: 20px;
+
+            border: 2px solid $purple;
+            border-radius: 100%;
+          }
+
+          &:nth-child(1):before {
+            content: '1';
+
+            left: 0;
+          }
+          &:nth-child(2):before {
+            content: '2';
+
+            left: 0;
+          }
+
+          &:nth-child(3):before {
+            content: '3';
+
+            left: 0;
+          }
+
+          &:nth-child(4):before {
+            content: '4';
+
+            left: 0;
+          }
+        }
+      }
+    }
+  }
+
+  .section-sleep-medications {
+    .wrapper {
+      padding: 100px 0;
+
+      align-items: center;
+
+      .title {
+        font-size: 28px;
+        text-align: center;
+        font-family: $font-Spectral-Medium;
+      }
+
+      .description {
+        width: 52%;
+        margin: 0 auto;
+        margin-bottom: 87px;
+
+        text-align: center;
+        font-family: $font-Spectral-Medium;
+      }
+
+      .text-bottom {
+        margin: 80px 0;
+        text-align: center;
+        font-family: $font-Spectral-Regular;
+        color: $black;
+      }
+
+      .holder {
+        max-width: 82%;
+        margin: 0 auto;
+
+        &-item {
+          .medic-item {
+            width: 95%;
+          }
+
+          .sub-description {
+            h5 {
+              margin-top: 15px;
+              font-size: 17px;
+              font-family: $font-Spectral-Medium;
+            }
+
+            p {
+              margin-top: 5px;
+              font-family: $font-Spectral-Medium;
+            }
+          }
+        }
       }
     }
   }
