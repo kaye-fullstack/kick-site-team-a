@@ -13,14 +13,16 @@ AppName.Modules.ThemeModule = (function () {
         el: '.swiper-pagination',
       },
     });
-    
+  };
+
+  const _scrollHeader = () => {
     $(window).on("scroll", function() {
       if($(window).scrollTop() > 50) {
           $(".scroll-active-js").addClass("active");
       } else {
          $(".scroll-active-js").removeClass("active");
       }
-  });
+    });
   };
 
   const _activeListItem = () => {
@@ -29,7 +31,11 @@ AppName.Modules.ThemeModule = (function () {
       $(this).siblings().removeClass("active-js")
     });
   };
+<<<<<<< HEAD
 
+=======
+  
+>>>>>>> 112ce6e (faq & doctor ama - done)
   /////////////////////
   // Public Methods //
   ///////////////////
