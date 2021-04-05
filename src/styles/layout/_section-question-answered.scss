@@ -1,0 +1,111 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.section-questions-answered {
+  padding: 43px 0 83px;
+  
+  background-color: $violet;
+
+  .title {
+    margin-bottom: 0;
+    font-family: $text-spectral-medium;
+    font-size: 29px;
+    color: $violet;
+    line-height: 43px;
+    text-align: center;
+  }
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 0 0 122px 0;
+    .content-holder {
+      &:nth-child(1) {
+        width: 50%
+      }
+
+      &:nth-child(2) {
+        width: 50%
+      }
+
+      .title{
+        position: absolute;
+
+        padding: 112px 0 2px 6px;
+  
+        color: #f25930;
+        font-size: 14px;
+      }
+  
+      .swiper-container {
+        margin: 150px 0 0 -9px;
+  
+        .swiper-slide {
+          width: 480px;
+          height: 100%;
+  
+          .quote {
+            position: relative;
+            
+            width: 440px;
+            padding: 0 18px;
+  
+            font-family: $font-Spectral-Medium;
+            font-size: 47px;
+            color: $white;
+            text-align: left;
+          }
+  
+          .quote:before {
+            position: absolute;
+            left: 0px;
+  
+            content: "“";
+          }
+  
+          .quote:after {
+            position: absolute;
+  
+            content: "”";
+          }
+        }
+      }
+  
+      .desc {
+        width: 300px;
+        margin: -25px 0 58px 6px;
+  
+        color: $white;
+        font-size: 13px;
+      }
+
+      .doctor-image{
+        .doctor-border{
+          position: absolute;
+
+          margin: 136px 0 0 222px;
+          width: 256px;
+          height: 348px;
+
+          background-color: $purple;
+        }
+
+        .image{
+          position: relative;
+
+          margin: 126px 0 0 203px;
+        }
+      }
+
+      .doctor-name {
+        margin: 29px 0 0 225px;
+        
+        color: $white;
+        font-size: 13px;
+      }
+    }
+  }
+}

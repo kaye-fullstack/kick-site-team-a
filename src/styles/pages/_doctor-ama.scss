@@ -1,0 +1,16 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
+
+.doctor-ama {
+  .scrollable {
+    height: 667px;
+    overflow: auto;
+  }
+
+  .scrollable::-webkit-scrollbar {
+    display: none;
+  }
+}

@@ -3,173 +3,201 @@
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
-.faq {
-  .section-faq {
-    padding-top: 103px;
+.section-faq {
+  padding-top: 103px;
 
-    .info-holder {
-      display: flex;
-      align-items: center;
+  .info-holder {
+    display: flex;
+    align-items: center;
 
-      .info {
-        width: 700px;
-        text-align: center;
+    .info {
+      width: 700px;
+      text-align: center;
 
-        .title {
-          font-family: $text-spectral-medium;
-          font-size: 35px;
-        }
-
-        .description {
-          font-family: $text-spectral-regular;
-          font-size: 16px;
-        }
+      .title {
+        font-family: $text-spectral-medium;
+        font-size: 35px;
       }
 
-      .image-holder {
+      .description {
+        font-family: $text-spectral-regular;
+        font-size: 16px;
+      }
+    }
+
+    .image-holder {
+      position: relative;
+      top: -5px;
+      right: -24px;
+    
+      .logo {
+        width: 190px;
+      }
+    }
+  }
+
+  .content-holder {
+    margin: 37px 0 0 8px;
+
+    .faq-navigation {
+      position: sticky;
+      top: 85px;
+      width: 165px;
+
+      .list-item {
+        padding: 8px 0;
+        font-family: $text-spectral-regular;
+        font-size: 15px;
+        color: $faq-nav-item;
+        border: none;
+        cursor: pointer;
+      }
+
+      .active-js::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        left: -12px;
+        width: 25px;
+        height: 2px;
+        background-color: $red-orange;
+        transform: translateX(-50%) rotate(90deg);
+        transition: 0.2s ease-in-out;
+        opacity: 1;
+      }
+
+      .active-js {
         position: relative;
-        top: -5px;
-        right: -24px;
+        color: $violet;
+        background-color: transparent;
+        pointer-events: none;
+      }
+    }
+
+    .faq-content {
+      padding-left: 210px;
+      margin-top: -270px;
       
-        .logo {
-          width: 190px;
+      .content-holder {
+        margin-top: 85px;
+
+        .title {
+          padding-left: 10px;
+          font-family: $text-spectral-medium;
+          font-size: 26px;
+          color: $title-accordion;
         }
       }
     }
 
-    .content-holder {
-      margin: 37px 0 0 8px;
-
-      .faq-navigation {
-        position: sticky;
-        top: 85px;
-        width: 165px;
-
-        .list-item {
-          padding: 8px 0;
-          font-family: $text-spectral-regular;
-          font-size: 15px;
-          color: $faq-nav-item;
-          border: none;
-          cursor: pointer;
-        }
-
-        .list-item::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-          left: -12px;
-          width: 25px;
-          height: 2px;
-          background-color: $red-orange;
-          transform: translateX(-50%) rotate(90deg);
-          transition: 0.2s ease-in-out;
-          opacity: 0;
-        }
+    .accordion {
+      .card {
+        border: none;
       }
 
-      .faq-content {
-        padding-left: 210px;
-        margin-top: -270px;
+      .card-header {
+        position: relative;
+        padding: 0;
+
+        // font-family: $text-spectral-medium;
+        // font-size: 30px;
+
+        background-color: transparent;
+        border: none;
+      }
+
+      .card-body {
+        padding: 10px 40px 10px 10px;
+
+        font-family: $text-spectral-regular;
+        font-size: 16px;
+
+        border-bottom: 3px solid $pastel-yellow;
+      }
+
+      .btn-link:hover {
+        color: $red-orange;
+
+        background-color: $pastel-yellow;
+
+        text-decoration: none;
+      }
+
+      .btn-link::before {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
+
+        width: 25px;
+        height: 3px;
         
-        .content-holder {
-          margin-top: 85px;
-
-          .title {
-            padding-left: 10px;
-            font-family: $text-spectral-medium;
-            font-size: 26px;
-            color: $title-accordion;
-          }
-        }
+        background-color: $dark-blue;
+        transition: 0.2s ease-in;
       }
 
-      .accordion {
-        .card {
-          border: none;
-        }
+      .btn-link::after {
+        content: "";
+        position: absolute;
+        top: 50%;
+        right: 0;
 
-        .card-header {
-          position: relative;
-          padding: 0;
+        width: 25px;
+        height: 3px;
+        
+        background-color: $dark-blue;
+        transition: 0.2s ease-in;
+        transform: rotate(90deg);
+      }
 
-          font-family: $text-spectral-medium;
-          font-size: 30px;
-
-          background-color: transparent;
-          border: none;
-        }
-
-        .btn-link:hover {
-          color: $red-orange;
-
-          background-color: $pastel-yellow;
-
-          text-decoration: none;
-        }
-
-        .btn-link::before {
-          content: "";
-          position: absolute;
-          top: 50%;
-
-          height: 3px;
-          
-          background-color: $dark-blue;
-          transition: 0.2s ease-in;
-        }
-
-        .btn-link::after {
-          right: 0;
-          width: 25px;
-          transform: rotate(90deg);
-        }
+      .btn-link[aria-expanded="true"]:after {
+        background-color: $red-orange;
+        transform: initial;
       }
     }
   }
 }
 
 @include respond-to(sm) {
-  .faq {
-    .section-faq {
-      .info-holder {
-        .info {
-          width: 400px;
-          .title {
-            font-size: 24px;
-          }
+  .section-faq {
+    .info-holder {
+      .info {
+        margin-bottom: 25px;
 
-          .description {
-            font-size: 12px;
-          }
+        .title {
+          font-size: 24px;
         }
 
-        .image-holder {
-          position: relative;
-          right: -5px;
-
-          .logo {
-            width: 170px;
-          }
+        .description {
+          font-size: 12px;
         }
       }
 
-      .content-holder {
-        .faq-navigation {
-          .list-item {
-            font-size: 12px;
-          }
-        }
+      .image-holder {
+        position: relative;
+        right: -5px;
 
-        .faq-content {
+        .logo {
+          width: 170px;
+        }
+      }
+    }
+
+    .content-holder {
+      .faq-navigation {
+        .list-item {
+          font-size: 12px;
+        }
+      }
+
+      .faq-content {
+        margin-top: -219px;
+
+        .content-holder {
           margin-top: -219px;
 
-          .content-holder {
-            margin-top: -219px;
-
-            .title {
-              font-size: 15px;
-            }
+          .title {
+            font-size: 15px;
           }
         }
       }
@@ -178,48 +206,45 @@
 }
 
 @include respond-to(xs) {
-  .faq {
-    .section-faq {
-      .info-holder {
-        .info {
-          width: 400px;
-          .title {
-            font-size: 24px;
-          }
-
-          .description {
-            font-size: 12px;
-          }
+  .section-faq {
+    .info-holder {
+      .info {
+        .title {
+          font-size: 24px;
         }
 
-        .image-holder {
-          position: relative;
-          right: -5px;
-
-          .logo {
-            width: 120px;
-          }
+        .description {
+          font-size: 12px;
         }
       }
 
-      .content-holder {
-        .faq-navigation {
-          width: 50px;
-          .list-item {
-            font-size: 12px;
-          }
+      .image-holder {
+        position: relative;
+        right: -5px;
+
+        .logo {
+          width: 120px;
         }
+      }
+    }
 
-        .faq-content {
-          padding-left: 80px;
-          margin-top: -238px;
+    .content-holder {
+      .faq-navigation {
+        width: 50px;
+        .list-item {
+          font-size: 12px;
+        }
+      }
 
-          .content-holder {
-            margin-top: -219px;
-            
-            .title {
-              font-size: 15px;
-            }
+      .faq-content {
+        padding-left: 80px;
+        margin-top: -238px;
+
+        .content-holder {
+          margin-top: -219px;
+          
+          .title {
+            font-size: 15px;
           }
         }
       }

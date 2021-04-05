@@ -23,8 +23,8 @@
 @import
   'layout/header',
   'layout/footer',
-  'layout/section-incredibly-personal',
-  'layout/section-science-sleep';
+  'layout/faq',
+  'layout/section-question-answered';
 
 // 5. Components
 @import
@@ -33,7 +33,7 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/faq';
+  'pages/doctor-ama';
 
 // 7. Themes
 @import
