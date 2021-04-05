@@ -290,8 +290,7 @@
     
     background-color: $violet;
 
-<<<<<<< HEAD
-    background-color: $violet;
+
 
       width: 166px;
       height: 44px;
@@ -302,8 +301,7 @@
       line-height: 24px;
     }
 
-=======
->>>>>>> b525f2b (footer responsize done)
+
     .content-wrapper {
       display: flex;
       flex-direction: row;
@@ -511,7 +509,7 @@
   }
 }
 
-<<<<<<< HEAD
+
     .section-help-products {
       .product-holder {
         flex-wrap: wrap;
@@ -531,11 +529,8 @@
 
             .prod-image {
               width: 300px;
-<<<<<<< HEAD
-            }
-=======
             };
-=======
+
 @include respond-to(md) {
   .home{
     .section-questions-answered {
@@ -560,8 +555,7 @@
           .desc{
             width: 370px;
             font-size: 16px;
->>>>>>> b525f2b (footer responsize done)
->>>>>>> 04a76b5 (footer responsize done)
+
           }
         }
       }
@@ -569,34 +563,6 @@
   }
 }
 
-<<<<<<< HEAD
-    .section-how-it-works {
-      padding-bottom: 0;
-
-      .work-list {
-        display: block;
-        margin: 55px auto 20px;
-        width: 100%;
-      }
-
-      .work-item {
-        margin-bottom: 80px;
-        width: 100%;
-      }
-
-      .work-item::before {
-        top: -28px;
-      }
-
-      .work-item::after {
-        top: 52px;
-        left: 0;
-
-        width: 48px;
-        height: 2px;
-        
-        transform: rotate(90deg);
-=======
 @include respond-to(sm) {
   .home{
     .section-questions-answered {
@@ -663,7 +629,6 @@
             width: 270px;
           }
         }
->>>>>>> b525f2b (footer responsize done)
       }
     }
   }
