@@ -232,6 +232,93 @@
       
     }
   }
+
+  .section-how-it-works {
+    padding-top: 98px;
+    padding-bottom: 79px;
+
+    .title {
+      font-family: $text-spectral-medium;
+      font-size: 30px;
+      text-align: center;
+    }
+
+    .work-list {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding-left: 0;
+      margin: 89px auto;
+      width: 724px;
+
+      list-style: none;
+    }
+
+    .work-item {
+      position: relative;
+
+      width: 166px;
+      height: 44px;
+      
+      font-family: "Spectral-Regular";
+      font-size: 20px;
+      text-align: center;
+
+      line-height: 24px;
+    }
+
+    .work-item::before {
+      content: attr(data-attribute);
+      position: absolute;
+      top: -35px;
+      right: 0;
+      left: 0;
+
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      width: 18px;
+      height: 18px;
+
+      font-family: $text-spectral-medium;
+      font-size: 14px;
+      color: $attribute;
+      text-align: center;
+
+      background-color: $pastel-blue;
+      border-radius: 100%;
+
+      line-height: 22px;
+    }
+
+    .work-item::after {
+      content: " ";
+      position: absolute;
+      top: -42px;
+      right: 0;
+      left: 98px;
+
+      margin: 0 auto;
+      width: 150px;
+      height: 16px;
+
+      border-bottom: 2px solid $pastel-blue
+    }
+
+    #four::after {
+      content: none;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .home {
+    .section-how-it-works {
+      padding-bottom: 0;
+    }
+  }
 }
 
 @include respond-to(sm) {
@@ -265,6 +352,33 @@
             };
           }
         }
+      }
+    }
+
+    .section-how-it-works {
+      padding-bottom: 0;
+
+      .work-list {
+        display: block;
+        margin: 55px auto 20px;
+        width: 100%;
+      }
+
+      .work-item {
+        margin-bottom: 80px;
+        width: 100%;
+      }
+
+      .work-item::before {
+        top: -28px;
+      }
+
+      .work-item::after {
+        top: 52px;
+        left: 0;
+        width: 48px;
+        height: 2px;
+        transform: rotate(90deg);
       }
     }
   }
@@ -304,6 +418,33 @@
             };
           }
         }
+      }
+    }
+
+    .section-how-it-works {
+      padding-bottom: 0;
+
+      .work-list {
+        display: block;
+        margin: 55px auto 20px;
+        width: 100%;
+      }
+
+      .work-item {
+        margin-bottom: 80px;
+        width: 100%;
+      }
+
+      .work-item::before {
+        top: -28px;
+      }
+
+      .work-item::after {
+        top: 52px;
+        left: 0;
+        width: 48px;
+        height: 2px;
+        transform: rotate(90deg);
       }
     }
   }
