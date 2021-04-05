@@ -35,6 +35,7 @@
 
 //991 - 768 
 @include respond-to(md) {
+<<<<<<< HEAD
   .sleep {
     .section-science-sleep {
       .content-holder {
@@ -44,12 +45,16 @@
       }
     }
   }
+=======
+
+>>>>>>> Sleep page - section why trials, doctors word, incredibly personal, science sleep. Desktop done
 }
 
 //767 - 576
 @include respond-to(sm) {
   .sleep {
     .section-science-sleep {
+<<<<<<< HEAD
 
       .title {
         font-size: 25px;
@@ -82,6 +87,9 @@
           font-size: 20px;
         }
       }
+=======
+      text-align: center;
+>>>>>>> Sleep page - section why trials, doctors word, incredibly personal, science sleep. Desktop done
     }
   }
 }
@@ -90,6 +98,7 @@
 @include respond-to(xs) {
   .sleep {
     .section-science-sleep {
+<<<<<<< HEAD
 
       .title {
         font-size: 25px;
@@ -104,6 +113,14 @@
           img {
             max-width: 100%;
           }
+=======
+      padding: 20px 0;
+      .content-wrapper {
+        padding: 0;
+  
+        .content-holder {
+          text-align: center;
+>>>>>>> Sleep page - section why trials, doctors word, incredibly personal, science sleep. Desktop done
         }
   
         .title {

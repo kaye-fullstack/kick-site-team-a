@@ -110,9 +110,7 @@
 
   .section-sleep-medications {
     .wrapper {
-      padding: 58px 0;
-
-      align-items: center;
+      padding: 95px 0;
 
       .title {
         margin-left: 12px;
@@ -337,87 +335,6 @@
             margin: 14px 0 0 14px;
           } 
         }
-      }
-    }
-  }
-
-  .section-doctors-word {
-    padding: 60px 0;
-    
-    background-color: $pastel-blue;
-
-    // .title {
-    //   margin-bottom: 0;
-    //   font-family: $text-spectral-medium;
-    //   font-size: 29px;
-    //   color: $violet;
-    //   line-height: 43px;
-    //   text-align: center;
-    // }
-    
-
-    .content-wrapper {
-      position: relative;
-      
-      display: flex;
-      flex-direction: row;
-      padding: 0 80px;
-
-        .title {
-          margin: 49px 0 22px;
-          
-          font-family: $font-Spectral-Medium;
-          color: $white;
-          font-size: 14px;
-          text-transform: uppercase;
-        }
-
-        .title:before {
-          content: '';
-          position: absolute;
-          top: 5px;
-          left: 82px;
-    
-          height: 22.5px;
-          width: 45px;
-
-          border-radius:0 0 150px 150px;
-          background-color: $white;
-        }
-        
-        .description {
-          max-width: 82%;
-          font-family: $font-Spectral-Regular;
-          font-size: 20px;
-          color: $white;
-          line-height: 30px;
-        }
-
-        .doctor-image {
-          margin-right: 20px;
-          
-          .doctor-border {
-            position: absolute;
-
-            margin: 7px 0 0 15px;
-            width: 235px;
-            height: 304px;
-
-            background-color: $white;
-          }
-
-          .image {
-            position: relative;
-          }
-        }
-
-        .doctor-name {
-          margin-top: 37px;
-          
-          color: $white;
-          font-size: 18px;
-          font-family: $font-Spectral-Medium;
-        
       }
     }
   }
