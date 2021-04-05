@@ -51,6 +51,7 @@
 
   .section-trials-work {
     background-color: $lavender;
+
     .wrapper {
       padding: 84px 0;
 
@@ -181,16 +182,6 @@
     
     background-color: $pastel-blue;
 
-    // .title {
-    //   margin-bottom: 0;
-    //   font-family: $text-spectral-medium;
-    //   font-size: 29px;
-    //   color: $violet;
-    //   line-height: 43px;
-    //   text-align: center;
-    // }
-    
-
     .content-wrapper {
       position: relative;
       
@@ -253,6 +244,62 @@
           font-size: 18px;
           font-family: $font-Spectral-Medium;
         
+      }
+    }
+  }
+
+}
+@include respond-to(lg) {
+}
+
+@include respond-to(md) {
+//   .sleep {
+    
+//   }
+}
+
+@include respond-to(sm) {
+}
+
+@include respond-to(xs) {
+  .sleep {
+    .section-hero {
+      .title {
+        font-size: 25px;
+        width: 80%;
+      }
+    }
+
+    .section-why-trials {
+      .wrapper {
+        padding: 0 0;
+      }
+      
+      .holder {
+        padding: 20px 15px;
+      }
+    }
+
+
+    .section-why-trials {
+      .image-trials {
+        display: none;
+      }
+    }
+
+    .section-doctors-word {
+      padding: 20px 0;
+      .content-holder:nth-child(2) {
+        display: none;
+      }
+
+      .content-wrapper {
+        padding: 20px 20px;
+
+        .title:before {
+          left: 22px;
+          top: 33px;
+        }
       }
     }
   }

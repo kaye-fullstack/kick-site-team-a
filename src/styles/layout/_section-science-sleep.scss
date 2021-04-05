@@ -1,0 +1,73 @@
+.sleep {
+  .section-science-sleep {
+    padding: 78px 0;
+    background-color: $pastel-yellow;
+    .content-wrapper {
+      .title {
+        margin-bottom: 67px;
+        margin-left: -28px;
+  
+        letter-spacing: -1px;
+        font-size: 30px;
+        font-family: $font-Spectral-Regular;
+        text-align: center;
+        color: $purple;
+      }
+  
+      .sub-heading {
+        margin: 20px 0;
+        
+        font-family: $font-Spectral-Regular;
+        color: $purple;
+      }
+      .description {
+        font-family: $font-Spectral-Regular;
+        color: $purple;
+      }
+    }
+  }
+}
+
+//1199 - 992
+@include respond-to(lg) {
+
+}
+
+//991 - 768 
+@include respond-to(md) {
+
+}
+
+//767 - 576
+@include respond-to(sm) {
+  .sleep {
+    .section-science-sleep {
+      text-align: center;
+    }
+  }
+}
+
+//575 - 320
+@include respond-to(xs) {
+  .sleep {
+    .section-science-sleep {
+      padding: 20px 0;
+      .content-wrapper {
+        padding: 0;
+  
+        .content-holder {
+          text-align: center;
+        }
+  
+        .title {
+          margin: 20px 0;
+          width: 80%;
+          margin-left: auto;
+          margin-right: auto;
+  
+          font-size: 20px;
+        }
+      }
+    }
+  }
+}
