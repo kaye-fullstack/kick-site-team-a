@@ -45,7 +45,6 @@
       display: flex;
       align-items: center;
       justify-content: space-between;
-
       padding: 86px 0 83px 0;
       margin: 0 auto;
       width: 660px;
@@ -78,8 +77,8 @@
       
       font-family: $text-spectral-medium;
       font-size: 32px;
-      letter-spacing: -2.5px;
       text-align: center;
+      letter-spacing: -2.5px;
     }
 
     .description {
@@ -150,13 +149,14 @@
         width: 18px;
         height: 18px;
 
-        line-height: 1.6;
-        text-align: center;
         font-size: 12px;
         color: $white;
+        text-align: center;
 
         background-color: $pastel-blue;
         border-radius: 100%;
+        
+        line-height: 1.8;
       }
 
       &:nth-child(1):before {
@@ -171,6 +171,17 @@
         left: -30px;
 
         margin-right: 12px;
+        width: 21px;
+        height: 21px;
+        
+        font-size: 12px;
+        color: $white;
+        text-align: center;
+        
+        background-color: $mid-grey;
+        border-radius: 100%;
+
+        line-height: 1.8;
       }
 
       &:nth-child(3):before {
@@ -179,6 +190,17 @@
         left: -30px;
 
         margin-right: 12px;
+        width: 21px;
+        height: 21px;
+
+        font-size: 12px;
+        color: $white;
+        text-align: center;
+        
+        background-color: $mid-grey;
+        border-radius: 100%;
+
+        line-height: 1.8;
       }
     }
   }
@@ -193,15 +215,15 @@
         padding-top: 55px;
         width: 500px;
 
-        text-align: center;
         font-size: 30px;
         font-family: $font-Spectral-Medium;
+        text-align: center;
       }
       
       .content-holder {
-        width: 500px;
-        margin-left: auto;
         margin-right: auto;
+        margin-left: auto;
+        width: 500px;
 
         .content-swiper {
           color: $pastel-pink;
@@ -269,11 +291,11 @@
 
     .work-item::before {
       content: attr(data-attribute);
+
       position: absolute;
       top: -35px;
       right: 0;
       left: 0;
-
 
       display: flex;
       align-items: center;
@@ -295,6 +317,7 @@
 
     .work-item::after {
       content: " ";
+
       position: absolute;
       top: -42px;
       right: 0;
@@ -326,7 +349,6 @@
     .section-press {
       .logo-holder {
         flex-wrap: wrap;
-
         padding-top: 30px;
         padding-bottom: 40px;
         width: 100%;
@@ -376,8 +398,10 @@
       .work-item::after {
         top: 52px;
         left: 0;
+
         width: 48px;
         height: 2px;
+
         transform: rotate(90deg);
       }
     }
@@ -442,8 +466,10 @@
       .work-item::after {
         top: 52px;
         left: 0;
+
         width: 48px;
         height: 2px;
+        
         transform: rotate(90deg);
       }
     }
