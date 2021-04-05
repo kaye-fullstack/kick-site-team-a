@@ -24,9 +24,7 @@
   'layout/header',
   'layout/footer',
   'layout/faq',
-  'layout/section-question-answered',
-  'layout/section-testimonials',
-  'layout/section-ratings';
+  'layout/section-question-answered';
 
 // 5. Components
 @import
@@ -36,7 +34,7 @@
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/faq';
+  'pages/doctor-ama';
 
 // 7. Themes
 @import

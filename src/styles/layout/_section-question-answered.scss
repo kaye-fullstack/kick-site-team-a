@@ -1,70 +1,62 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to the section questions answered.
+// This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
 
 .section-questions-answered {
+  padding: 43px 0 83px;
+  
   background-color: $violet;
 
   .title {
     margin-bottom: 0;
-
-    font-family: $font-Spectral-Medium;
+    font-family: $text-spectral-medium;
     font-size: 29px;
     color: $violet;
-    text-align: center;
     line-height: 43px;
+    text-align: center;
   }
 
   .content-wrapper {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
-    padding: 0 0 102px 0;
-
+    padding: 0 0 122px 0;
     .content-holder {
       &:nth-child(1) {
-        width: 405px;
+        width: 50%
       }
 
       &:nth-child(2) {
-        width: 280px;
+        width: 50%
       }
 
       .title{
         position: absolute;
 
-        padding: 103px 0 0 17px;
+        padding: 112px 0 2px 6px;
   
-        font-size: 13px;
-        color: $red-orange;
+        color: #f25930;
+        font-size: 14px;
       }
-
-      .btn-yellow:hover {
-        color: $white;
   
-        background-color: $purple;
-      }
-
       .swiper-container {
-        width: 440px;
         margin: 150px 0 0 -9px;
-        width: 440px;
   
         .swiper-slide {
-          width: 440px;
+          width: 480px;
           height: 100%;
   
           .quote {
             position: relative;
             
-            padding: 0 18px;
             width: 440px;
+            padding: 0 18px;
   
             font-family: $font-Spectral-Medium;
             font-size: 47px;
             color: $white;
+            text-align: left;
           }
   
           .quote:before {
@@ -83,163 +75,36 @@
       }
   
       .desc {
-        margin: 30px 0 41px 0;
         width: 300px;
+        margin: -25px 0 58px 6px;
   
-        font-size: 13px;
         color: $white;
+        font-size: 13px;
       }
 
-      .btn-yellow {
-        width: 173px;
-        height: 45px;
-      }
-
-      .doctor-image {
-        .doctor-border {
+      .doctor-image{
+        .doctor-border{
           position: absolute;
 
-          margin: 128px 0 0 0;
+          margin: 136px 0 0 222px;
+          width: 256px;
+          height: 348px;
 
-          &:before {
-            content: "";
-
-            position: absolute;
-            top: 15px;
-            left: 17px;
-            z-index: 0;
-
-            width: 260px;
-            height: 344px;
-
-            background-color: $title-accordion;
-          }
+          background-color: $purple;
         }
 
-        .image {
+        .image{
           position: relative;
 
-          width: 260px;
-          height: 344px;
+          margin: 126px 0 0 203px;
         }
       }
 
       .doctor-name {
-        margin: 500px 0 0 10px;
+        margin: 29px 0 0 225px;
         
-        font-size: 13px;
         color: $white;
-      }
-    }
-  }
-}
-
-@include respond-to(md) {
-  .section-questions-answered {
-    .content-wrapper {
-      .content-holder {
-        &:nth-child(1) {
-          width: 420px;
-          margin: auto;
-        }
-
-        &:nth-child(2) {
-          width: 280px;
-          margin: auto;
-        }
-
-        .doctor-name {
-          margin: 500px 0 0 16px;
-        }
-      }
-    }
-  }
-}
-
-@include respond-to(sm) {
-  .section-questions-answered {
-    .content-wrapper {
-      flex-direction: column-reverse;
-
-      .content-holder {
-        &:nth-child(1) {
-          width: 420px;
-          margin: auto;
-        }
-
-        &:nth-child(2) {
-          margin: auto;
-          width: 280px;
-        }
-
-        .doctor-border {
-          margin: 126px 0 0 0;
-        }
-
-        .doctor-name {
-          margin: 500px 0 0 15px;
-        }
-
-        .swiper-container {
-          width: 420px;
-          margin: 150px 0 0 0;
-
-          .swiper-slide {
-            width: 420px;
-          }
-        }
-      }
-    }
-  }
-}
-
-@include respond-to(xs) {
-  .section-questions-answered {
-    .content-wrapper {
-      flex-direction: column-reverse;
-
-      .content-holder {
-        &:nth-child(1) {
-          width: 300px;
-          margin: auto;
-        }
-
-        &:nth-child(2) {
-          margin: auto;
-          width: 280px;
-        }
-
-        .doctor-border {
-          margin: 100px 0 0 0;
-        }
-
-        .doctor-name {
-          margin: 485px 0 0 15px;
-        }
-
-        .title{
-          padding: 75px 0 0 17px;
-        }
-
-        .swiper-container {
-          width: 300px;
-          margin: 120px 0 0 0;
-
-          .swiper-slide {
-            width: 300px;
-
-            .quote {
-              width: 300px;
-
-              font-size: 31px;
-            }
-          }
-        }
-
-        .desc {
-          width: 270px;
-          margin: 10px auto 40px;
-        }
+        font-size: 13px;
       }
     }
   }
