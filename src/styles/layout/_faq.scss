@@ -12,6 +12,7 @@
 
     .info {
       width: 700px;
+
       text-align: center;
 
       .title {
@@ -42,14 +43,18 @@
     .faq-navigation {
       position: sticky;
       top: 85px;
+
       width: 165px;
 
       .list-item {
         padding: 8px 0;
+
         font-family: $text-spectral-regular;
         font-size: 15px;
         color: $faq-nav-item;
+
         border: none;
+
         cursor: pointer;
       }
 
@@ -58,18 +63,24 @@
         position: absolute;
         top: 50%;
         left: -12px;
+
         width: 25px;
         height: 2px;
+        
         background-color: $red-orange;
-        transform: translateX(-50%) rotate(90deg);
-        transition: 0.2s ease-in-out;
+        
         opacity: 1;
+        transform: translateX(-50%) rotate(90deg); 
+        transition: 0.2s ease-in-out;
       }
 
       .active-js {
         position: relative;
+
         color: $violet;
+
         background-color: transparent;
+
         pointer-events: none;
       }
     }
@@ -83,6 +94,7 @@
 
         .title {
           padding-left: 10px;
+
           font-family: $text-spectral-medium;
           font-size: 26px;
           color: $title-accordion;
@@ -99,9 +111,6 @@
         position: relative;
         padding: 0;
 
-        // font-family: $text-spectral-medium;
-        // font-size: 30px;
-
         background-color: transparent;
         border: none;
       }
@@ -117,14 +126,14 @@
 
       .btn-link:hover {
         color: $red-orange;
+        text-decoration: none;
 
         background-color: $pastel-yellow;
-
-        text-decoration: none;
       }
 
       .btn-link::before {
         content: "";
+
         position: absolute;
         top: 50%;
         right: 0;
@@ -133,6 +142,7 @@
         height: 3px;
         
         background-color: $dark-blue;
+
         transition: 0.2s ease-in;
       }
 
@@ -146,12 +156,14 @@
         height: 3px;
         
         background-color: $dark-blue;
-        transition: 0.2s ease-in;
+
         transform: rotate(90deg);
+        transition: 0.2s ease-in;
       }
 
       .btn-link[aria-expanded="true"]:after {
         background-color: $red-orange;
+
         transform: initial;
       }
     }
@@ -231,6 +243,7 @@
     .content-holder {
       .faq-navigation {
         width: 50px;
+        
         .list-item {
           font-size: 12px;
         }
