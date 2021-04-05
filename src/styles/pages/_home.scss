@@ -232,140 +232,6 @@
       
     }
   }
-
-  .section-sleep-solutions {
-    background-color: $pastel-yellow;
-
-    .image-holder {
-      max-width: 90%;
-      margin-left: auto;
-    }
-
-    .content {
-      height: 313px;
-      max-width: 65%;
-      margin-left: 10px;
-    }
-
-    .title {
-      margin: 35px 0;
-      max-width: 200px;
-    }
-  }
-
-  .section-anxiety-solutions {
-    background-color: $lavender;
-
-    .image-holder {
-      max-width: 85%;
-      margin-left: auto;
-    }
-
-    .content {
-      max-width: 354px;
-      margin-left: 144px;
-    }
-
-    .title {
-      margin: 30px 0;
-    }
-  }
-  
-  
-  .section-ratings {
-    padding: 43px 0 83px;
-
-    --star-size: 60px;
-    --star-color: #F4F2F9;
-    --star-background: #404082;
-
-    .title {
-      margin-bottom: 0;
-      font-family: $text-spectral-medium;
-      font-size: 29px;
-      color: $violet;
-      line-height: 43px;
-      text-align: center;
-    }
-
-    .rating {
-      display: flex;
-      justify-content: space-between;
-      margin: 0 auto;
-    }
-
-    .rating-holder {
-      text-align: center;
-    }
-
-    .rating-star {
-      --percent: calc(var(--rating) / 5 * 100%);
-      display: block;
-      font-size: var(--star-size);
-      font-family: Times; 
-      line-height: 1;
-
-      &:before {
-        content: "★★★★★";
-        font-size: 26px;
-        letter-spacing: 0;
-        background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
-        -webkit-background-clip: text;
-        background-clip: text;
-        -webkit-text-fill-color: transparent;
-      }
-
-      &:first-child {
-        --rating: 4.7;
-      }
-
-      &:nth-child(2) {
-        --rating: 4.8;
-      }
-
-      &:nth-child(3) {
-        --rating: 4.7;
-      }
-    }
-
-    .rating-link {
-      margin-top: 3px;
-      font-family: $text-spectral-regular;
-      font-size: 14px;
-      color: $violet;
-      line-height: 20px;
-      text-align: center;
-    }
-  }
-
-  .section-testimonials {
-    padding: 62px 0 90px 0;
-
-    text-align: center;
-
-    background-color: $pastel-yellow;
-
-    .title {
-      padding-bottom: 48px;
-
-      font-family: $text-spectral-medium;
-      font-size: 32px;
-      letter-spacing: -2.5px;
-    }
-
-    .image-holder {
-      margin: 0 auto 26px;
-      width: 68px;
-    }
-
-    .logo-desc {
-      margin: 10px 0 16px;
-      font-family: $text-spectral-regular;
-      font-size: 16px;
-      letter-spacing: -0.2px;
-      line-height: 24px;
-    }
-  }
 }
 
 @include respond-to(sm) {
@@ -399,13 +265,6 @@
             };
           }
         }
-      }
-    }
-
-    .section-ratings {
-      .rating {
-        display: block;
-        width: 100%;
       }
     }
   }
@@ -445,13 +304,6 @@
             };
           }
         }
-      }
-    }
-
-    .section-ratings {
-      .rating {
-        display: block;
-        width: 100%;
       }
     }
   }
