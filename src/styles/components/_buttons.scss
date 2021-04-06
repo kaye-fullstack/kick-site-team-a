@@ -201,11 +201,44 @@
   border-bottom: 3px solid $pastel-yellow;
 }
 
+.btn-question {
+  margin: 19px 0 0 16px;
+  width: 184px;
+  height: 44px;
+
+  font-family: $text-spectral-regular;
+  font-size: 16px;
+  color: $violet;
+  text-align: center;
+  letter-spacing: -1px;
+
+  background-color: $pastel-yellow;
+  border: none;
+
+  cursor: pointer;
+}
+
+@include respond-to(lg) {
+  .btn-question {
+    margin: 19px 0 0 0;
+  }
+}
+
+@include respond-to(md) {
+  .btn-question {
+    margin: 19px 0 0 0;
+  }
+}
+
 @include respond-to(sm) {
   .btn-link {
     padding: 16px 10px 16px 10px;
 
     font-size: 18px;
+  }
+
+  .btn-question {
+    margin: 19px 0 0 0;
   }
 }
 
@@ -214,5 +247,9 @@
     padding: 16px 10px 16px 10px;
 
     font-size: 18px;
+  }
+
+  .btn-question {
+    margin: 19px 0 0 0;
   }
 }
