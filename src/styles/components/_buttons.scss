@@ -56,13 +56,15 @@
 
     transition: all .2s ease-in-out;
 
-    @include on-event() {
-      color: $violet;
-      
-      border: 1px solid $violet;
-      background-color: $white;
-    }
-  }
+  background-color: $pastel-yellow;
+  border: none;
+
+  cursor: pointer;
+}
+
+.btn-navy {
+  width: 156px;
+  height: 41px;
 
   &-white {
     width: 112px;
@@ -80,23 +82,26 @@
   }
 }
 
-<<<<<<< HEAD
-=======
   background-color: $violet;
   border: none;
+
+  cursor: pointer;
 }
 
 .btn-link {
   position: relative;
+
   padding: 16px 30px 16px 10px;
   height: 100%;
   width: 100%;
+
   font-family: $text-spectral-medium;
   font-size: 30px;
   color: $dark-blue;
   text-align: initial;
   text-decoration: none;
   white-space: normal;
+  
   border: none;
   border-top: 3px solid transparent;
   border-bottom: 3px solid $pastel-yellow;
@@ -117,4 +122,3 @@
     font-size: 18px;
   }
 }
->>>>>>> f73735c (faq [desktop-responsive] -wip)
