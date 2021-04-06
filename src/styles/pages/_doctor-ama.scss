@@ -5,6 +5,10 @@
 // -----------------------------------------------------------------------------
 
 .doctor-ama {
+  .section-questions-answered {
+    margin-top: 82px;
+  }
+  
   .scrollable {
     height: 667px;
     overflow: auto;
@@ -12,6 +16,14 @@
 
   .scrollable::-webkit-scrollbar {
     display: none;
+  }
+
+  .section-faq {
+    padding-top: 14px;
+
+    .faq-navigation {
+      top: 56px;
+    }
   }
 
   .section-ask-specialist {
@@ -23,7 +35,7 @@
       margin: 0 0 0 15px;
       font-family: $text-spectral-medium;
       font-size: 30px;
-      color: $violet;
+      color: $purple;
       text-align: center;
       letter-spacing: -2px;
       
@@ -35,6 +47,10 @@
       flex-wrap: wrap;
       justify-content: center;
       align-items: center;
+    }
+
+    ::placeholder {
+      color: $black;
     }
 
     .text {
