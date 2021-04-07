@@ -11,8 +11,8 @@ footer{
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    .content-holder {
 
+    .content-holder {
       &:nth-child(1) {
         margin-left: 10px;
       }
@@ -22,31 +22,17 @@ footer{
         margin: 65px 0 0 0;
       }
 
-<<<<<<< HEAD
-      .seal {
-        position: absolute;
-        top: 129px;        
-        right: -4px;
-=======
       .footer-content {
         p {
           font-family: $font-BasisGrotesquePro-Regular;
           font-size: 14px;
         }
->>>>>>> b525f2b (footer responsize done)
 
         .description {
           width: 278px;
           margin: 31px 0 0 1px;
         }
 
-<<<<<<< HEAD
-      .footer-links {
-        display: flex;
-        flex-direction: row;
-        margin: 66px 0 0 32px;
-        width: 250px;
-=======
         .bottom-footer {
           display: flex;
           flex-direction: row;
@@ -62,7 +48,6 @@ footer{
             margin: 0 0 0 41px;
           }
         }
->>>>>>> b525f2b (footer responsize done)
 
         .footer-links {
           display: flex;
@@ -103,40 +88,22 @@ footer{
         }
       }
 
-<<<<<<< HEAD
-        .last-set-of-links {
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-          margin: 0 0 0 87px;
-=======
       .subscribe-to-newsletter {
         .title {
           margin: 17px 0 0 0;
->>>>>>> b525f2b (footer responsize done)
 
           font-family: $font-BasisGrotesquePro-Regular;
           font-size: 14px;
         }
 
-<<<<<<< HEAD
         .links {
           margin-bottom: 6px;
-=======
+
         .description {
           margin:3px 0 17px 0;
->>>>>>> b525f2b (footer responsize done)
 
           font-family: $font-BasisGrotesquePro-Regular;
           font-size: 11px;
-        }
-
-        .form-control {
-          margin: 0;
-          width: 210px;
-          height: 32px;
-
-          border-radius: 0;
         }
 
         .btn-newsletter {
@@ -287,4 +254,5 @@ footer{
       }
     }
   }
+}
 }
