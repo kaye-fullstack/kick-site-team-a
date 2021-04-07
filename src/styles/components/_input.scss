@@ -1,5 +1,9 @@
-//main: ../main.scss
+.form-control {
+  margin: 0;
+  width: 210px;
+  height: 32px;
 
+<<<<<<< HEAD
 // -----------------------------------------------------------------------------
 // This file contains styles that are specific to the input component.
 // -----------------------------------------------------------------------------
@@ -96,4 +100,7 @@
     
     background-size: 34px;
   }
+=======
+  border-radius: 0;
+>>>>>>> 67427e6 (responsive fixed)
 }
