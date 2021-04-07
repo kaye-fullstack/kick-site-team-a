@@ -29,18 +29,43 @@
 }
 
 .nav-link:hover {
-  background-image: url("../assets/images/header-hover-icon.jpg");
-  background-position: 98% 15%;
-  background-repeat: no-repeat;
-  background-size: 8px;
+  position: relative;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 8px;
+    right: 1px;
+    width: 6px;
+    height: 6px;
+    border-radius: 100%;
+  }
+
+  &:hover:before {
+    background-color: $violet;
+  }
+
+  &:focus::before {
+    background-color: transparent;
+  }
 }
 
-.nav-link:active {
-  color: $red-orange;
-
-  background-image: url("../assets/images/header-active-icon.svg");
-  background-position: 98% 20%;
-  background-repeat: no-repeat;
+.nav-link {
+  position: relative;
+  &:focus {
+    color: $red-orange;
+  }
+  &:focus:before {
+    content: "";
+    position: absolute;
+    top: 6px;
+    right: -2px;
+    width: 11px;
+    height: 11px;
+    background-color: transparent;
+    background-image: url("../assets/images/header-active-icon.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 .navbar-toggler {
