@@ -26,30 +26,57 @@
   background-image: url("../assets/images/arrow-right-navy.svg");
 }
 
-.btn-yellow {
-  width: 156px;
-  height: 41px;
+.btn  {
+  &-yellow {
+    width: 156px;
+    height: 41px;
+  
+    font-family: $text-spectral-regular;
+    font-size: 16px;
+    color: $violet;
+    text-align: center;
+    letter-spacing: -1px;
+  
+    background-color: $pastel-yellow;
+    border: none;
+  }
+  
+  &-navy {
+    width: 156px;
+    height: 41px;
+  
+    font-family: $text-spectral-regular;
+    font-size: 16px;
+    color: $white;
+    text-align: center;
+    letter-spacing: -1px;
+  
+    background-color: $violet;
+    border: 1px solid $violet;
 
-  font-family: $text-spectral-regular;
-  font-size: 16px;
-  color: $violet;
-  text-align: center;
-  letter-spacing: -1px;
+    transition: all .2s ease-in-out;
 
-  background-color: $pastel-yellow;
-  border: none;
+    @include on-event() {
+      color: $violet;
+      
+      border: 1px solid $violet;
+      background-color: $white;
+    }
+  }
+
+  &-white {
+    width: 112px;
+    height: 35px;
+  
+    font-family: $text-spectral-regular;
+    font-size: 13px;
+    color: $violet;
+    text-align: center;
+    letter-spacing: -1px;
+  
+    background-color: $white;
+    border: 1px solid $black;
+    border-radius: 0;
+  }
 }
 
-.btn-navy {
-  width: 156px;
-  height: 41px;
-
-  font-family: $text-spectral-regular;
-  font-size: 16px;
-  color: $violet;
-  text-align: center;
-  letter-spacing: -1px;
-
-  background-color: $violet;
-  border: none;
-}

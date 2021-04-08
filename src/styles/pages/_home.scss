@@ -5,6 +5,7 @@
 // -----------------------------------------------------------------------------
 
 .home {
+  
   .section-hero {
     position: relative;
     top: 0;
@@ -123,74 +124,65 @@
     background-color: $pastel-grey;
 
     .title {
-      width: 305px;
+      width: 330px;
+      margin-top: 18px;
+
+      line-height: 41px;
     }
     
-    .sub-heading {
-      font-size: 14px;
-      font-family: $font-BasisGrotesquePro-Light;
-      text-transform: uppercase;
+    .content {
+      height: 357px;
+      margin: 122px 0 0 162px;
+    }
+
+    .image-holder {
+      margin-left: 80px;
     }
 
     .treatment-list {
-      line-height: 27px;
+      position: relative;
+      
+      margin-bottom: 10px;
+
       list-style: none;
+      line-height: 28px;
 
-      &:nth-child(1):before {
-        content: '1';
-
+      &:before {
         position: absolute;
-        left: 24px;
-
+        
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
+        width: 18px;
+        height: 18px;
 
-        line-height: 1.8;
+        line-height: 1.6;
         text-align: center;
         font-size: 12px;
         color: $white;
 
-        background-color: $mid-grey;
+        background-color: $pastel-blue;
         border-radius: 100%;
+      }
+
+      &:nth-child(1):before {
+        content: '1';
+        top: 6px;
+        left: -30px;
       }
       
       &:nth-child(2):before {
         content: '2';
-
-        position: absolute;
-        left: 24px;
+        top: 6px;
+        left: -30px;
 
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
-        
-        line-height: 1.8;
-        text-align: center;
-        font-size: 12px;
-        color: $white;
-
-        background-color: $mid-grey;
-        border-radius: 100%;
       }
 
       &:nth-child(3):before {
         content: '3';
-        
-        position: absolute;
-        left: 24px;
+        top: 6px;
+        left: -30px;
 
         margin-right: 12px;
-        width: 21px;
-        height: 21px;
-
-        line-height: 1.8;
-        text-align: center;
-        font-size: 12px;
-        color: $white;
-
-        background-color: $mid-grey;
-        border-radius: 100%;
       }
     }
   }
@@ -199,10 +191,10 @@
     background-color: $tortoise;
 
     .swiper-container {
-      height: 50vh;
+      height: 44vh;
 
       .swiper-slide {
-        padding-top: 100px;
+        padding-top: 55px;
         width: 500px;
 
         text-align: center;
@@ -215,33 +207,72 @@
         margin-left: auto;
         margin-right: auto;
 
-        .description {
-          color: $white;
+        .content-swiper {
+          color: $pastel-pink;
+          font-size: 30px;
         }
+        
         .bottom-text {
           font-size: 18px;
-          color: $white;
+          color: $pastel-pink;
         }
       }
+
+      .swiper-pagination-bullet {
+        background-color: $pastel-pink;
+      }
+
+      .swiper-pagination-bullets {
+        top: 290px;
+      }
+    }
+    .bottom-reviews {
+      margin-top: -90px;
+      padding-bottom: 50px;
+
+      color: $pastel-pink;
+      font-size: 17px;
+      font-family: $font-Spectral-Medium;
+      
     }
   }
 
   .section-sleep-solutions {
     background-color: $pastel-yellow;
 
-    .title {
-      width: 305px;
+    .image-holder {
+      max-width: 90%;
+      margin-left: auto;
     }
-    
-    .sub-heading {
-      font-size: 14px;
-      font-family: $font-BasisGrotesquePro-Light;
-      text-transform: uppercase;
+
+    .content {
+      height: 313px;
+      max-width: 65%;
+      margin-left: 10px;
+    }
+
+    .title {
+      margin: 35px 0;
+      max-width: 200px;
     }
   }
 
   .section-anxiety-solutions {
     background-color: $lavender;
+
+    .image-holder {
+      max-width: 85%;
+      margin-left: auto;
+    }
+
+    .content {
+      max-width: 354px;
+      margin-left: 144px;
+    }
+
+    .title {
+      margin: 30px 0;
+    }
   }
   
   .section-questions-answered {
@@ -276,7 +307,7 @@
 
           padding: 112px 0 2px 6px;
     
-          color: #f25930;
+          color: $red-orange;
           font-size: 14px;
         }
     
@@ -345,6 +376,270 @@
           
           color: $white;
           font-size: 13px;
+        }
+      }
+    }
+  }
+}
+
+
+@include respond-to(md) {
+  .home {
+    .section-personalized {
+      .title {
+        width: 100%;
+
+        font-size: 24px;
+        line-height: 27px;
+      }
+
+      .treatment-list {
+        font-size: 16px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-quotation-slider {
+      .swiper-slide {
+        padding-top: 20px;
+      }
+
+      .swiper-container {
+
+        .swiper-slide {
+          padding-top: 40px;
+        }
+
+        .swiper-pagination-bullets {
+          top: 243px;
+        }
+
+        .content-holder {
+          width: auto;
+          
+        }
+      }
+
+      .content-holder {
+        width: auto;
+        .content-swiper {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .section-sleep-solutions {
+
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
+
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+      
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-anxiety-solutions {
+
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
+
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        display: none;
+      }
+    }
+
+    .section-how-it-works {
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+      }
+
+      .title {
+        margin-bottom: 0;
+      }
+
+      .works-list {
+        flex-direction: column; 
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+      }
+
+      .works-item {
+        padding-top: 60px;
+      }
+
+      .works-item:after {
+        content: '';
+        position: absolute;
+        top: 120px;
+        left: 18px;
+        right: 0;
+        margin: 0 auto;
+        width: 39px;
+        height: 16px;
+        border-bottom: 2px solid $pastel-blue;
+        transform: rotate(90deg);
+      }
+
+      .works-item {
+        &:nth-child(-n+5):before {
+          top: 45px;
+          left: 48%;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .home {
+    .section-personalized {
+      .title {
+        width: 100%;
+
+        font-size: 24px;
+        line-height: 27px;
+      }
+
+      .treatment-list {
+        font-size: 16px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        margin-left: 10px;
+
+        img {
+          padding: 0;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .section-quotation-slider {
+      .swiper-slide {
+        padding-top: 20px;
+      }
+
+      .swiper-container {
+
+        .swiper-slide {
+          padding-top: 40px;
+        }
+
+        .swiper-pagination-bullets {
+          top: 243px;
+        }
+
+        .content-holder {
+          width: 100%;
+          
+        }
+      }
+
+      .content-holder {
+        width: auto;
+        .content-swiper {
+          font-size: 20px;
+        }
+      }
+    }
+
+    .section-sleep-solutions {
+
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
+
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        max-width: 100%;
+        width: 100%;
+        height: auto;
+      }
+      
+      .image-holder {
+        margin-left: 10px;
+        
+        img {
+          padding: 0;
+          max-width: 100%;
+        }
+      }
+    }
+
+    .section-anxiety-solutions {
+
+      .title {
+        margin: 15px 0;
+        max-width: 100%;
+
+        font-size: 24px;
+      }
+
+      .content {
+        margin: 0;
+        padding: 55px 15px;
+        
+        width: 100%;
+        height: auto;
+      }
+
+      .image-holder {
+        margin-left: 10px;
+        
+        img {
+          padding: 0;
+          max-width: 100%;
         }
       }
     }

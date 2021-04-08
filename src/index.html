@@ -11,6 +11,7 @@
   <title>Kick Home Page</title>
   <link rel="icon" href="./assets/images/favicon.ico">
   <link rel="stylesheet" type="text/css" href="./styles/main.min.css">
+  
   <!--[if lte IE 9]>
     <link href="stylesheets/non-responsive.css" rel="stylesheet" />
   <![endif]-->
@@ -31,9 +32,9 @@
     </div>
   <![endif]-->
 
-  <header class="scroll-active-js">
-    <div class="container custom-container">
-      <nav class="navbar navbar-expand-md">
+  <header class="section-header">
+    <nav class="navbar navbar-expand-md scroll-active-js">
+      <div class="container custom-container">
         <a href="index.html" class="logo"><img src="assets\images\Logo.svg" alt="logo"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -46,12 +47,12 @@
             <li class="nav-item"><a href="#" class="nav-link">Our Doctors</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Story</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Performance</a></li>
-            <li class="nav-item"><a href="#" class="nav-link">Sleep</a></li>
+            <li class="nav-item"><a href="sleep.html" class="nav-link">Sleep</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Blog</a></li>
           </ul>
         </div>
-      </nav>
-    </div>
+      </div>
+    </nav>
   </header>
 
   <main class="home">
@@ -120,11 +121,10 @@
         </div>
       </div>
     </div>
-
     <div class="section-personalized">
-      <div class="container custom-container">
-        <div class="row align-items-center">
-          <div class="col-md-6">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6 col">
             <div class="content">
               <span class="sub-heading">Expert care, From home</span>
               <h3 class="title">Personalized Treatments by Expert Doctors</h3>
@@ -133,25 +133,26 @@
                 <li class="treatment-list">Personalized, prescriptions medications delivered to your door</li>
                 <li class="treatment-list">Ongoing coaching & support from our specialists</li>
               </ul>
-              <button>Meet our Doctors</button>
+              <button class="btn btn-navy">Meet our Doctors</button>
             </div>
           </div>
           <div class="col-md-6">
-            <img src="assets/images/meet-our-doctors.jpg" alt="">
+            <div class="image-holder">
+              <img src="assets/images/meet-our-doctors.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>
     </div>
-
     <div class="section-quotation-slider">
-      <div class="container custom-container">
+      <div class="container">
         <div class="swiper-testimonial">
           <div class="swiper-container">
             <div class="swiper-wrapper">
               <div class="swiper-slide">
                 <div class="content-holder">
-                  <img src="assets/images/Sem-circle.svg" alt="">
-                  <p class="description">
+                  <img src="assets/images/Semi-circle-yellow.svg" alt="">
+                  <p class="content-swiper">
                     “Kick is my secret weapon. I know I can get it from a normal
                     doctor but that's a major inconvenience.”
                   </p>
@@ -162,8 +163,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="content-holder">
-                  <img src="assets/images/Sem-circle.svg" alt="">
-                  <p class="description">
+                  <img src="assets/images/Semi-circle-yellow.svg" alt="">
+                  <p class="content-swiper">
                     “Kick is my secret weapon. I know I can get it from a normal
                     doctor but that's a major inconvenience.”
                   </p>
@@ -174,8 +175,8 @@
               </div>
               <div class="swiper-slide">
                 <div class="content-holder">
-                  <img src="assets/images/Sem-circle.svg" alt="">
-                  <p class="description">
+                  <img src="assets/images/Semi-circle-yellow.svg" alt="">
+                  <p class="content-swiper">
                     “Kick is my secret weapon. I know I can get it from a normal
                     doctor but that's a major inconvenience.”
                   </p>
@@ -185,25 +186,29 @@
                 </div>
               </div>
             </div>
+            <div class="swiper-pagination"></div>
           </div>
+          <div class="bottom-reviews text-center">Our commitment to customers</div>
         </div>
       </div>
     </div>
 
     <div class="section-sleep-solutions">
-      <div class="container custom-container">
+      <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
-            <img src="assets/images/explore-sleep.jpg" alt="">
+            <div class="image-holder">
+              <img src="assets/images/explore-sleep.jpg" alt="">
+            </div>
           </div>
           <div class="col-md-6">
             <div class="content">
               <span class="sub-heading">Sleep Solutions</span>
               <h3 class="title">Good Nights & Good Mornigs</h3>
-              <div class="description">
+              <p class="description">
                 Doctor-led, personalized sleep coaching and trial sleep prescriptions to help you rediscover your best night's rest.
-              </div>
-              <button>Meet our Doctors</button>
+              </p>
+              <button class="btn-navy">Explore Sleep</button>
             </div>
           </div>
         </div>
@@ -211,18 +216,20 @@
     </div>
     
     <div class="section-anxiety-solutions">
-      <div class="container custom-container">
+      <div class="container">
         <div class="row align-items-center">
           <div class="col-md-6">
             <div class="content">
               <span class="sub-heading">Anxiety Solutions</span>
               <h3 class="title">Prescription-Strength Confidence</h3>
               <p class="description">Deliver calm, confident presentations without racing heartbeat, shaky hands and anxious physical symptoms getting in your way.</p>
-              <button>Meet our Doctors</button>
+              <button class="btn-navy">Explore Beta Blockers</button>
             </div>
           </div>
           <div class="col-md-6">
-            <img src="assets/images/beta-blockers.jpg" alt="">
+            <div class="image-holder">
+              <img src="assets/images/beta-blockers.jpg" alt="">
+            </div>
           </div>
         </div>
       </div>

@@ -1,0 +1,462 @@
+.sleep {
+  .section-hero {
+    position: relative;
+    top: 0;
+    
+    padding: 146px 0 151px 14px;
+
+    background-image: url("../assets/images/sleep-product-hero.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .title {
+      margin-bottom: 120px;
+      width: 415px;
+
+      font-family: $text-spectral-medium;
+      font-size: 37px;
+      color: $white;
+      letter-spacing: -1.7px;
+      
+      line-height: 1.2;
+    }
+  }
+
+  .section-why-trials {
+    margin-bottom: 87px;
+
+    .wrapper {
+      padding: 70px 0;
+    }
+
+    .holder {
+      padding: 20px 35px;
+      position: relative;
+
+      .image-trials {
+        position: absolute;
+        top: 0;
+        left: 75px;
+        transform: rotate(-7deg);
+      }
+
+      .title {
+        font-family: $font-Spectral-Medium;
+      }
+      .description {
+        font-family: $font-Spectral-Regular;
+      }
+    }
+  }
+
+  .section-trials-work {
+    background-color: $lavender;
+
+    .wrapper {
+      padding: 84px 0;
+
+      align-items: center;
+
+      .title {
+
+        margin-bottom: 70px;
+        font-family: $font-Spectral-Medium;
+        font-size: 25px;
+        text-align: center;
+        
+      }
+
+      .holder {
+
+        .item {
+          position: relative;
+
+          max-width: 71%;
+          margin-left: auto;
+          margin-right: auto;
+          margin-bottom: 50px;
+          padding-left: 65px;
+
+          font-size: 16px;
+          font-family: $font-Spectral-Regular;
+          list-style: none;
+
+          &:before {
+            position: absolute;
+            display: flex;
+            justify-content: center;
+            left: 0;
+
+            width: 30px;
+            height: 30px;
+
+            font-size: 20px;
+            color: $purple;
+
+            border: 2px solid $purple;
+            border-radius: 100%;
+          }
+
+          &:nth-child(1):before {
+            content: '1';
+          }
+          &:nth-child(2):before {
+            content: '2';
+          }
+
+          &:nth-child(3):before {
+            content: '3';
+          }
+
+          &:nth-child(4):before {
+            content: '4';
+          }
+        }
+      }
+    }
+  }
+
+  .section-sleep-medications {
+    .wrapper {
+      padding: 58px 0;
+
+      align-items: center;
+      justify-content: center;
+
+      .title {
+        font-size: 28px;
+        text-align: center;
+        font-family: $font-Spectral-Medium;
+      }
+
+      .description {
+        width: 52%;
+        margin: 0 auto;
+        margin-bottom: 87px;
+
+        text-align: center;
+        font-family: $font-Spectral-Medium;
+      }
+
+      .text-bottom {
+        margin: 80px 0;
+        text-align: center;
+        font-family: $font-Spectral-Regular;
+        color: $black;
+      }
+
+      .holder {
+        max-width: 82%;
+        margin: 0 auto;
+
+        &-item {
+          .medic-item {
+            width: 95%;
+          }
+
+          .sub-description {
+            h5 {
+              margin-top: 15px;
+              font-size: 17px;
+              font-family: $font-Spectral-Medium;
+            }
+
+            p {
+              margin-top: 5px;
+              font-family: $font-Spectral-Medium;
+            }
+          }
+        }
+      }
+    }
+  }
+
+  .section-doctors-word {
+    padding: 60px 0;
+    
+    background-color: $pastel-blue;
+
+    .content-wrapper {
+      position: relative;
+      
+      display: flex;
+      flex-direction: row;
+      padding: 0 80px;
+
+        .title {
+          margin: 49px 0 22px;
+          
+          font-family: $font-Spectral-Medium;
+          color: $white;
+          font-size: 14px;
+          text-transform: uppercase;
+        }
+
+        .title:before {
+          content: '';
+          position: absolute;
+          top: 5px;
+          left: 82px;
+    
+          height: 22.5px;
+          width: 45px;
+
+          border-radius:0 0 150px 150px;
+          background-color: $white;
+        }
+        
+        .description {
+          max-width: 82%;
+          font-family: $font-Spectral-Regular;
+          font-size: 20px;
+          color: $white;
+          line-height: 30px;
+        }
+
+        .doctor-image {
+          margin-right: 20px;
+          
+          .doctor-border {
+            position: absolute;
+
+            margin: 7px 0 0 15px;
+            width: 235px;
+            height: 304px;
+
+            background-color: $white;
+          }
+
+          .image {
+            position: relative;
+          }
+        }
+
+        .doctor-name {
+          margin-top: 37px;
+          
+          color: $white;
+          font-size: 18px;
+          font-family: $font-Spectral-Medium;
+        
+      }
+    }
+  }
+
+}
+@include respond-to(lg) {
+}
+
+@include respond-to(md) {
+  // .sleep {
+    
+  // }
+}
+
+@include respond-to(sm) {
+  .sleep {
+    .section-sleep-medications {
+      .wrapper {
+        .title {
+          font-size: 25px;
+        }
+  
+        .description {
+          width: 80%;
+          margin-bottom: 40px;
+        }
+  
+        .holder {
+          max-width: 82%;
+  
+          &-item {
+            margin-bottom: 20px;
+            text-align: center;
+
+            .medic-item {
+              width: 80%;
+              max-width: 70%;
+            }
+  
+            .sub-description {
+              h5 {
+                margin-top: 15px;
+                font-size: 17px;
+                font-family: $font-Spectral-Medium;
+              }
+  
+              p {
+                margin-top: 5px;
+                font-family: $font-Spectral-Medium;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-doctors-word {
+      padding: 20px 0;
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+
+        align-items: center;
+        text-align: center;
+
+        .title:before {
+          left: 45%;
+          top: 345px;
+        }
+        
+        .description {
+          max-width: 100%;
+        }
+
+        .content-holder:nth-child(2) {
+          order: -1;
+        }
+
+        .doctor-image {
+          .doctor-border {
+            margin: 14px 0 0 14px;
+          } 
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .sleep {
+    .section-hero {
+      .title {
+        font-size: 25px;
+        width: 80%;
+      }
+    }
+
+    .section-why-trials {
+      margin-bottom: 0;
+      padding: 50px 0;
+
+      .title {
+        font-size: 25px
+      }
+
+      .wrapper {
+        padding: 0 0;
+
+        .holder {
+          padding: 0 15px;
+
+        }
+      }
+      .image-trials {
+        display: none;
+      }
+    }
+
+    .section-trials-work {
+      .wrapper {
+        padding: 50px 0;
+        .holder {
+          padding: 0;
+          margin: 0;
+          
+          .item {
+            padding-left: 0;
+            max-width: 92%;
+
+            &:nth-child(-n+5):before {
+              top: -35px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-sleep-medications {
+      .wrapper {
+        padding: 50px 0;
+  
+        align-items: center;
+  
+        .title {
+          font-size: 25px;
+        }
+  
+        .description {
+          width: 80%;
+          margin-bottom: 40px;
+        }
+  
+        .text-bottom {
+          margin: 30px 0;
+        }
+  
+        .holder {
+          max-width: 82%;
+          margin: 0 auto;
+  
+          &-item {
+            margin-bottom: 20px;
+            text-align: center;
+
+            .medic-item {
+              width: 80%;
+              max-width: 70%;
+            }
+  
+            .sub-description {
+              h5 {
+                margin-top: 15px;
+                font-size: 17px;
+                font-family: $font-Spectral-Medium;
+              }
+  
+              p {
+                margin-top: 5px;
+                font-family: $font-Spectral-Medium;
+              }
+            }
+          }
+        }
+      }
+    }
+
+    .section-doctors-word {
+      padding: 20px 0;
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        padding: 20px 20px;
+
+        align-items: center;
+
+        text-align: center;
+
+        .title:before {
+          left: 45%;
+          top: 345px;
+        }
+        
+        .description {
+          max-width: 100%;
+        }
+
+        .content-holder:nth-child(2) {
+          order: -1;
+        }
+
+        .doctor-image {
+          .doctor-border {
+            margin: 14px 0 0 14px;
+          } 
+        }
+      }
+    }
+  }
+}
