@@ -20,23 +20,22 @@
   .content-wrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-between;
     padding: 0 0 102px 0;
 
     .content-holder {
       &:nth-child(1) {
-        margin-left: 63px;
-        width: 50%;
+        width: 405px;
       }
 
       &:nth-child(2) {
-        margin: 0 0 0 145px;
-        width: 50%;
+        width: 280px;
       }
 
       .title{
         position: absolute;
 
-        padding: 103px 0 2px 17px;
+        padding: 103px 0 0 17px;
   
         font-size: 13px;
         color: $red-orange;
@@ -47,8 +46,9 @@
   
         background-color: $purple;
       }
-  
+
       .swiper-container {
+        width: 440px;
         margin: 150px 0 0 -9px;
         width: 440px;
   
@@ -99,7 +99,7 @@
         .doctor-border {
           position: absolute;
 
-          margin: 126px 0 0 111px;
+          margin: 128px 0 0 0;
 
           &:before {
             content: "";
@@ -125,10 +125,121 @@
       }
 
       .doctor-name {
-        margin: 500px 0 0 121px;
+        margin: 500px 0 0 10px;
         
         font-size: 13px;
         color: $white;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .section-questions-answered {
+    .content-wrapper {
+      .content-holder {
+        &:nth-child(1) {
+          width: 420px;
+          margin: auto;
+        }
+
+        &:nth-child(2) {
+          width: 280px;
+          margin: auto;
+        }
+
+        .doctor-name {
+          margin: 500px 0 0 16px;
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .section-questions-answered {
+    .content-wrapper {
+      flex-direction: column-reverse;
+
+      .content-holder {
+        &:nth-child(1) {
+          width: 420px;
+          margin: auto;
+        }
+
+        &:nth-child(2) {
+          margin: auto;
+          width: 280px;
+        }
+
+        .doctor-border {
+          margin: 126px 0 0 0;
+        }
+
+        .doctor-name {
+          margin: 500px 0 0 15px;
+        }
+
+        .swiper-container {
+          width: 420px;
+          margin: 150px 0 0 0;
+
+          .swiper-slide {
+            width: 420px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-questions-answered {
+    .content-wrapper {
+      flex-direction: column-reverse;
+
+      .content-holder {
+        &:nth-child(1) {
+          width: 300px;
+          margin: auto;
+        }
+
+        &:nth-child(2) {
+          margin: auto;
+          width: 280px;
+        }
+
+        .doctor-border {
+          margin: 100px 0 0 0;
+        }
+
+        .doctor-name {
+          margin: 485px 0 0 15px;
+        }
+
+        .title{
+          padding: 75px 0 0 17px;
+        }
+
+        .swiper-container {
+          width: 300px;
+          margin: 120px 0 0 0;
+
+          .swiper-slide {
+            width: 300px;
+
+            .quote {
+              width: 300px;
+
+              font-size: 31px;
+            }
+          }
+        }
+
+        .desc {
+          width: 270px;
+          margin: 10px auto 40px;
+        }
       }
     }
   }
