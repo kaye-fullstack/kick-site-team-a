@@ -1,40 +1,42 @@
-.sleep {
-  .section-science-sleep {
-    padding: 78px 0;
-    background-color: $pastel-yellow;
-    .content-wrapper {
-      .title {
-        margin-bottom: 67px;
-        margin-left: -28px;
-  
-        letter-spacing: -1px;
-        font-size: 30px;
-        font-family: $font-Spectral-Regular;
-        text-align: center;
-        color: $purple;
-      }
-  
-      .sub-heading {
-        margin: 20px 0;
-        
-        font-family: $font-Spectral-Regular;
-        color: $purple;
-      }
-      .description {
-        font-family: $font-Spectral-Regular;
-        color: $purple;
-      }
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the section science sleep.
+// -----------------------------------------------------------------------------
+
+.section-science-sleep {
+  padding: 78px 0;
+
+  background-color: $pastel-yellow;
+
+  .content-wrapper {
+    margin-left: 20px;
+
+    .title {
+      margin-bottom: 71px;
+
+      font-family: $font-Spectral-Regular;
+      font-size: 30px;
+      color: $purple;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+
+    .sub-heading {
+      margin: 20px 0;
+      
+      font-family: $font-Spectral-Regular;
+      color: $purple;
+    }
+    .description {
+      font-family: $font-Spectral-Regular;
+      color: $purple;
     }
   }
 }
 
-//1199 - 992
-@include respond-to(lg) {
-
-}
-
-//991 - 768 
 @include respond-to(md) {
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
@@ -45,6 +47,12 @@
         img {
             max-width: 100%;
         }
+=======
+  .section-science-sleep {
+    .content-holder {
+      img {
+        max-width: 100%;
+>>>>>>> update section science-sleep
       }
     }
   }
@@ -56,45 +64,47 @@
 >>>>>>> sleep page - mobile view done
 }
 
-//767 - 576
 @include respond-to(sm) {
+<<<<<<< HEAD
   .sleep {
     .section-science-sleep {
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> sleep page - mobile view done
+=======
+  .section-science-sleep {
+    padding: 20px 0;
+>>>>>>> update section science-sleep
+
+    .title {
+      font-size: 25px;
+    }
+    
+    .content-wrapper {
+      padding: 0;
+
+      .sub-heading {
+        font-size: 20px;
+      }
+
+      .content-holder {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+
+        img {
+          max-width: 100%;
+        }
+      }
 
       .title {
-        font-size: 25px;
-      }
-      
-      padding: 20px 0;
-      .content-wrapper {
-        padding: 0;
+        margin: 20px 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
 
-        .sub-heading {
-          font-size: 20px;
-        }
-
-        .content-holder {
-          margin-left: auto;
-          margin-right: auto;
-          max-width: 80%;
-
-          img {
-            max-width: 100%;
-          }
-        }
-  
-        .title {
-          margin: 20px 0;
-          width: 80%;
-          margin-left: auto;
-          margin-right: auto;
-  
-          font-size: 20px;
-        }
+        font-size: 20px;
       }
 <<<<<<< HEAD
 =======
@@ -106,19 +116,24 @@
   }
 }
 
-//575 - 320
 @include respond-to(xs) {
+<<<<<<< HEAD
   .sleep {
     .section-science-sleep {
 <<<<<<< HEAD
 <<<<<<< HEAD
 =======
 >>>>>>> sleep page - mobile view done
+=======
+  .section-science-sleep {
+    padding: 20px 0;
+>>>>>>> update section science-sleep
 
-      .title {
-        font-size: 25px;
-      }
+    .title {
+      font-size: 25px;
+    }
 
+<<<<<<< HEAD
 <<<<<<< HEAD
       padding: 20px 0;
       .content-wrapper {
@@ -154,7 +169,26 @@
           margin-right: auto;
   
           font-size: 20px;
+=======
+    .content-wrapper {
+      padding: 0;
+
+      .content-holder { 
+        text-align: center;
+        
+        img {
+          max-width: 100%;
+>>>>>>> update section science-sleep
         }
+      }
+
+      .title {
+        margin: 20px 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+
+        font-size: 20px;
       }
     }
   }
