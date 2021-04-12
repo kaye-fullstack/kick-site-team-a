@@ -36,8 +36,10 @@
     position: absolute;
     top: 8px;
     right: 1px;
+
     width: 6px;
     height: 6px;
+
     border-radius: 100%;
   }
 
@@ -52,16 +54,20 @@
 
 .nav-link {
   position: relative;
+  
   &:focus {
     color: $red-orange;
   }
+
   &:focus:before {
     content: "";
     position: absolute;
     top: 6px;
     right: -2px;
+
     width: 11px;
     height: 11px;
+    
     background-color: transparent;
     background-image: url("../assets/images/header-active-icon.svg");
     background-repeat: no-repeat;
@@ -84,7 +90,10 @@
   
     &:before {
       content: "";
+<<<<<<< HEAD
 
+=======
+>>>>>>> 79c104d (added changes - header, homepage, doctor-ama,buttons  & faq)
       position: absolute;
       top: 15px;
       left: 160px;
@@ -106,9 +115,13 @@
     right: 0;
     bottom: 0;
     left: 0;
+<<<<<<< HEAD
 
     padding: 25px;
     
+=======
+    padding: 25px;
+>>>>>>> 79c104d (added changes - header, homepage, doctor-ama,buttons  & faq)
     background-color: $white;
   }
 }
