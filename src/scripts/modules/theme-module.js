@@ -31,11 +31,6 @@ AppName.Modules.ThemeModule = (function () {
       $(this).siblings().removeClass("active-js")
     });
   };
-<<<<<<< HEAD
-
-=======
-  
->>>>>>> 112ce6e (faq & doctor ama - done)
   /////////////////////
   // Public Methods //
   ///////////////////
