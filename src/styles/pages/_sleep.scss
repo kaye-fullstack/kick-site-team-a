@@ -1,5 +1,5 @@
 .sleep {
-  .section-hero {
+  .section-banner {
     position: relative;
     top: 0;
     
@@ -12,39 +12,39 @@
     .title {
       margin-bottom: 120px;
       width: 415px;
-
-      font-family: $text-spectral-medium;
+      
       font-size: 37px;
       color: $white;
-      letter-spacing: -1.7px;
-      
+      letter-spacing: -2px;
       line-height: 1.2;
     }
   }
 
   .section-why-trials {
-    margin-bottom: 87px;
+    margin-bottom: 46px;
 
     .wrapper {
       padding: 70px 0;
     }
 
     .holder {
-      padding: 20px 35px;
       position: relative;
 
+      padding: 20px 35px;
       .image-trials {
         position: absolute;
         top: 0;
         left: 75px;
+
         transform: rotate(-7deg);
       }
 
       .title {
-        font-family: $font-Spectral-Medium;
+        margin-bottom: 1.5rem;
       }
+
       .description {
-        font-family: $font-Spectral-Regular;
+        max-width: 83%;
       }
     }
   }
@@ -53,40 +53,32 @@
     background-color: $lavender;
 
     .wrapper {
-      padding: 84px 0;
-
       align-items: center;
+      padding: 67px 0;
 
       .title {
-
         margin-bottom: 70px;
-        font-family: $font-Spectral-Medium;
-        font-size: 25px;
+        margin-left: 12px;
         text-align: center;
-        
       }
 
       .holder {
-
+        margin-bottom: 4rem;
         .item {
           position: relative;
 
-          max-width: 71%;
-          margin-left: auto;
-          margin-right: auto;
-          margin-bottom: 50px;
           padding-left: 65px;
+          margin: 50px auto 0;
+          max-width: 71%;
 
           font-size: 16px;
-          font-family: $font-Spectral-Regular;
-          list-style: none;
-
+          
           &:before {
             position: absolute;
-            display: flex;
-            justify-content: center;
             left: 0;
 
+            display: flex;
+            justify-content: center;
             width: 30px;
             height: 30px;
 
@@ -118,61 +110,61 @@
 
   .section-sleep-medications {
     .wrapper {
-      padding: 58px 0;
-
-      align-items: center;
-      justify-content: center;
+      padding: 95px 0;
 
       .title {
-        font-size: 28px;
+        margin-left: 12px;
+
         text-align: center;
-        font-family: $font-Spectral-Medium;
       }
 
       .description {
+        margin: 0 auto 87px;
         width: 52%;
-        margin: 0 auto;
-        margin-bottom: 87px;
-
+        
         text-align: center;
-        font-family: $font-Spectral-Medium;
       }
 
       .text-bottom {
-        margin: 80px 0;
-        text-align: center;
-        font-family: $font-Spectral-Regular;
-        color: $black;
+        margin: 80px 0 -20px;
       }
 
       .holder {
-        max-width: 82%;
         margin: 0 auto;
+        max-width: 82%;
 
         &-item {
+          position: relative;
+
           .medic-item {
             width: 95%;
           }
 
           .sub-description {
-            h5 {
+            .sub-title {
               margin-top: 15px;
-              font-size: 17px;
-              font-family: $font-Spectral-Medium;
             }
 
-            p {
+            .sub-desc {
               margin-top: 5px;
-              font-family: $font-Spectral-Medium;
             }
           }
+        }
+
+        &-item:before {
+          content: 'Studio Med Shot';
+
+          position: absolute;
+          top: 6%;
+
+          width: 95%;
         }
       }
     }
   }
 
   .section-doctors-word {
-    padding: 60px 0;
+    padding: 65px 0;
     
     background-color: $pastel-blue;
 
@@ -183,112 +175,131 @@
       flex-direction: row;
       padding: 0 80px;
 
-        .title {
-          margin: 49px 0 22px;
-          
-          font-family: $font-Spectral-Medium;
-          color: $white;
-          font-size: 14px;
-          text-transform: uppercase;
-        }
+      .title {
+        margin: 47px 0 22px;
+        font-size: 14px;
+        color: $white;
+        text-transform: uppercase;
+      }
 
-        .title:before {
-          content: '';
+      .title:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 82px;
+  
+        height: 22.5px;
+        width: 45px;
+
+        background-color: $white;
+        border-radius:0 0 150px 150px;
+      }
+      
+      .description {
+        max-width: 82%;
+
+        font-size: 22px;
+        color: $white;
+
+        line-height: 30px;
+      }
+
+      .doctor-image {
+        margin-right: 20px;
+        
+        .doctor-border {
           position: absolute;
-          top: 5px;
-          left: 82px;
-    
-          height: 22.5px;
-          width: 45px;
 
-          border-radius:0 0 150px 150px;
+          margin: 7px 0 0 15px;
+          width: 235px;
+          height: 304px;
+
           background-color: $white;
         }
-        
-        .description {
-          max-width: 82%;
-          font-family: $font-Spectral-Regular;
-          font-size: 20px;
-          color: $white;
-          line-height: 30px;
+
+        .image {
+          position: relative;
         }
+      }
 
-        .doctor-image {
-          margin-right: 20px;
-          
-          .doctor-border {
-            position: absolute;
-
-            margin: 7px 0 0 15px;
-            width: 235px;
-            height: 304px;
-
-            background-color: $white;
-          }
-
-          .image {
-            position: relative;
-          }
-        }
-
-        .doctor-name {
-          margin-top: 37px;
-          
-          color: $white;
-          font-size: 18px;
-          font-family: $font-Spectral-Medium;
-        
+      .doctor-name {
+        margin-top: 37px;
       }
     }
   }
 
-}
-@include respond-to(lg) {
-}
+  .section-faq {
+    height: 1050px;
 
-@include respond-to(md) {
-  // .sleep {
-    
-  // }
+    .info-holder {
+      .info {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .content-holder {
+      margin: 0;
+      
+      .faq-content {
+        padding-left: 0;
+        margin-top: 0;
+        margin: 0 auto;
+        max-width: 94%;
+
+        .content-holder {
+          margin-top: 40px;
+        }
+      }
+
+      .accordion {
+        .btn-link {
+          font-size: 27px;
+
+          &:before {
+            padding-left: 12px;
+          }
+        }
+
+        .card-body {
+          display: flex;
+          flex-direction: row;
+
+          .card-desc {
+            padding: 20px;
+            max-width: 50%;
+          }
+        }
+      }
+    }
+  }
 }
 
 @include respond-to(sm) {
   .sleep {
     .section-sleep-medications {
       .wrapper {
-        .title {
-          font-size: 25px;
-        }
-  
         .description {
-          width: 80%;
           margin-bottom: 40px;
+          width: 80%;
         }
   
         .holder {
           max-width: 82%;
-  
           &-item {
             margin-bottom: 20px;
-            text-align: center;
 
+            text-align: center;
             .medic-item {
-              width: 80%;
               max-width: 70%;
             }
-  
-            .sub-description {
-              h5 {
-                margin-top: 15px;
-                font-size: 17px;
-                font-family: $font-Spectral-Medium;
-              }
-  
-              p {
-                margin-top: 5px;
-                font-family: $font-Spectral-Medium;
-              }
-            }
+          }
+
+          &-item:before {
+            width: 70%;
+
+            text-align: center;
+            font-size: 16px;
           }
         }
       }
@@ -300,9 +311,10 @@
       .content-wrapper {
         display: flex;
         flex-direction: column;
+        align-items: center;
+        
         padding: 20px 20px;
 
-        align-items: center;
         text-align: center;
 
         .title:before {
@@ -330,16 +342,17 @@
 
 @include respond-to(xs) {
   .sleep {
-    .section-hero {
+    .section-banner {
       .title {
-        font-size: 25px;
         width: 80%;
+
+        font-size: 25px;
       }
     }
 
     .section-why-trials {
-      margin-bottom: 0;
       padding: 50px 0;
+      margin-bottom: 0;
 
       .title {
         font-size: 25px
@@ -350,9 +363,9 @@
 
         .holder {
           padding: 0 15px;
-
         }
       }
+
       .image-trials {
         display: none;
       }
@@ -361,6 +374,7 @@
     .section-trials-work {
       .wrapper {
         padding: 50px 0;
+
         .holder {
           padding: 0;
           margin: 0;
@@ -388,8 +402,8 @@
         }
   
         .description {
-          width: 80%;
           margin-bottom: 40px;
+          width: 80%;
         }
   
         .text-bottom {
@@ -397,30 +411,25 @@
         }
   
         .holder {
-          max-width: 82%;
           margin: 0 auto;
+          max-width: 82%;
   
           &-item {
             margin-bottom: 20px;
+
             text-align: center;
 
             .medic-item {
               width: 80%;
               max-width: 70%;
             }
-  
-            .sub-description {
-              h5 {
-                margin-top: 15px;
-                font-size: 17px;
-                font-family: $font-Spectral-Medium;
-              }
-  
-              p {
-                margin-top: 5px;
-                font-family: $font-Spectral-Medium;
-              }
-            }
+          }
+          
+          &-item:before { 
+            width: 70%;
+
+            text-align: center;
+            font-size: 18px;
           }
         }
       }
@@ -432,15 +441,15 @@
       .content-wrapper {
         display: flex;
         flex-direction: column;
-        padding: 20px 20px;
-
         align-items: center;
+
+        padding: 20px 20px;
 
         text-align: center;
 
         .title:before {
-          left: 45%;
           top: 345px;
+          left: 45%;
         }
         
         .description {
