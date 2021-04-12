@@ -73,12 +73,14 @@
     .title {
       margin-bottom: 13px;
       
+      font-family: $text-spectral-medium;
       font-size: 32px;
       text-align: center;
       letter-spacing: -2.5px;
     }
 
     .description {
+      font-family: $text-spectral-regular;
       font-size: 14px;
       text-align: center;
     }
@@ -198,6 +200,7 @@
         padding-top: 30px;
         width: 500px;
 
+        font-family: $font-Spectral-Medium;
         text-align: center;
         font-size: 30px;
       }
@@ -232,6 +235,7 @@
     .bottom-reviews {
       margin-top: -90px;
 
+      font-family: $font-Spectral-Medium;
       font-size: 17px;
       color: $pastel-pink;
     }
@@ -242,6 +246,8 @@
     padding-bottom: 79px;
 
     .title {
+      font-family: $text-spectral-medium;
+      font-size: 30px;
       text-align: center;
     }
 
@@ -262,6 +268,7 @@
       width: 166px;
       height: 44px;
       
+      font-family: "Spectral-Regular";
       font-size: 20px;
       text-align: center;
 
@@ -283,8 +290,9 @@
       width: 18px;
       height: 18px;
 
+      font-family: $text-spectral-medium;
       font-size: 14px;
-      // color: $attribute;
+      color: $attribute;
       text-align: center;
 
       background-color: $pastel-blue;
