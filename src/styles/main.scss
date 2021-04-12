@@ -23,29 +23,19 @@
 @import
   'layout/header',
   'layout/footer',
-<<<<<<< HEAD
-  'layout/faq',
-  'layout/section-question-answered',
-  'layout/section-testimonials',
-  'layout/section-ratings';
-=======
+  'layout/section-sleep-solutions',
+  'layout/section-anxiety-solutions',
   'layout/section-incredibly-personal',
   'layout/section-science-sleep';
->>>>>>> Sleep page - section why trials, doctors word, incredibly personal, science sleep. Desktop done
 
 // 5. Components
 @import
-  'components/buttons',
-  'components/input';
+  'components/buttons';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-<<<<<<< HEAD
-  'pages/doctor-ama';
-=======
   'pages/sleep';
->>>>>>> fixed issue
 
 // 7. Themes
 @import
