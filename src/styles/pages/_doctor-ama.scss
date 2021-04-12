@@ -1,7 +1,7 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
+// This file contains styles that are specific to the doc-ama page.
 // -----------------------------------------------------------------------------
 
 .doctor-ama {
@@ -11,6 +11,7 @@
   
   .scrollable {
     height: 667px;
+
     overflow: auto;
   }
 
@@ -33,6 +34,7 @@
 
     .title {
       margin: 0 0 0 15px;
+
       font-family: $text-spectral-medium;
       font-size: 30px;
       color: $purple;
@@ -71,6 +73,69 @@
   }
 }
 
+@include respond-to(md) {
+  .doctor-ama {
+    .section-questions-answered {
+      .content-wrapper {
+        .content-holder {
+          &:nth-child(1) {
+            margin: auto;
+            width: 420px;
+          }
+
+          margin: auto;
+          &:nth-child(2) {
+            width: 280px;
+          }
+
+          .doctor-name {
+            margin: 500px 0 0 16px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .doctor-ama {
+    .section-questions-answered {
+      .content-wrapper {
+        flex-direction: column-reverse;
+
+        .content-holder {
+          margin: auto;
+          &:nth-child(1) {
+            width: 420px;
+          }
+
+          &:nth-child(2) {
+            width: 280px;
+            margin: auto;
+          }
+
+          .doctor-border {
+            margin: 126px 0 0 0;
+          }
+
+          .doctor-name {
+            margin: 500px 0 0 15px;
+          }
+
+          .swiper-container {
+            margin: 150px 0 0 0;
+            width: 420px;
+
+            .swiper-slide {
+              width: 420px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
 @include respond-to(xs) {
   .doctor-ama {
     .section-ask-specialist {
@@ -78,6 +143,56 @@
         padding: 10px 51px;
     
         line-height: 1.5;
+      }
+    }
+
+    .section-questions-answered {
+      .content-wrapper {
+        flex-direction: column-reverse;
+
+        .content-holder {
+          &:nth-child(1) {
+            margin: auto;
+            width: 300px;
+          }
+
+          &:nth-child(2) {
+            margin: auto;
+            width: 280px;
+          }
+
+          .doctor-border {
+            margin: 100px 0 0 0;
+          }
+
+          .doctor-name {
+            margin: 485px 0 0 15px;
+          }
+
+          .title{
+            padding: 75px 0 0 17px;
+          }
+
+          .swiper-container {
+            margin: 120px 0 0 0;
+            width: 300px;
+
+            .swiper-slide {
+              width: 300px;
+
+              .quote {
+                width: 300px;
+
+                font-size: 31px;
+              }
+            }
+          }
+
+          .desc {
+            margin: 10px auto 40px;
+            width: 270px;
+          }
+        }
       }
     }
   }

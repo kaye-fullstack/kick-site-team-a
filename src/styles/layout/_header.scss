@@ -36,8 +36,10 @@
     position: absolute;
     top: 8px;
     right: 1px;
+
     width: 6px;
     height: 6px;
+
     border-radius: 100%;
   }
 
@@ -52,16 +54,20 @@
 
 .nav-link {
   position: relative;
+  
   &:focus {
     color: $red-orange;
   }
+
   &:focus:before {
     content: "";
     position: absolute;
     top: 6px;
     right: -2px;
+
     width: 11px;
     height: 11px;
+    
     background-color: transparent;
     background-image: url("../assets/images/header-active-icon.svg");
     background-repeat: no-repeat;
@@ -71,5 +77,41 @@
 .navbar-toggler {
   .icon-bar {
     background-color: $violet;
+  }
+}
+
+@include respond-to(sm-down) {
+  .nav-link {
+    font-size: 28px;
+  }
+
+  .nav-link:hover {
+    position: relative;
+  
+    &:before {
+      content: "";
+      position: absolute;
+      top: 15px;
+      left: 160px;
+  
+      width: 8px;
+      height: 8px;
+  
+      border-radius: 100%;
+    }
+  }
+
+  .navbar-toggler[aria-expanded="true"] {
+    z-index: 1;
+  }
+  
+  .collapse-menu {
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    padding: 25px;
+    background-color: $white;
   }
 }
