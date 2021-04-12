@@ -1,10 +1,10 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
+// This file contains styles that are specific to the faq page.
 // -----------------------------------------------------------------------------
 .section-faq {
-  padding-top: 103px;
+  padding-top: 72px;
 
   .info-holder {
     display: flex;
@@ -16,35 +16,41 @@
       text-align: center;
 
       .title {
+        padding-bottom: 13px;
+
         font-family: $text-spectral-medium;
-        font-size: 35px;
+        font-size: 29px;
+        letter-spacing: -.5px;
       }
 
       .description {
         font-family: $text-spectral-regular;
         font-size: 16px;
+        letter-spacing: -1.2px;
       }
     }
 
     .image-holder {
       position: relative;
-      top: -5px;
-      right: -24px;
-    
+      top: -6px;
+      right: -32px;
+      
       .logo {
-        width: 190px;
+        width: 245px;
       }
     }
   }
 
   .content-holder {
-    margin: 37px 0 0 8px;
+    margin: 4px 0 0 8px;
 
     .faq-navigation {
       position: sticky;
       top: 85px;
 
       width: 165px;
+
+      line-height: 1.35;
 
       .list-item {
         padding: 8px 0;
@@ -116,15 +122,25 @@
       }
 
       .card-body {
-        padding: 10px 40px 10px 10px;
+        padding: 0 139px 66px 10px;
 
         font-family: $text-spectral-regular;
         font-size: 16px;
 
         border-bottom: 3px solid $pastel-yellow;
+
+        letter-spacing: -1px;
+        line-height: 1.38;
       }
 
       .btn-link:hover {
+        color: $red-orange;
+        text-decoration: none;
+
+        background-color: $pastel-yellow;
+      }
+
+      .btn-link:focus {
         color: $red-orange;
         text-decoration: none;
 
@@ -201,16 +217,27 @@
           font-size: 12px;
         }
       }
-
+      
       .faq-content {
-        margin-top: -219px;
+        padding-left: 170px;
+        margin-top: 50px;
 
         .content-holder {
-          margin-top: -219px;
+          margin-top: 60px;
+
+          &:first-child {
+            margin-top: -215px;
+          }
 
           .title {
             font-size: 15px;
           }
+        }
+      }
+
+      .accordion {
+        .card-body {
+          padding: 0 0 66px 10px;
         }
       }
     }
@@ -254,11 +281,21 @@
         margin-top: -238px;
 
         .content-holder {
-          margin-top: -219px;
+          margin-top: 60px;
+
+          &:first-child {
+            margin-top: 10px;
+          }
           
           .title {
             font-size: 15px;
           }
+        }
+      }
+
+      .accordion {
+        .card-body {
+          padding: 0 0 66px 10px;
         }
       }
     }
