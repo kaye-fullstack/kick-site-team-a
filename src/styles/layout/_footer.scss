@@ -4,7 +4,7 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
-footer{
+footer {
   padding: 108px 0 30px 0;
 
   .content-wrapper {
@@ -18,8 +18,8 @@ footer{
       }
 
       &:nth-child(2) {
-        width: 250px;
         margin: 65px 0 0 0;
+        width: 250px;
       }
 
       .footer-content {
@@ -29,23 +29,24 @@ footer{
         }
 
         .description {
-          width: 278px;
           margin: 31px 0 0 1px;
+          width: 278px;
         }
 
         .bottom-footer {
           display: flex;
           flex-direction: row;
+
           .address {
-            width: 131px;
             margin: 20px 0 0 1px;
+            width: 131px;
           }
   
           .seal {
             position: absolute;
   
-            width: 125px;
             margin: 0 0 0 41px;
+            width: 125px;
           }
         }
 
@@ -115,7 +116,7 @@ footer{
 }
 
 @include respond-to(sm) {
-  footer{
+  footer {
     padding: 60px 0 30px 0;
 
     .content-wrapper {
@@ -128,8 +129,8 @@ footer{
         }
   
         &:nth-child(2) {
-          width: 440px;
           margin: 55px 0 0 10px;
+          width: 440px;
         }
   
         .footer-content {
@@ -199,8 +200,8 @@ footer{
         }
   
         &:nth-child(2) {
-          width: 280px;
           margin: 55px 0 0 10px;
+          width: 280px;
         }
   
         .footer-content {
