@@ -162,6 +162,15 @@
         transition: 0.2s ease-in;
       }
 
+      .btn-link:hover::before {
+        background-color: $red-orange;
+      }
+
+      .btn-link:hover::after {
+        background-color: $red-orange;
+      }
+
+
       .btn-link::after {
         content: "";
         position: absolute;
