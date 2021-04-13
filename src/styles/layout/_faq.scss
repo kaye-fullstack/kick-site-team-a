@@ -255,17 +255,31 @@
       
       .faq-content {
         padding-left: 170px;
-        margin-top: 50px;
+        margin-top: -220px;
 
         .content-holder {
-          margin-top: 60px;
-
-          &:first-child {
-            margin-top: -215px;
-          }
-
           .title {
             font-size: 15px;
+          }
+
+          &:first-child {
+            padding-top: 45px;
+          }
+  
+          &:nth-child(2) {
+            padding-top: 35px;
+          }
+  
+          &:nth-child(3) {
+            padding-top: 35px;
+          }
+  
+          &:nth-child(4) {
+            padding-top: 35px;
+          }
+  
+          &:last-child {
+            padding-top: 35px;
           }
         }
       }
@@ -313,17 +327,31 @@
 
       .faq-content {
         padding-left: 80px;
-        margin-top: -238px;
+        margin-top: -220px;
 
         .content-holder {
-          margin-top: 60px;
-
-          &:first-child {
-            margin-top: 10px;
-          }
-          
           .title {
             font-size: 15px;
+          }
+
+          &:first-child {
+            padding-top: 0;
+          }
+  
+          &:nth-child(2) {
+            padding-top: 25px;
+          }
+  
+          &:nth-child(3) {
+            padding-top: 25px;
+          }
+  
+          &:nth-child(4) {
+            padding-top: 25px;
+          }
+  
+          &:last-child {
+            padding-top: 25px;
           }
         }
       }
