@@ -1,7 +1,99 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the home page.
+// -----------------------------------------------------------------------------
 .form-control {
   margin: 0;
   width: 210px;
   height: 32px;
 
   border-radius: 0;
+}
+
+.question {
+  padding: 7px 0 0 86px;
+  margin: 45px 0 0 18px;
+  width: 751px;
+  height: 82px;
+
+  font-family: $text-spectral-regular;
+  font-size: 25px;
+  text-align: left;
+  letter-spacing: -1.7px;
+
+  background-color: $white;
+  background-image: url(../assets/images/sleep-hygiene-icon.svg);
+  background-position: 16px 23px;
+  background-size: 37px;
+  background-repeat: no-repeat;
+  border: none;
+
+  cursor: pointer;
+}
+
+.email {
+  padding: 12px 0 0 22px;
+  margin: 19px 0 0 18px;
+  width: 375px;
+  height: 70px;
+
+  font-family: $text-spectral-regular;
+  font-size: 25px;
+  text-align: left;
+  letter-spacing: -1.5px;
+
+  background-color: $white;
+  border: none;
+
+  cursor: pointer;
+}
+
+@include respond-to(lg) {
+  .question {
+    margin: 45px 0 0 0;
+  }
+
+  .email {
+    margin: 19px 0 0 0;
+  }
+}
+
+@include respond-to(md) {
+  .question {
+    margin: 45px 0 0 0;
+  }
+
+  .email {
+    margin: 19px 0 0 0;
+  }
+}
+
+@include respond-to(sm) {
+  .question {
+    margin: 45px 0 0 0;
+  }
+
+  .email {
+    margin: 19px 0 0 0;
+  }
+}
+
+@include respond-to(xs) {
+  .question {
+    padding: 7px 0 0 50px;
+    margin: 45px 0 0 0;
+    
+    font-size: 20px;
+    
+    background-size: 34px;
+  }
+
+  .email {
+    margin: 19px 0 0 0;
+
+    font-size: 20px;
+    
+    background-size: 34px;
+  }
 }
