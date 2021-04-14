@@ -17,11 +17,14 @@
   background-repeat: no-repeat;
   background-size: 18px;
   border: none;
+
+  cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-newsletter:active {
-  background-image: url("../assets/images/arrow-right-navy.svg");
   background-color: transparent;
+  background-image: url("../assets/images/arrow-right-navy.svg");
   border: $violet;
 }
 
@@ -44,9 +47,11 @@
 
   background-color: $pastel-yellow;
   border: none;
-  
+
   cursor: pointer;
+  transition: color .2s ease-in-out;
 }
+
 .btn-yellow:hover {
   color: $white;
   
@@ -67,6 +72,7 @@
   border: none;
 
   cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-navy:hover {
@@ -94,6 +100,9 @@
   border: none;
   border-top: 3px solid transparent;
   border-bottom: 3px solid $pastel-yellow;
+
+  cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-question {
@@ -111,6 +120,7 @@
   border: none;
 
   cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-question:hover {
@@ -132,6 +142,9 @@
   background-color: $white;
   border: 1px solid $black;
   border-radius: 0;
+
+  cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-white:hover {

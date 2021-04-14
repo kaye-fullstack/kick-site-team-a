@@ -33,6 +33,7 @@
 
   &:before {
     content: "";
+    
     position: absolute;
     top: 8px;
     right: 1px;
@@ -61,6 +62,7 @@
 
   &:focus:before {
     content: "";
+
     position: absolute;
     top: 6px;
     right: -2px;
@@ -90,6 +92,7 @@
   
     &:before {
       content: "";
+
       position: absolute;
       top: 15px;
       left: 160px;
@@ -111,7 +114,9 @@
     right: 0;
     bottom: 0;
     left: 0;
+
     padding: 25px;
+    
     background-color: $white;
   }
 }
