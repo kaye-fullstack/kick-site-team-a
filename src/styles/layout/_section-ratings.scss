@@ -3,11 +3,19 @@
 
   .title {
     margin-bottom: 0;
+
+    font-family: $font-spectral-medium;
+    font-size: 29px;
+    color: $violet;
+    text-align: center;
+    line-height: 43px;
+
     font-family: $text-spectral-medium;
     font-size: 29px;
     color: $violet;
-    line-height: 43px;
     text-align: center;
+
+    line-height: 43px;
   }
 
   .rating {
@@ -23,8 +31,8 @@
   .rating-star {
     --rating: 4.7;
     --percent: calc(var(--rating) / 5 * 100%);
-
     display: block;
+
     font-size: var(--star-size);
     text-align: center;
     line-height: 1;
@@ -32,8 +40,11 @@
 
     &:before {
       content: "★★★★★";
+
+
       font-size: 26px;
       letter-spacing: 0;
+
       background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
       -webkit-background-clip: text;
       background-clip: text;
@@ -55,11 +66,12 @@
 
   .rating-link {
     margin-top: 3px;
-    font-family: $text-spectral-regular;
+
+    font-family: $font-spectral-regular;
     font-size: 14px;
     color: $violet;
-    line-height: 20px;
     text-align: center;
+    line-height: 20px;
   }
 }
 
