@@ -33,6 +33,7 @@
 
   &:before {
     content: "";
+    
     position: absolute;
     top: 8px;
     right: 1px;
@@ -61,6 +62,7 @@
 
   &:focus:before {
     content: "";
+
     position: absolute;
     top: 6px;
     right: -2px;
@@ -90,10 +92,7 @@
   
     &:before {
       content: "";
-<<<<<<< HEAD
 
-=======
->>>>>>> 79c104d (added changes - header, homepage, doctor-ama,buttons  & faq)
       position: absolute;
       top: 15px;
       left: 160px;
@@ -115,16 +114,9 @@
     right: 0;
     bottom: 0;
     left: 0;
-<<<<<<< HEAD
 
     padding: 25px;
-<<<<<<< HEAD
-=======
-    
-=======
-    padding: 25px;
->>>>>>> 79c104d (added changes - header, homepage, doctor-ama,buttons  & faq)
->>>>>>> 9f1b2d3 (added changes - header, homepage, doctor-ama,buttons  & faq)
+
     background-color: $white;
   }
 }

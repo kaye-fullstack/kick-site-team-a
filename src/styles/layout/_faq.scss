@@ -77,8 +77,8 @@
         background-color: $red-orange;
         
         opacity: 1;
-        transform: translateX(-50%) rotate(90deg); 
         transition: 0.2s ease-in-out;
+        transform: translateX(-50%) rotate(90deg); 
       }
 
       .active-js {
@@ -141,6 +141,7 @@
 
       .card-header {
         position: relative;
+
         padding: 0;
 
         background-color: transparent;
@@ -152,11 +153,10 @@
 
         font-family: $text-spectral-regular;
         font-size: 16px;
-
-        border-bottom: 3px solid $pastel-yellow;
-
         letter-spacing: -1px;
         line-height: 1.38;
+
+        border-bottom: 3px solid $pastel-yellow;
       }
 
       .btn-link:hover {
@@ -196,9 +196,9 @@
         background-color: $red-orange;
       }
 
-
       .btn-link::after {
         content: "";
+
         position: absolute;
         top: 50%;
         right: 0;
@@ -208,8 +208,8 @@
         
         background-color: $dark-blue;
 
-        transform: rotate(90deg);
         transition: 0.2s ease-in;
+        transform: rotate(90deg);
       }
 
       .btn-link[aria-expanded="true"]:after {

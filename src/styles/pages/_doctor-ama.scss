@@ -211,7 +211,6 @@
   
   .section-faq{
     height: 667px;
-
     overflow: auto;
   }
 
@@ -241,7 +240,6 @@
       color: $purple;
       text-align: center;
       letter-spacing: -2px;
-      
       line-height: 1.3;
     }
 
@@ -262,7 +260,6 @@
       color: $white;
       text-align: center;
       letter-spacing: -1px;
-
       line-height: 2.7;
     }
 
@@ -311,8 +308,8 @@
           }
 
           &:nth-child(2) {
-            width: 280px;
             margin: auto;
+            width: 280px;
           }
 
           .doctor-border {
