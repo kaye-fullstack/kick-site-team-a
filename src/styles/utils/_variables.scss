@@ -6,6 +6,10 @@
 
 /// Regular font family
 $font-opensans: 'Open Sans';
+
+/// @type List
+$text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
+
 $font-BasisGrotesquePro-Bold: 'BasisGrotesquePro-Bold';
 $font-BasisGrotesquePro-Light: 'BasisGrotesquePro-Light';
 $font-BasisGrotesquePro-Regular: 'BasisGrotesquePro-Regular';

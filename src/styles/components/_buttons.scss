@@ -17,11 +17,14 @@
   background-repeat: no-repeat;
   background-size: 18px;
   border: none;
+
+  cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-newsletter:active {
-  background-image: url("../assets/images/arrow-right-navy.svg");
   background-color: transparent;
+  background-image: url("../assets/images/arrow-right-navy.svg");
   border: $violet;
 }
 
@@ -44,47 +47,11 @@
 
   background-color: $pastel-yellow;
   border: none;
-  
-  cursor: pointer;
-  transition: color .2s ease-in-out;
-}
-
-.btn-question:hover {
-  color: $white;
-    
-  background-color: $purple;
-}
-
-.btn-white {
-  width: 112px;
-  height: 35px;
-
-  font-family: $font-spectral-regular;
-  font-size: 13px;
-  color: $violet;
-  text-align: center;
-  letter-spacing: -1px;
-
-  background-color: $white;
-  border: 1px solid $black;
-  border-radius: 0;
 
   cursor: pointer;
   transition: color .2s ease-in-out;
 }
 
-.btn-white:hover {
-  color: $violet;
-  
-  background-color: $white;
-  border: 1px solid $violet;
-}
-
-@include respond-to(lg) {
-  .btn-question {
-    margin: 19px 0 0 0;
-  }
-}
 .btn-yellow:hover {
   color: $white;
   
@@ -105,6 +72,7 @@
   border: none;
 
   cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-navy:hover {
@@ -132,6 +100,9 @@
   border: none;
   border-top: 3px solid transparent;
   border-bottom: 3px solid $pastel-yellow;
+
+  cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-question {
@@ -149,6 +120,7 @@
   border: none;
 
   cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-question:hover {
@@ -170,6 +142,9 @@
   background-color: $white;
   border: 1px solid $black;
   border-radius: 0;
+
+  cursor: pointer;
+  transition: color .2s ease-in-out;
 }
 
 .btn-white:hover {
