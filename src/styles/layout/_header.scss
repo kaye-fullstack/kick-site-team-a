@@ -35,16 +35,18 @@
 }
 
 .nav-link:hover {
-  background-image: url("../assets/images/header-hover-icon.jpg");
-  background-position: 98% 15%;
-  background-size: 8px;
-  background-repeat: no-repeat;
-}
+  &:hover {
+    background-image: url("../assets/images/header-hover-icon.jpg");
+    background-position: 98% 15%;
+    background-size: 8px;
+    background-repeat: no-repeat;
+  }
 
-.nav-link:active {
-  background-image: url("../assets/images/header-active-icon.svg");
-  background-position: 98% 20%;
-  background-repeat: no-repeat;
+  &:active {
+    background-image: url("../assets/images/header-active-icon.svg");
+    background-position: 98% 20%;
+    background-repeat: no-repeat;
+  }
 }
 
 .navbar-toggler {
