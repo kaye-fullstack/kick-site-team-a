@@ -1,15 +1,23 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the ratings layout.
+// -----------------------------------------------------------------------------
+
 .section-ratings {
   padding: 43px 0 83px;
 
+  --star-size: 60px;
+  --star-color: #F4F2F9;
+  --star-background: #404082;
+
   .title {
     margin-bottom: 0;
-
     font-family: $font-Spectral-Medium;
     font-size: 29px;
     color: $violet;
-    text-align: center;
-
     line-height: 43px;
+    text-align: center;
   }
 
   .rating {
@@ -19,26 +27,20 @@
   }
 
   .rating-holder {
-    width: 165px;
+    text-align: center;
   }
 
   .rating-star {
-    --rating: 4.7;
     --percent: calc(var(--rating) / 5 * 100%);
     display: block;
-
     font-size: var(--star-size);
-    text-align: center;
+    font-family: Times; 
     line-height: 1;
-  }
 
     &:before {
       content: "★★★★★";
-
-
       font-size: 26px;
       letter-spacing: 0;
-
       background: linear-gradient(90deg, var(--star-background) var(--percent), var(--star-color) var(--percent));
       -webkit-background-clip: text;
       background-clip: text;
@@ -60,12 +62,11 @@
 
   .rating-link {
     margin-top: 3px;
-
     font-family: $font-Spectral-Regular;
     font-size: 14px;
     color: $violet;
-    text-align: center;
     line-height: 20px;
+    text-align: center;
   }
 }
 
