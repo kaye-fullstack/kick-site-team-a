@@ -31,7 +31,6 @@ AppName.Modules.ThemeModule = (function () {
       $(this).siblings().removeClass("active-js")
     });
   };
-
   /////////////////////
   // Public Methods //
   ///////////////////
