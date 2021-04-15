@@ -6,24 +6,14 @@
 
 /// Regular font family
 $font-opensans: 'Open Sans';
+$font-BasisGrotesquePro-Bold: 'BasisGrotesquePro-Bold';
+$font-BasisGrotesquePro-Light: 'BasisGrotesquePro-Light';
+$font-BasisGrotesquePro-Regular: 'BasisGrotesquePro-Regular';
+$font-Spectral-Regular: 'Spectral-Regular';
+$font-Spectral-Medium: 'Spectral-Medium';
 
 /// @type List
 $text-font-stack: $font-opensans, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-$font-BasisGrotesquePro-Bold: 'BasisGrotesquePro-Bold';
-$text-font-bold: $font-BasisGrotesquePro-Bold, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-$font-BasisGrotesquePro-Light: 'BasisGrotesquePro-Light';
-$text-font-light: $font-BasisGrotesquePro-Light, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-$font-BasisGrotesquePro-Regular: 'BasisGrotesquePro-Regular';
-$text-font-regular: $font-BasisGrotesquePro-Regular, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-$font-Spectral-Regular: 'Spectral-Regular';
-$text-spectral-regular: $font-Spectral-Regular, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
-
-$font-Spectral-Medium: 'Spectral-Medium';
-$text-spectral-medium: $font-Spectral-Medium, 'Helvetica Neue Light', 'Helvetica Neue', 'Helvetica', 'Arial', sans-serif !default;
 
 /// Code (monospace) font family
 /// @type List
