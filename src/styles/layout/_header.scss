@@ -27,10 +27,10 @@
     font-family: $text-spectral-regular;
     font-size: 16px;
     color: $violet;
-  }
 
-  .nav-link:active {
-    color: $red-orange;
+    &:active {
+      color: $red-orange; 
+    }
   }
 }
 
