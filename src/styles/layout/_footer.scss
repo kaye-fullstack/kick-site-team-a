@@ -4,97 +4,256 @@
 // This file contains all styles related to the footer of the site/application.
 // -----------------------------------------------------------------------------
 
-footer{
-  padding: 156px 0 30px 0;
+footer {
+  padding: 108px 0 30px 0;
 
-  .footer-wrapper{
-    .footer-content{
-      padding-left: 8px;
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 
-      p {
-        font-family: $font-BasisGrotesquePro-Regular;
-        font-size: 14px;
+    .content-holder {
+      &:nth-child(1) {
+        margin-left: 10px;
       }
 
-      .description {
-        margin: 31px 0 0 1px;
-      }
-
-      .address {
-        margin: 20px 0 0 1px;
-        width: 131px;
-      }
-
-      .seal {
-        position: absolute;
-        top: 129px;        
-        right: -4px;
-
-        width: 125px;
-      }
-
-      .footer-links {
-        display: flex;
-        flex-direction: row;
-        margin: 66px 0 0 32px;
+      &:nth-child(2) {
+        margin: 65px 0 0 0;
         width: 250px;
+      }
 
-        .first-set-of-links{
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-          margin: 0;
-
-          list-style-type: none;
+      .footer-content {
+        p {
+          font-family: $font-BasisGrotesquePro-Regular;
+          font-size: 14px;
         }
 
-        .last-set-of-links {
-          display: flex;
-          flex-direction: column;
-          padding: 0;
-          margin: 0 0 0 87px;
+        .description {
+          margin: 31px 0 0 1px;
+          width: 278px;
+        }
 
-          list-style-type: none;
+        .bottom-footer {
+          display: flex;
+          flex-direction: row;
+
+          .address {
+            margin: 20px 0 0 1px;
+            width: 131px;
+          }
+  
+          .seal {
+            position: absolute;
+  
+            margin: 0 0 0 41px;
+            width: 125px;
+          }
+        }
+
+        .footer-links {
+          display: flex;
+          flex-direction: row;
+          width: 250px;
+
+          .first-set-of-links {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0;
+
+            list-style-type: none;
+          }
+
+          .last-set-of-links {
+            display: flex;
+            flex-direction: column;
+            padding: 0;
+            margin: 0 0 0 87px;
+
+            list-style-type: none;
+          }
+
+          .links {
+            margin-bottom: 6px;
+
+            font-family: $font-BasisGrotesquePro-Regular;
+            font-size: 15px;    
+            color: $pastel-blue;
+            
+            border-bottom: 1px;
+          }
+
+          .links:hover {
+            color: $violet;
+          }
+        }
+      }
+
+      .subscribe-to-newsletter {
+        .title {
+          margin: 17px 0 0 0;
+
+          font-family: $font-BasisGrotesquePro-Regular;
+          font-size: 14px;
         }
 
         .links {
           margin-bottom: 6px;
 
+        .description {
+          margin:3px 0 17px 0;
+
           font-family: $font-BasisGrotesquePro-Regular;
-          font-size: 15px;    
-          color: $pastel-blue;
-          
-          border-bottom: 1px;
+          font-size: 11px;
         }
 
-        .links:hover {
-          color: $violet;
+        .btn-newsletter {
+          margin: -32px 0 0 209px;
         }
-      }
-    }
-
-    .subscribe-to-newsletter {
-      .title{
-        margin: 17px 0 0 39px;
-
-        font-family: $font-BasisGrotesquePro-Regular;
-        font-size: 14px;
-      }
-
-      .description {
-        margin:3px 0 17px 39px;
-
-        font-family: $font-BasisGrotesquePro-Regular;
-        font-size: 11px;
-      }
-
-      .form-control {
-        margin: 0 0 0 40px;
-        width: 72%;
-        height: 32px;
-
-        border-radius: 0;
       }
     }
   }
+}
+
+@include respond-to(sm) {
+  footer {
+    padding: 60px 0 30px 0;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .content-holder {
+        &:nth-child(1) {
+          margin-left: 10px;
+        }
+  
+        &:nth-child(2) {
+          margin: 55px 0 0 10px;
+          width: 440px;
+        }
+  
+        .footer-content {
+          .description {
+            width: 535px;
+
+            font-size: 18px;
+          }
+  
+          .bottom-footer {
+            .address {
+              width: 150px;
+
+              font-size: 16px;
+            }
+    
+            .seal {
+              margin: 15px 0 0 41px;
+            }
+          }
+  
+          .footer-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 300px;
+
+            .links{
+              font-size: 18px;
+            }
+          }
+        }
+  
+        .subscribe-to-newsletter {
+          .title {
+            font-size: 22px;
+          }
+  
+          .description {
+            font-size: 16px;
+          }
+  
+          .form-control {
+            width: 250px;
+          }
+  
+          .btn-newsletter {
+            margin: -32px 0 0 250px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  footer{
+    padding: 60px 0 30px 0;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+
+      .content-holder {
+        &:nth-child(1) {
+          margin-left: 10px;
+        }
+  
+        &:nth-child(2) {
+          margin: 55px 0 0 10px;
+          width: 280px;
+        }
+  
+        .footer-content {
+          .description {
+            width: 290px;
+
+            font-size: 18px;
+          }
+  
+          .bottom-footer {
+            .address {
+              width: 150px;
+
+              font-size: 16px;
+            }
+    
+            .seal {
+              margin: 15px 0 0 3px;
+            }
+          }
+  
+          .footer-links {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 280px;
+
+            .links{
+              font-size: 16px;
+            }
+          }
+        }
+  
+        .subscribe-to-newsletter {
+          .title {
+            font-size: 22px;
+          }
+  
+          .description {
+            font-size: 16px;
+          }
+  
+          .form-control {
+            width: 240px;
+          }
+  
+          .btn-newsletter {
+            margin: -32px 0 0 240px;
+          }
+        }
+      }
+    }
+  }
+}
 }

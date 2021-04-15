@@ -1,0 +1,319 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the testimonials page.
+// -----------------------------------------------------------------------------
+
+.testimonials {
+  .section-banner {
+    position: relative;
+
+    padding: 166px 0 99px 0;
+  
+    .title {
+      font-family: $font-Spectral-Medium;
+      font-size: 36px;
+      color: $purple;
+    }
+
+    .description {
+      margin-right: 550px;
+
+      font-family: $font-Spectral-Medium;
+      font-size: 17px;
+      color: $purple;
+    }  
+    
+    .button-holder {
+      display: flex;
+      flex-direction: row;
+
+      margin: 110px 0 0 8px;
+
+      .btn-yellow {
+        &:nth-child(1) {
+          width: 186px; 
+          margin-right: 20px;         
+        }
+
+        &:nth-child(2) {
+          width: 233px;          
+        }
+      }
+    }
+
+    &:before {
+      content: "";
+      position: absolute;
+      top: 164px;
+      left: 55.5%;
+
+      width: 336px;
+      height: 282px;
+  
+      background-image: url("../assets/images/testimonials-banner.svg");
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .section-quotation-slider {
+    background-color: $tortoise;
+
+    .swiper-container {
+      height: 50vh;
+
+      .swiper-slide {
+        padding-top: 100px;
+        width: 500px;
+
+        text-align: center;
+        font-size: 30px;
+        font-family: $font-Spectral-Medium;
+      }
+      
+      .content-holder {
+        width: 500px;
+        margin-left: auto;
+        margin-right: auto;
+
+        .description {
+          color: $white;
+        }
+        .bottom-text {
+          font-size: 18px;
+          color: $white;
+        }
+      }
+    }
+  }
+
+  .section-customers-reviews {
+    .reviews-wrapper {
+      padding-bottom: 75px;
+    }
+    
+    .reviews-holder {
+      width: 585px;
+      margin: 90px auto;
+
+      &:nth-child(1) {
+        width: 585px;
+        margin: 70px auto;
+      }
+    }
+
+    .heading {
+      width: 585px;
+      padding-top: 52px;
+
+      font-family: $font-Spectral-Medium;
+      font-size: 27px;
+    }
+
+    .sub-heading {
+      font-size: 15px;
+   }
+
+    .reviews-holder:nth-child(even) {
+      color: $purple;
+
+      text-align: center;
+
+      &:before{
+        content: "";
+        position: absolute;
+
+        height: 32px;
+        width: 60px;
+        margin: -1px -21px 0;
+
+        background-image: url("../assets/images/doctors-trivia-img2.svg");
+        background-repeat: no-repeat;
+        background-size: contain;
+
+      }
+    }
+
+    .reviews-holder:nth-child(odd) {
+      color: $pastel-pink;
+
+      text-align: center;
+
+      &:before{
+        content: "";
+        position: absolute;
+
+        margin: -1px -21px 0;
+        height: 28px;
+        width: 73px;
+
+        background-image: url("../assets/images/doctors-trivia-img.png");
+        background-repeat: no-repeat;
+        background-size: contain;
+      }
+    }
+  }
+}
+
+@include respond-to(md) {
+  .testimonials {
+    .section-banner {
+      .text-holder{
+        margin-left: 50px;
+
+        .description{
+          margin-right: 350px;
+        }
+      }
+      
+      .button-holder {
+        margin: 91px 0 0 50px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .testimonials{
+    .section-banner {
+      padding: 166px 0 70px 0;
+
+      .text-holder {
+        margin-left: 20px;
+
+        .title{
+          font-size: 25px;
+        }
+
+        .description {
+          margin-right: 280px;
+
+          font-size: 16px;
+        }
+      }
+      
+      .button-holder {
+        flex-direction: column;
+
+        margin: 70px 0 0 20px;
+
+        .btn-yellow {
+          &:nth-child(1) {
+            margin-bottom: 15px;
+          }          
+        }
+      }
+
+      &:before {
+        left: 58%;
+
+        width: 230px;
+        height: 186px;
+      }
+    }
+
+    .section-customers-reviews {
+      .reviews-wrapper {
+        padding-bottom: 75px;
+      }
+      
+      .reviews-holder {
+        width: 500px;
+  
+        &:nth-child(1) {
+          width: 500px;
+        }
+      }
+  
+      .heading {
+        width: 500px;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .testimonials{
+    .section-banner {
+      padding: 250px 0 70px 0;
+
+      .text-holder {
+        margin-left: 35px;
+        width: 320px;
+
+        .title{
+          font-size: 38px;
+        }
+
+        .description {
+          margin-right: 0;
+
+          font-size: 22px;
+        }
+      }
+      
+      .button-holder {
+        flex-direction: column;
+
+        margin: 70px 0 0 20px;
+
+        .btn-yellow {
+          &:nth-child(1) {
+            margin-bottom: 15px;
+          }          
+        }
+      }
+
+      &:before {
+        top: 80px;
+        left: 35%;
+
+        width: 200px;
+        height: 150px;
+      }
+    }
+
+    .section-customers-reviews {
+      .reviews-wrapper {
+        padding-bottom: 75px;
+      }
+      
+      .reviews-holder {
+        width: 300px;
+        margin: 70px 0 0px 50px;
+  
+        &:nth-child(1) {
+          width: 300px;
+          margin: 70px 0 0px 50px;
+        }
+      }
+  
+      .heading {
+        width: 300px;
+
+        font-size: 26px;
+      }
+
+      .sub-heading{
+        font-size: 20px;
+      }
+  
+      .reviews-holder:nth-child(odd) {
+        &:before{
+          height: 30px;
+          width: 60px;
+          margin: 0 -25px 0;
+        }
+      }
+
+      .reviews-holder:nth-child(even) { 
+        &:before{
+          height: 30px;
+          width: 60px;
+          margin: 0 -25px 0;
+        }
+      }
+    }
+  }
+}

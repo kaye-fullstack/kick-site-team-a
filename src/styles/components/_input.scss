@@ -1,8 +1,15 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to the input component.
+// This file contains styles that are specific to the home page.
 // -----------------------------------------------------------------------------
+.form-control {
+  margin: 0;
+  width: 210px;
+  height: 32px;
+
+  border-radius: 0;
+}
 
 .question {
   padding: 7px 0 0 86px;
@@ -10,7 +17,7 @@
   width: 751px;
   height: 82px;
 
-  font-family:   $font-Spectral-Regular;
+  font-family: $text-spectral-regular;
   font-size: 25px;
   text-align: left;
   letter-spacing: -1.7px;
@@ -31,7 +38,7 @@
   width: 375px;
   height: 70px;
 
-  font-family:  $font-Spectral-Regular;
+  font-family: $text-spectral-regular;
   font-size: 25px;
   text-align: left;
   letter-spacing: -1.5px;
