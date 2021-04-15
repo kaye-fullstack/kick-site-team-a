@@ -1,0 +1,114 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the section science sleep.
+// -----------------------------------------------------------------------------
+
+.section-science-sleep {
+  padding: 78px 0;
+
+  background-color: $pastel-yellow;
+
+  .content-wrapper {
+    margin-left: 20px;
+
+    .title {
+      margin-bottom: 71px;
+
+      font-family: $font-Spectral-Regular;
+      font-size: 30px;
+      color: $purple;
+      text-align: center;
+      letter-spacing: -1px;
+    }
+
+    .sub-heading {
+      margin: 20px 0;
+      
+      font-family: $font-Spectral-Regular;
+      color: $purple;
+    }
+    .description {
+      font-family: $font-Spectral-Regular;
+      color: $purple;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .section-science-sleep {
+    .content-holder {
+      img {
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .section-science-sleep {
+    padding: 20px 0;
+
+    .title {
+      font-size: 25px;
+    }
+    
+    .content-wrapper {
+      padding: 0;
+
+      .sub-heading {
+        font-size: 20px;
+      }
+
+      .content-holder {
+        margin-right: auto;
+        margin-left: auto;
+        max-width: 80%;
+
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .title {
+        margin: 20px 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+
+        font-size: 20px;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-science-sleep {
+    padding: 20px 0;
+
+    .title {
+      font-size: 25px;
+    }
+
+    .content-wrapper {
+      padding: 0;
+
+      .content-holder { 
+        text-align: center;
+        
+        img {
+          max-width: 100%;
+        }
+      }
+
+      .title {
+        margin: 20px 0;
+        margin-right: auto;
+        margin-left: auto;
+        width: 80%;
+
+        font-size: 20px;
+      }
+    }
+  }
+}

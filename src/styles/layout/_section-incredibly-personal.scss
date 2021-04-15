@@ -1,0 +1,199 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the section incredibly personal.
+// -----------------------------------------------------------------------------
+
+.section-incredibly-personal {
+  padding: 100px 0;
+  
+  background-color: $lavender;
+
+  .content-wrapper {
+    display: flex;
+    flex-direction: row;
+    padding: 20px 100px 0;
+
+    .content-holder {
+      position: relative;
+    }
+
+    .content-holder:nth-child(2) {
+      margin-left: 110px;
+
+      .bottom-action {
+        font-family: $font-Spectral-Regular;
+        
+        a {
+          color: $black;
+          text-decoration: underline;
+        }
+      }
+    }
+
+    .title {
+      margin: 80px 0 0;
+      
+      font-family: $font-Spectral-Medium;
+      font-size: 18px;
+      color: $pastel-blue;
+      line-height: 27px;
+    }
+
+    .title:before {
+      content: '';
+      position: absolute;
+      top: 10px;
+      left: 1px;
+
+      width: 73px;
+      height: 35px;
+
+      border-radius:0 0 150px 150px;
+      background-color: $pastel-blue;
+    }
+    
+    .description {
+      margin: 31px 0 60px;
+
+      font-family: $font-Spectral-Regular;
+      font-size: 14px;
+      color: $pastel-blue;
+    }
+
+    .doctor-image {
+      margin-left: 12px;
+      
+      .doctor-border {
+        position: absolute;
+
+        margin: -19px 0 0 -19px;
+        width: 298px;
+        height: 369px;
+
+        background-color: $pastel-blue;
+      }
+
+      .image {
+        position: relative;
+      }
+    }
+
+    .doctor-name {
+      margin-top: 37px;
+      
+      font-family: $font-Spectral-Medium;
+      font-size: 18px;
+      color: $white;
+    }
+  }
+}
+
+@include respond-to(md) {
+  .section-incredibly-personal {
+    padding: 40px 0;
+
+    .content-wrapper {
+      padding: 40px;
+
+      .content-holder:nth-child(2) {
+        margin-left: 40px;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .section-incredibly-personal {
+    padding: 20px 0;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      
+      text-align: center;
+
+      .title {
+        margin-top: 40px;
+      }
+
+      .title:before {
+        left: 45%;
+
+        width: 45px;
+        height: 22.5px;
+      }
+
+      .content-holder {
+        .doctor-image {
+          .doctor-border {
+            width: 100%;
+            height: 283px;
+          }
+          .image {
+            width: 230px;
+          }
+        }
+      }
+
+      .content-holder:nth-child(2) {
+        margin-left: 0;
+      }
+
+      .content-holder:first-child {
+        margin-right: 10px;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-incredibly-personal {
+    padding: 20px 0;
+
+    .content-wrapper {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 20px;
+      
+      text-align: center;
+
+      .title {
+        margin-top: 40px;
+      }
+
+      .title:before {
+        left: 45%;
+        
+        width: 45px;
+        height: 22.5px;
+      }
+
+      .content-holder {
+        .doctor-image {
+          .doctor-border {
+            margin: -19px 0 0 10px;
+            width: 80%;
+            height: 100%;
+          }
+          
+          .image {
+            width: 80%;
+          }
+        }
+      }
+
+      .content-holder:nth-child(2) {
+        margin-left: 0;
+      }
+
+      .content-holder:first-child {
+        max-width: 100%;
+      }
+    }
+  }
+}

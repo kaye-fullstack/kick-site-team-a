@@ -1,0 +1,471 @@
+.sleep {
+  .section-banner {
+    position: relative;
+    top: 0;
+    
+    padding: 146px 0 151px 14px;
+
+    background-image: url("../assets/images/sleep-product-hero.jpg");
+    background-position: center;
+    background-size: cover;
+
+    .title {
+      margin-bottom: 120px;
+      width: 415px;
+      
+      font-size: 37px;
+      color: $white;
+      letter-spacing: -2px;
+      line-height: 1.2;
+    }
+  }
+
+  .section-why-trials {
+    margin-bottom: 46px;
+
+    .wrapper {
+      padding: 70px 0;
+    }
+
+    .holder {
+      position: relative;
+
+      padding: 20px 35px;
+      .image-trials {
+        position: absolute;
+        top: 0;
+        left: 75px;
+
+        transform: rotate(-7deg);
+      }
+
+      .title {
+        margin-bottom: 1.5rem;
+      }
+
+      .description {
+        max-width: 83%;
+      }
+    }
+  }
+
+  .section-trials-work {
+    background-color: $lavender;
+
+    .wrapper {
+      align-items: center;
+      padding: 67px 0;
+
+      .title {
+        margin-bottom: 70px;
+        margin-left: 12px;
+        text-align: center;
+      }
+
+      .holder {
+        margin-bottom: 4rem;
+        .item {
+          position: relative;
+
+          padding-left: 65px;
+          margin: 50px auto 0;
+          max-width: 71%;
+
+          font-size: 16px;
+          
+          &:before {
+            position: absolute;
+            left: 0;
+
+            display: flex;
+            justify-content: center;
+            width: 30px;
+            height: 30px;
+
+            font-size: 20px;
+            color: $purple;
+
+            border: 2px solid $purple;
+            border-radius: 100%;
+          }
+
+          &:nth-child(1):before {
+            content: '1';
+          }
+          &:nth-child(2):before {
+            content: '2';
+          }
+
+          &:nth-child(3):before {
+            content: '3';
+          }
+
+          &:nth-child(4):before {
+            content: '4';
+          }
+        }
+      }
+    }
+  }
+
+  .section-sleep-medications {
+    .wrapper {
+      padding: 95px 0;
+
+      .title {
+        margin-left: 12px;
+
+        text-align: center;
+      }
+
+      .description {
+        margin: 0 auto 87px;
+        width: 52%;
+        
+        text-align: center;
+      }
+
+      .text-bottom {
+        margin: 80px 0 -20px;
+      }
+
+      .holder {
+        margin: 0 auto;
+        max-width: 82%;
+
+        &-item {
+          position: relative;
+
+          .medic-item {
+            width: 95%;
+          }
+
+          .sub-description {
+            .sub-title {
+              margin-top: 15px;
+            }
+
+            .sub-desc {
+              margin-top: 5px;
+            }
+          }
+        }
+
+        &-item:before {
+          content: 'Studio Med Shot';
+
+          position: absolute;
+          top: 6%;
+
+          width: 95%;
+        }
+      }
+    }
+  }
+
+  .section-doctors-word {
+    padding: 65px 0;
+    
+    background-color: $pastel-blue;
+
+    .content-wrapper {
+      position: relative;
+      
+      display: flex;
+      flex-direction: row;
+      padding: 0 80px;
+
+      .title {
+        margin: 47px 0 22px;
+        font-size: 14px;
+        color: $white;
+        text-transform: uppercase;
+      }
+
+      .title:before {
+        content: '';
+        position: absolute;
+        top: 5px;
+        left: 82px;
+  
+        height: 22.5px;
+        width: 45px;
+
+        background-color: $white;
+        border-radius:0 0 150px 150px;
+      }
+      
+      .description {
+        max-width: 82%;
+
+        font-size: 22px;
+        color: $white;
+
+        line-height: 30px;
+      }
+
+      .doctor-image {
+        margin-right: 20px;
+        
+        .doctor-border {
+          position: absolute;
+
+          margin: 7px 0 0 15px;
+          width: 235px;
+          height: 304px;
+
+          background-color: $white;
+        }
+
+        .image {
+          position: relative;
+        }
+      }
+
+      .doctor-name {
+        margin-top: 37px;
+      }
+    }
+  }
+
+  .section-faq {
+    height: 1050px;
+
+    .info-holder {
+      .info {
+        width: 100%;
+        margin: 0 auto;
+      }
+    }
+
+    .content-holder {
+      margin: 0;
+      
+      .faq-content {
+        padding-left: 0;
+        margin-top: 0;
+        margin: 0 auto;
+        max-width: 94%;
+
+        .content-holder {
+          margin-top: 40px;
+        }
+      }
+
+      .accordion {
+        .btn-link {
+          font-size: 27px;
+
+          &:before {
+            padding-left: 12px;
+          }
+        }
+
+        .card-body {
+          display: flex;
+          flex-direction: row;
+
+          .card-desc {
+            padding: 20px;
+            max-width: 50%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .sleep {
+    .section-sleep-medications {
+      .wrapper {
+        .description {
+          margin-bottom: 40px;
+          width: 80%;
+        }
+  
+        .holder {
+          max-width: 82%;
+          &-item {
+            margin-bottom: 20px;
+
+            text-align: center;
+            .medic-item {
+              max-width: 70%;
+            }
+          }
+
+          &-item:before {
+            width: 70%;
+
+            text-align: center;
+            font-size: 16px;
+          }
+        }
+      }
+    }
+
+    .section-doctors-word {
+      padding: 20px 0;
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        
+        padding: 20px 20px;
+
+        text-align: center;
+
+        .title:before {
+          left: 45%;
+          top: 345px;
+        }
+        
+        .description {
+          max-width: 100%;
+        }
+
+        .content-holder:nth-child(2) {
+          order: -1;
+        }
+
+        .doctor-image {
+          .doctor-border {
+            margin: 14px 0 0 14px;
+          } 
+        }
+      }
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .sleep {
+    .section-banner {
+      .title {
+        width: 80%;
+
+        font-size: 25px;
+      }
+    }
+
+    .section-why-trials {
+      padding: 50px 0;
+      margin-bottom: 0;
+
+      .title {
+        font-size: 25px
+      }
+
+      .wrapper {
+        padding: 0 0;
+
+        .holder {
+          padding: 0 15px;
+        }
+      }
+
+      .image-trials {
+        display: none;
+      }
+    }
+
+    .section-trials-work {
+      .wrapper {
+        padding: 50px 0;
+
+        .holder {
+          padding: 0;
+          margin: 0;
+          
+          .item {
+            padding-left: 0;
+            max-width: 92%;
+
+            &:nth-child(-n+5):before {
+              top: -35px;
+            }
+          }
+        }
+      }
+    }
+
+    .section-sleep-medications {
+      .wrapper {
+        padding: 50px 0;
+  
+        align-items: center;
+  
+        .title {
+          font-size: 25px;
+        }
+  
+        .description {
+          margin-bottom: 40px;
+          width: 80%;
+        }
+  
+        .text-bottom {
+          margin: 30px 0;
+        }
+  
+        .holder {
+          margin: 0 auto;
+          max-width: 82%;
+  
+          &-item {
+            margin-bottom: 20px;
+
+            text-align: center;
+
+            .medic-item {
+              width: 80%;
+              max-width: 70%;
+            }
+          }
+          
+          &-item:before { 
+            width: 70%;
+
+            text-align: center;
+            font-size: 18px;
+          }
+        }
+      }
+    }
+
+    .section-doctors-word {
+      padding: 20px 0;
+
+      .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        padding: 20px 20px;
+
+        text-align: center;
+
+        .title:before {
+          top: 345px;
+          left: 45%;
+        }
+        
+        .description {
+          max-width: 100%;
+        }
+
+        .content-holder:nth-child(2) {
+          order: -1;
+        }
+
+        .doctor-image {
+          .doctor-border {
+            margin: 14px 0 0 14px;
+          } 
+        }
+      }
+    }
+  }
+}

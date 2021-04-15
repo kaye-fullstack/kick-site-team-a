@@ -4,12 +4,53 @@
 // This file contains all styles related to the header of the site/application.
 // -----------------------------------------------------------------------------
 
-.section-header {
-  .navbar-nav {
-    .nav-link {
-      font-family: $text-font-light;
-      font-size: 16px;
-      color: $violet;
+.scroll-active-js {
+  position: fixed;
+  top: 14px;
+  right: 0;
+  left: 0;
+
+  z-index: 2;
+
+  transition: all 1s;
+
+}
+
+.active {
+  position: fixed;
+  top: 0;
+  background-color: $white;
+}
+
+.navbar-nav {
+  .nav-link {
+    font-family: $text-spectral-regular;
+    font-size: 16px;
+    color: $violet;
+
+    &:active {
+      color: $red-orange; 
     }
+  }
+}
+
+.nav-link {
+  &:hover {
+    background-image: url("../assets/images/header-hover-icon.jpg");
+    background-position: 98% 15%;
+    background-size: 8px;
+    background-repeat: no-repeat;
+  }
+
+  &:active {
+    background-image: url("../assets/images/header-active-icon.svg");
+    background-position: 98% 20%;
+    background-repeat: no-repeat;
+  }
+}
+
+.navbar-toggler {
+  .icon-bar {
+    background-color: $violet;
   }
 }

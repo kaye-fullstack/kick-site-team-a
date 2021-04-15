@@ -1,0 +1,113 @@
+//main: ../main.scss
+
+// -----------------------------------------------------------------------------
+// This file contains styles that are specific to the section sleep solutions.
+// -----------------------------------------------------------------------------
+
+.section-sleep-solutions {
+  background-color: $pastel-yellow;
+
+  .image-holder {
+    margin-left: auto;
+    max-width: 90%;
+  }
+
+  .content {
+    margin-left: 10px;
+    max-width: 75%;
+    height: 313px;
+  }
+
+  .title {
+    margin-top: 23px;
+    margin-bottom: 39px;
+    max-width: 200px;
+  }
+
+  .description {
+    margin-bottom: 40px;
+  }
+
+  .btn-navy {
+    height: auto;
+    width: auto;
+    padding: 8px 60px;
+  }
+}
+
+
+@include respond-to(md) {
+  .section-sleep-solutions {
+    .title {
+      margin: 15px 0;
+      max-width: 100%;
+
+      font-size: 24px;
+    }
+
+    .content {
+      padding: 55px 15px;
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+    
+    .image-holder {
+      margin-left: 10px;
+      
+      img {
+        padding: 0;
+        max-width: 100%;
+      }
+    }
+  }
+}
+
+@include respond-to(sm) {
+  .section-sleep-solutions {
+
+    .title {
+      margin: 15px 0;
+      max-width: 100%;
+
+      font-size: 24px;
+    }
+
+    .content {
+      padding: 55px 15px;
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+    
+    .image-holder {
+      display: none;
+    }
+  }
+}
+
+@include respond-to(xs) {
+  .section-sleep-solutions {
+
+    .title {
+      margin: 15px 0;
+      max-width: 100%;
+
+      font-size: 24px;
+    }
+
+    .content {
+      padding: 55px 15px;
+      margin: 0;
+      max-width: 100%;
+      width: 100%;
+      height: auto;
+    }
+    
+    .image-holder {
+      display: none;
+    }
+  }
+}
