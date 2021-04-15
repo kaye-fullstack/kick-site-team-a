@@ -1,7 +1,7 @@
 //main: ../main.scss
 
 // -----------------------------------------------------------------------------
-// This file contains styles that are specific to the home page.
+// This file contains styles that are specific to the input component.
 // -----------------------------------------------------------------------------
 .form-control {
   margin: 0;
@@ -17,7 +17,7 @@
   width: 751px;
   height: 82px;
 
-  font-family: $text-spectral-regular;
+  font-family:   $font-Spectral-Regular;
   font-size: 25px;
   text-align: left;
   letter-spacing: -1.7px;
@@ -38,7 +38,7 @@
   width: 375px;
   height: 70px;
 
-  font-family: $text-spectral-regular;
+  font-family:  $font-Spectral-Regular;
   font-size: 25px;
   text-align: left;
   letter-spacing: -1.5px;

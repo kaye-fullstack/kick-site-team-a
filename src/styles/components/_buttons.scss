@@ -23,9 +23,9 @@
 }
 
 .btn-newsletter:active {
-  border: $violet;
   background-color: transparent;
   background-image: url("../assets/images/arrow-right-navy.svg");
+  border: $violet;
 }
 
 .btn-newsletter:hover {
