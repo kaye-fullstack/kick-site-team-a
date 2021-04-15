@@ -8,11 +8,6 @@
   .section-questions-answered {
     margin-top: 82px;
   }
-  
-  .section-faq{
-    height: 667px;
-    overflow: auto;
-  }
 
   .section-faq::-webkit-scrollbar {
     display: none;
@@ -20,6 +15,9 @@
 
   .section-faq {
     padding-top: 14px;
+    height: 667px;
+    
+    overflow: auto;
 
     .faq-navigation {
       top: 56px;
