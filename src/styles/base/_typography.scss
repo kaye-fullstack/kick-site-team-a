@@ -63,6 +63,22 @@
     font-family: $font-Spectral-Regular;
     font-size: 17px;
   }
+
+  .swiper-slide {
+    font-family: $font-Spectral-Medium;
+  }
+
+  .bottom-reviews {
+    font-family: $font-Spectral-Medium;
+  }
+
+  .work-item {
+    font-family: $font-Spectral-Regular;
+  }
+
+  .work-item::before { 
+    font-family: $text-spectral-medium;
+  }
 }
 
 @include respond-to(sm) { 
