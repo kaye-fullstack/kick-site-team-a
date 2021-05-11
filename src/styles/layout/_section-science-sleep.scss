@@ -36,46 +36,18 @@
 }
 
 @include respond-to(md) {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> sleep page - mobile view done
-  .sleep {
-    .section-science-sleep {
-      .content-holder {
-        img {
-            max-width: 100%;
-        }
-=======
   .section-science-sleep {
     .content-holder {
       img {
         max-width: 100%;
->>>>>>> update section science-sleep
       }
     }
   }
-<<<<<<< HEAD
-=======
-
->>>>>>> Sleep page - section why trials, doctors word, incredibly personal, science sleep. Desktop done
-=======
->>>>>>> sleep page - mobile view done
 }
 
 @include respond-to(sm) {
-<<<<<<< HEAD
-  .sleep {
-    .section-science-sleep {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> sleep page - mobile view done
-=======
   .section-science-sleep {
     padding: 20px 0;
->>>>>>> update section science-sleep
 
     .title {
       font-size: 25px;
@@ -106,70 +78,18 @@
 
         font-size: 20px;
       }
-<<<<<<< HEAD
-=======
-      text-align: center;
->>>>>>> Sleep page - section why trials, doctors word, incredibly personal, science sleep. Desktop done
-=======
->>>>>>> sleep page - mobile view done
     }
   }
 }
 
 @include respond-to(xs) {
-<<<<<<< HEAD
-  .sleep {
-    .section-science-sleep {
-<<<<<<< HEAD
-<<<<<<< HEAD
-=======
->>>>>>> sleep page - mobile view done
-=======
   .section-science-sleep {
     padding: 20px 0;
->>>>>>> update section science-sleep
 
     .title {
       font-size: 25px;
     }
 
-<<<<<<< HEAD
-<<<<<<< HEAD
-      padding: 20px 0;
-      .content-wrapper {
-        padding: 0;
-        .content-holder { 
-          text-align: center;
-          
-          img {
-            max-width: 100%;
-          }
-=======
-=======
->>>>>>> sleep page - mobile view done
-      padding: 20px 0;
-      .content-wrapper {
-        padding: 0;
-        .content-holder { 
-          text-align: center;
-<<<<<<< HEAD
->>>>>>> Sleep page - section why trials, doctors word, incredibly personal, science sleep. Desktop done
-=======
-          
-          img {
-            max-width: 100%;
-          }
->>>>>>> sleep page - mobile view done
-        }
-  
-        .title {
-          margin: 20px 0;
-          width: 80%;
-          margin-left: auto;
-          margin-right: auto;
-  
-          font-size: 20px;
-=======
     .content-wrapper {
       padding: 0;
 
@@ -178,7 +98,6 @@
         
         img {
           max-width: 100%;
->>>>>>> update section science-sleep
         }
       }
 
