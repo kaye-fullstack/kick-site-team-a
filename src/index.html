@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en-us">
+<html lang="en">
 
 <head>
   <meta charset="utf-8">
@@ -32,9 +32,9 @@
     </div>
   <![endif]-->
 
-  <header class="scroll-active-js">
-    <div class="container custom-container">
-      <nav class="navbar navbar-expand-md">
+  <header class="section-header">
+    <nav class="navbar navbar-expand-md scroll-active-js">
+      <div class="container custom-container">
         <a href="index.html" class="logo"><img src="assets\images\Logo.svg" alt="logo"></a>
         <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -42,9 +42,9 @@
           <span class="icon-bar"></span>
           <span class="icon-bar"></span>
         </button>
-        <div class="collapse collapse-menu navbar-collapse" id="navbarSupportedContent">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item"><a href="doctor-ama.html" class="nav-link">Our Doctors</a></li>
+            <li class="nav-item"><a href="#" class="nav-link">Our Doctors</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Story</a></li>
             <li class="nav-item"><a href="#" class="nav-link">Performance</a></li>
             <li class="nav-item"><a href="sleep.html" class="nav-link">Sleep</a></li>
@@ -56,7 +56,7 @@
   </header>
 
   <main class="home">
-    <div class="section-banner">
+    <div class="section-hero">
       <div class="container custom-container">
         <div class="content">
           <div class="text-holder">
@@ -74,16 +74,24 @@
       <div class="container custom-container">
         <div class="logo-holder">
           <div class="image-holder">
-            <a href="#"><img src="assets\images\business-insider-white.svg" alt="logo"></a>
+            <a href="#">
+              <img src="assets\images\business-insider-white.svg" alt="logo">
+            </a>
           </div>
           <div class="image-holder">
-            <a href="#"><img src="assets\images\the-new-york-times.svg" alt="logo"></a>
+            <a href="#">
+              <img src="assets\images\the-new-york-times.svg" alt="logo">
+            </a>
           </div>
           <div class="image-holder">
-            <a href="#"><img src="assets\images\stat-white.svg" alt="logo"></a>
+            <a href="#">
+              <img src="assets\images\stat-white.svg" alt="logo">
+            </a>
           </div>
           <div class="image-holder">
-            <a href="#"><img src="assets\images\ozy.svg" alt="logo"></a>
+            <a href="#">
+              <img src="assets\images\ozy.svg" alt="logo">
+            </a>
           </div>
         </div>
       </div>
@@ -91,8 +99,10 @@
 
     <div class="section-help-products">
       <div class="container custom-container">
-        <p class="title">How We Can Help</p>
-        <p class="description">Accept to expert, specialized care.</p>
+        <div class="text-holder">
+          <p class="title">How We Can Help</p>
+          <p class="description">Accept to expert, specialized care.</p>
+        </div>
         <div class="product-holder">
           <div class="item">
             <a href="#">
@@ -111,7 +121,6 @@
         </div>
       </div>
     </div>
-
     <div class="section-personalized">
       <div class="container">
         <div class="row">
@@ -135,7 +144,6 @@
         </div>
       </div>
     </div>
-    
     <div class="section-quotation-slider">
       <div class="container">
         <div class="swiper-testimonial">
@@ -148,7 +156,9 @@
                     “Kick is my secret weapon. I know I can get it from a normal
                     doctor but that's a major inconvenience.”
                   </p>
-                  <p class="bottom-text">- Grant D, March 2019</p>
+                  <p class="bottom-text">
+                    - Grant D, March 2019
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -158,7 +168,9 @@
                     “Kick is my secret weapon. I know I can get it from a normal
                     doctor but that's a major inconvenience.”
                   </p>
-                  <p class="bottom-text">- Grant D, March 2019</p>
+                  <p class="bottom-text">
+                    - Grant D, March 2019
+                  </p>
                 </div>
               </div>
               <div class="swiper-slide">
@@ -168,7 +180,9 @@
                     “Kick is my secret weapon. I know I can get it from a normal
                     doctor but that's a major inconvenience.”
                   </p>
-                  <p class="bottom-text">- Grant D, March 2019 </p>
+                  <p class="bottom-text">
+                    - Grant D, March 2019
+                  </p>
                 </div>
               </div>
             </div>
@@ -221,23 +235,11 @@
       </div>
     </div>
 
-    <div class="section-how-it-works">
-      <div class="container custom-container">
-        <h1 class="title">How It works</h1>
-        <ul class="work-list">
-          <li class="work-item" data-attribute="1">Online Consultation</li>
-          <li class="work-item" data-attribute="2">At-Home Prescription Trials</li>
-          <li class="work-item" data-attribute="3">Continuous Sleep Coaching</li>
-          <li class="work-item" id="four" data-attribute="4">Ongoing Medical Support</li>
-        </ul>
-      </div>
-    </div>
-
     <div class="section-questions-answered">
       <div class="container custom-container">
         <div class="content-wrapper">
           <div class="content-holder">
-            <h5 class="title">YOUR QUESTIONS ANSWERED</h5>
+            <div class="title">YOUR QUESTIONS ANSWERED</div>
               <div class="swiper-container">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><p class="quote">How do I know the difference between anxiety and fear?</p></div>
@@ -252,19 +254,18 @@
           </div> 
           <div class="content-holder">
             <div class="doctor-image">
-              <div class="doctor-border">
-                <img class="image" src="assets\images\Anne.jpg">                
-              </div>
+              <div class="doctor-border"></div>
+              <img class="image" src="assets\images\Anne.jpg">
             </div>
             <p class="doctor-name">Kick Medical Team, Dr. Margaret Howell</p>
           </div>
         </div>
-      </div>
+        </div>
     </div>
 
     <div class="section-ratings">
       <div class="container custom-container">
-        <h2 class="title">We're here for you</h2>
+        <p class="title">We're here for you</p>
         <div class="rating">
           <div class="rating-holder">
             <div class="rating-star"></div>
@@ -330,40 +331,46 @@
     </div>
   </main>
 
-  <footer>
+  <footer class="section-footer">
     <div class="container custom-container">
-      <div class="content-wrapper">
-        <div class="content-holder">
-          <div class="footer-content">
-            <a href="index.html"><img src="assets\images\logo-dark.svg"></a>
-            <p class="description">Kick was started to support our fearless customers in achieving their goals. Backed by leading physicians and people who care.</p>
-            <div class="bottom-footer">
+      <div class="footer-wrapper">
+ 
+        <div class="row">
+          <div class="col-4">
+            <div class="footer-content">
+              <a href="index.html"><img src="assets\images\logo-dark.svg"></a>
+              <p class="description">Kick was started to support our fearless customers in achieving their goals. Backed by leading physicians and people who care.</p>
               <p class="address">Built with Empathy San Francisco, CA 415-723-6001</p>
-              <a href="#"><img class="seal" src="assets\images\3871190.png"></a>              
-            </div>
-          </div>              
-        </div>
-        <div class="content-holder">
-          <div class="footer-content">
-            <div class="footer-links">
-              <ul class="first-set-of-links">
-                <li><a class="links" href="#">Instagram</a></li>
-                <li><a class="links" href="#">Facebook</a></li>
-                <li><a class="links" href="#">Twitter</a></li>
-              </ul>
-              <ul class="last-set-of-links">
-                <li><a class="links" href="#">Kick Blog</a></li>
-                <li><a class="links" href="#">Terms of Use</a></li>
-                <li><a class="links" href="#">Privacy Policy</a></li>
-                <li><a class="links" href="#">Contact Us</a>  </li>                    
-              </ul>
+              <a href="#"><img class="seal" src="assets\images\3871190.png"></a>
             </div>              
           </div>
-          <div class="subscribe-to-newsletter">
-            <p class="title">Subscribe to our newsletter</p>
-            <p class="description">The latest mental performance and sleep news, sent directly to you every month</p>   
-            <input type="email" class="form-control" placeholder="Enter email">     
-            <button type="submit" class="btn-newsletter"></button>       
+ 
+          <div class="col-4"></div>
+ 
+          <div class="col-4">
+            <div class="footer-content">
+              <div class="footer-links">
+                <ul class="first-set-of-links">
+                  <li><a class="links" href="#">Instagram</a></li>
+                  <li><a class="links" href="#">Facebook</a></li>
+                  <li><a class="links" href="#">Twitter</a></li>
+                </ul>
+ 
+                <ul class="last-set-of-links">
+                  <li><a class="links" href="#">Kick Blog</a></li>
+                  <li><a class="links" href="#">Terms of Use</a></li>
+                  <li><a class="links" href="#">Privacy Policy</a></li>
+                  <li><a class="links" href="#">Contact Us</a>  </li>                    
+                </ul>
+              </div>              
+            </div>
+            
+            <div class="subscribe-to-newsletter">
+              <p class="title">Subscribe to our newsletter</p>
+              <p class="description">The latest mental performance and sleep news, sent directly to you every month</p>   
+              <input type="email" class="form-control" placeholder="Enter email">     
+              <button type="submit" class="btn-newsletter"></button>       
+            </div>
           </div>
         </div>
       </div>

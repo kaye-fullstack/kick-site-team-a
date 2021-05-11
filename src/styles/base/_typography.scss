@@ -3,24 +3,90 @@
 /**
  * Basic typography style for copy text
  */
-body {
+ body {
   color: $text-color;
-}
-.home {
+
   .title {
     font-family: $font-Spectral-Medium;
     color: $violet;
+    font-size: 30px;
+    letter-spacing: -1px;
   }
-
+  
   .description {
     color: $violet;
-    font-family: $font-Spectral-Medium;
+    font-family: $font-Spectral-Regular;
+    font-size: 18px;
   }
-
+  
   .sub-heading {
     font-size: 14px;
     font-family: $font-Spectral-Regular;
     text-transform: uppercase;
     color: $violet;
+  }
+
+  .item {
+    font-family: $font-Spectral-Regular;
+    list-style: none;
+  }
+
+  .text-bottom {
+    font-family: $font-Spectral-Regular;
+    text-align: center;
+    color: $black;
+  }
+
+  .sub-title {
+    font-size: 17px;
+    font-family: $font-Spectral-Medium;
+  }
+  
+  .sub-desc {
+    font-family: $font-Spectral-Medium;
+  }
+
+  .holder-item:before {
+    text-align: center;
+    font-family: $font-Spectral-Regular;
+    font-size: 19px;
+    color: $red-orange;
+  }
+
+  .doctor-name {
+    font-family: $font-Spectral-Medium;
+    font-size: 18px;
+    color: $white;
+  }
+
+  .treatment-list {
+    font-family: $font-Spectral-Regular;
+    font-size: 17px;
+  }
+
+  .swiper-slide {
+    font-family: $font-Spectral-Medium;
+  }
+
+  .bottom-reviews {
+    font-family: $font-Spectral-Medium;
+  }
+
+  .work-item {
+    font-family: $font-Spectral-Regular;
+  }
+
+  .work-item::before { 
+    font-family: $text-spectral-medium;
+  }
+}
+
+@include respond-to(sm) { 
+  .title {
+    font-size: 25px;
+  }
+
+  .description {
+    font-size: 20px;
   }
 }

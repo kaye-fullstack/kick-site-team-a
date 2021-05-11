@@ -23,20 +23,19 @@
 @import
   'layout/header',
   'layout/footer',
-  'layout/faq',
-  'layout/section-question-answered',
-  'layout/section-testimonials',
-  'layout/section-ratings';
+  'layout/section-sleep-solutions',
+  'layout/section-anxiety-solutions',
+  'layout/section-incredibly-personal',
+  'layout/section-science-sleep';
 
 // 5. Components
 @import
-  'components/buttons',
-  'components/input';
+  'components/buttons';
 
 // 6. Page-specific styles
 @import
   'pages/home',
-  'pages/doctor-ama';
+  'pages/sleep';
 
 // 7. Themes
 @import
